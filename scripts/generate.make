@@ -6,17 +6,17 @@
 
 FLATMATH_FLATC_CPP_FLAGS=\
 	--cpp --scoped-enums --gen-name-strings --gen-object-api \
-	-I ../schemas
+	-I $(PROJECT_SCAFFOLDING)/thirdparty/flatmath/schemas
 
 
 FLATMATH_FLATC_CPP_FLAGS_READONLY=\
 	$(FLATMATH_FLATC_CPP_FLAGS) \
-	-o ../include/flatmath/readonly/
+	-o $(PROJECT_SCAFFOLDING)/thirdparty/flatmath/include/flatmath/readonly/
 
 FLATMATH_FLATC_CPP_FLAGS_MUTABLE=\
 	--gen-mutable \
 	$(FLATMATH_FLATC_CPP_FLAGS) \
-	-o ../include/flatmath/mutable/
+	-o $(PROJECT_SCAFFOLDING)/thirdparty/flatmath/include/flatmath/mutable/
 
 ##---
 
@@ -28,25 +28,25 @@ gen_flatbuffer_flatmath_headers: \
 gen_flatbuffer_flatmath_readonly_headers:
 	@$(PROJECT_SCAFFOLDING)/tools/bin/darwin/flatc \
 		$(FLATMATH_FLATC_CPP_FLAGS_READONLY) \
-		../schemas/flatmath.fbs
+		$(PROJECT_SCAFFOLDING)/thirdparty/flatmath/schemas/flatmath.fbs
 
 gen_flatbuffer_flatmath_mutable_headers:
 	@$(PROJECT_SCAFFOLDING)/tools/bin/darwin/flatc \
 		$(FLATMATH_FLATC_CPP_FLAGS_MUTABLE) \
-		../schemas/flatmath.fbs
+		$(PROJECT_SCAFFOLDING)/thirdparty/flatmath/schemas/flatmath.fbs
 
 gen_flatbuffer_flatmath_schema_headers:
 	@$(PROJECT_SCAFFOLDING)/tools/bin/darwin/bin2c \
-		-f ../schemas/flatmath.fbs \
-		-o ../include/flatmath/flatmath_schema \
+		-f $(PROJECT_SCAFFOLDING)/thirdparty/flatmath/schemas/flatmath.fbs \
+		-o $(PROJECT_SCAFFOLDING)/thirdparty/flatmath/include/flatmath/flatmath_schema \
 		-n flatmath_schema
 
 ##---
 
 
 fmt_flatbuffer_flatmath_headers:
-	@clang-format -i ../include/flatmath/readonly/*_generated.h
-	@clang-format -i ../include/flatmath/mutable/*_generated.h
+	@clang-format -i $(PROJECT_SCAFFOLDING)/thirdparty/flatmath/include/flatmath/readonly/*_generated.h
+	@clang-format -i $(PROJECT_SCAFFOLDING)/thirdparty/flatmath/include/flatmath/mutable/*_generated.h
 
 # just being verbose
 prn_flatmath_verbose:
