@@ -5,7 +5,7 @@
 ##---
 
 FLATMATH_FLATC_CPP_FLAGS=\
-	--cpp --scoped-enums --gen-name-strings --gen-object-api \
+	--cpp --scoped-enums --gen-name-strings --gen-object-api --no-includes \
 	-I $(PROJECT_SCAFFOLDING)/thirdparty/flatmath/schemas
 
 
