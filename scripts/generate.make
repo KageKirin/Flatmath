@@ -36,9 +36,9 @@ gen_flatbuffer_flatmath_mutable_headers:
 		$(PROJECT_SCAFFOLDING)/thirdparty/flatmath/schemas/flatmath.fbs
 
 gen_flatbuffer_flatmath_schema_headers:
-	@$(PROJECT_SCAFFOLDING)/tools/bin/darwin/bin2c \
+	@$(PROJECT_SCAFFOLDING)/tools/bin/darwin/bin2cppstring \
 		-f $(PROJECT_SCAFFOLDING)/thirdparty/flatmath/schemas/flatmath.fbs \
-		-o $(PROJECT_SCAFFOLDING)/thirdparty/flatmath/include/flatmath/flatmath_schema \
+		-o $(PROJECT_SCAFFOLDING)/thirdparty/flatmath/include/flatmath/flatmath_schema.hxx \
 		-n flatmath_schema
 
 ##---
