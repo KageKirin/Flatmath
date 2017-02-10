@@ -5,8512 +5,4147 @@
 
 #include "flatbuffers/flatbuffers.h"
 
-namespace flatmath
-{
+namespace flatmath {
 
-	struct Vector2_f32;
+struct Vector2_f32;
 
-	struct Vector3_f32;
+struct Vector3_f32;
 
-	struct Vector4_f32;
+struct Vector4_f32;
 
-	struct Quaternion_f32;
+struct Quaternion_f32;
 
-	struct Matrix2x2_f32;
+struct Matrix2x2_f32;
 
-	struct Matrix2x3_f32;
+struct Matrix2x3_f32;
 
-	struct Matrix2x4_f32;
+struct Matrix2x4_f32;
 
-	struct Matrix3x2_f32;
+struct Matrix3x2_f32;
 
-	struct Matrix3x3_f32;
+struct Matrix3x3_f32;
 
-	struct Matrix3x4_f32;
+struct Matrix3x4_f32;
 
-	struct Matrix4x2_f32;
+struct Matrix4x2_f32;
 
-	struct Matrix4x3_f32;
+struct Matrix4x3_f32;
 
-	struct Matrix4x4_f32;
+struct Matrix4x4_f32;
 
-	struct ColorRGB_f32;
+struct ColorRGB_f32;
 
-	struct ColorRGBA_f32;
+struct ColorRGBA_f32;
 
-	struct Vector2_i32;
+struct Vector2_i32;
 
-	struct Vector3_i32;
+struct Vector3_i32;
 
-	struct Vector4_i32;
+struct Vector4_i32;
 
-	struct Quaternion_i32;
+struct Quaternion_i32;
 
-	struct Matrix2x2_i32;
+struct Matrix2x2_i32;
 
-	struct Matrix2x3_i32;
+struct Matrix2x3_i32;
 
-	struct Matrix2x4_i32;
+struct Matrix2x4_i32;
 
-	struct Matrix3x2_i32;
+struct Matrix3x2_i32;
 
-	struct Matrix3x3_i32;
+struct Matrix3x3_i32;
 
-	struct Matrix3x4_i32;
+struct Matrix3x4_i32;
 
-	struct Matrix4x2_i32;
+struct Matrix4x2_i32;
 
-	struct Matrix4x3_i32;
+struct Matrix4x3_i32;
 
-	struct Matrix4x4_i32;
+struct Matrix4x4_i32;
 
-	struct ColorRGB_i32;
+struct ColorRGB_i32;
 
-	struct ColorRGBA_i32;
+struct ColorRGBA_i32;
 
-	struct Vector2_u32;
+struct Vector2_u32;
 
-	struct Vector3_u32;
+struct Vector3_u32;
 
-	struct Vector4_u32;
+struct Vector4_u32;
 
-	struct Quaternion_u32;
+struct Quaternion_u32;
 
-	struct Matrix2x2_u32;
+struct Matrix2x2_u32;
 
-	struct Matrix2x3_u32;
+struct Matrix2x3_u32;
 
-	struct Matrix2x4_u32;
+struct Matrix2x4_u32;
 
-	struct Matrix3x2_u32;
+struct Matrix3x2_u32;
 
-	struct Matrix3x3_u32;
+struct Matrix3x3_u32;
 
-	struct Matrix3x4_u32;
+struct Matrix3x4_u32;
 
-	struct Matrix4x2_u32;
+struct Matrix4x2_u32;
 
-	struct Matrix4x3_u32;
+struct Matrix4x3_u32;
 
-	struct Matrix4x4_u32;
+struct Matrix4x4_u32;
 
-	struct ColorRGB_u32;
+struct ColorRGB_u32;
 
-	struct ColorRGBA_u32;
+struct ColorRGBA_u32;
 
-	struct Vector2_i16;
+struct Vector2_i16;
 
-	struct Vector3_i16;
+struct Vector3_i16;
 
-	struct Vector4_i16;
+struct Vector4_i16;
 
-	struct Quaternion_i16;
+struct Quaternion_i16;
 
-	struct Matrix2x2_i16;
+struct Matrix2x2_i16;
 
-	struct Matrix2x3_i16;
+struct Matrix2x3_i16;
 
-	struct Matrix2x4_i16;
+struct Matrix2x4_i16;
 
-	struct Matrix3x2_i16;
+struct Matrix3x2_i16;
 
-	struct Matrix3x3_i16;
+struct Matrix3x3_i16;
 
-	struct Matrix3x4_i16;
+struct Matrix3x4_i16;
 
-	struct Matrix4x2_i16;
+struct Matrix4x2_i16;
 
-	struct Matrix4x3_i16;
+struct Matrix4x3_i16;
 
-	struct Matrix4x4_i16;
+struct Matrix4x4_i16;
 
-	struct ColorRGB_i16;
+struct ColorRGB_i16;
 
-	struct ColorRGBA_i16;
+struct ColorRGBA_i16;
 
-	struct Vector2_u16;
+struct Vector2_u16;
 
-	struct Vector3_u16;
+struct Vector3_u16;
 
-	struct Vector4_u16;
+struct Vector4_u16;
 
-	struct Quaternion_u16;
+struct Quaternion_u16;
 
-	struct Matrix2x2_u16;
+struct Matrix2x2_u16;
 
-	struct Matrix2x3_u16;
+struct Matrix2x3_u16;
 
-	struct Matrix2x4_u16;
+struct Matrix2x4_u16;
 
-	struct Matrix3x2_u16;
+struct Matrix3x2_u16;
 
-	struct Matrix3x3_u16;
+struct Matrix3x3_u16;
 
-	struct Matrix3x4_u16;
+struct Matrix3x4_u16;
 
-	struct Matrix4x2_u16;
+struct Matrix4x2_u16;
 
-	struct Matrix4x3_u16;
+struct Matrix4x3_u16;
 
-	struct Matrix4x4_u16;
+struct Matrix4x4_u16;
 
-	struct ColorRGB_u16;
+struct ColorRGB_u16;
 
-	struct ColorRGBA_u16;
+struct ColorRGBA_u16;
 
-	struct Vector2_i8;
+struct Vector2_i8;
 
-	struct Vector3_i8;
+struct Vector3_i8;
 
-	struct Vector4_i8;
+struct Vector4_i8;
 
-	struct Quaternion_i8;
+struct Quaternion_i8;
 
-	struct Matrix2x2_i8;
+struct Matrix2x2_i8;
 
-	struct Matrix2x3_i8;
+struct Matrix2x3_i8;
 
-	struct Matrix2x4_i8;
+struct Matrix2x4_i8;
 
-	struct Matrix3x2_i8;
+struct Matrix3x2_i8;
 
-	struct Matrix3x3_i8;
+struct Matrix3x3_i8;
 
-	struct Matrix3x4_i8;
+struct Matrix3x4_i8;
 
-	struct Matrix4x2_i8;
+struct Matrix4x2_i8;
 
-	struct Matrix4x3_i8;
+struct Matrix4x3_i8;
 
-	struct Matrix4x4_i8;
+struct Matrix4x4_i8;
 
-	struct ColorRGB_i8;
+struct ColorRGB_i8;
 
-	struct ColorRGBA_i8;
+struct ColorRGBA_i8;
 
-	struct Vector2_u8;
+struct Vector2_u8;
 
-	struct Vector3_u8;
+struct Vector3_u8;
 
-	struct Vector4_u8;
+struct Vector4_u8;
 
-	struct Quaternion_u8;
+struct Quaternion_u8;
 
-	struct Matrix2x2_u8;
+struct Matrix2x2_u8;
 
-	struct Matrix2x3_u8;
+struct Matrix2x3_u8;
 
-	struct Matrix2x4_u8;
+struct Matrix2x4_u8;
 
-	struct Matrix3x2_u8;
+struct Matrix3x2_u8;
 
-	struct Matrix3x3_u8;
+struct Matrix3x3_u8;
 
-	struct Matrix3x4_u8;
+struct Matrix3x4_u8;
 
-	struct Matrix4x2_u8;
+struct Matrix4x2_u8;
 
-	struct Matrix4x3_u8;
+struct Matrix4x3_u8;
 
-	struct Matrix4x4_u8;
+struct Matrix4x4_u8;
 
-	struct ColorRGB_u8;
+struct ColorRGB_u8;
 
-	struct ColorRGBA_u8;
+struct ColorRGBA_u8;
 
-	struct Vector2_i64;
+struct Vector2_i64;
 
-	struct Vector3_i64;
+struct Vector3_i64;
 
-	struct Vector4_i64;
+struct Vector4_i64;
 
-	struct Quaternion_i64;
+struct Quaternion_i64;
 
-	struct Matrix2x2_i64;
+struct Matrix2x2_i64;
 
-	struct Matrix2x3_i64;
+struct Matrix2x3_i64;
 
-	struct Matrix2x4_i64;
+struct Matrix2x4_i64;
 
-	struct Matrix3x2_i64;
+struct Matrix3x2_i64;
 
-	struct Matrix3x3_i64;
+struct Matrix3x3_i64;
 
-	struct Matrix3x4_i64;
+struct Matrix3x4_i64;
 
-	struct Matrix4x2_i64;
+struct Matrix4x2_i64;
 
-	struct Matrix4x3_i64;
+struct Matrix4x3_i64;
 
-	struct Matrix4x4_i64;
+struct Matrix4x4_i64;
 
-	struct ColorRGB_i64;
+struct ColorRGB_i64;
 
-	struct ColorRGBA_i64;
+struct ColorRGBA_i64;
 
-	struct Vector2_u64;
+struct Vector2_u64;
 
-	struct Vector3_u64;
+struct Vector3_u64;
 
-	struct Vector4_u64;
+struct Vector4_u64;
 
-	struct Quaternion_u64;
+struct Quaternion_u64;
 
-	struct Matrix2x2_u64;
+struct Matrix2x2_u64;
 
-	struct Matrix2x3_u64;
+struct Matrix2x3_u64;
 
-	struct Matrix2x4_u64;
+struct Matrix2x4_u64;
 
-	struct Matrix3x2_u64;
+struct Matrix3x2_u64;
 
-	struct Matrix3x3_u64;
+struct Matrix3x3_u64;
 
-	struct Matrix3x4_u64;
+struct Matrix3x4_u64;
 
-	struct Matrix4x2_u64;
+struct Matrix4x2_u64;
 
-	struct Matrix4x3_u64;
+struct Matrix4x3_u64;
 
-	struct Matrix4x4_u64;
+struct Matrix4x4_u64;
 
-	struct ColorRGB_u64;
+struct ColorRGB_u64;
 
-	struct ColorRGBA_u64;
+struct ColorRGBA_u64;
 
-	struct Vector2_f64;
+struct Vector2_f64;
 
-	struct Vector3_f64;
+struct Vector3_f64;
 
-	struct Vector4_f64;
+struct Vector4_f64;
 
-	struct Quaternion_f64;
+struct Quaternion_f64;
 
-	struct Matrix2x2_f64;
+struct Matrix2x2_f64;
 
-	struct Matrix2x3_f64;
+struct Matrix2x3_f64;
 
-	struct Matrix2x4_f64;
+struct Matrix2x4_f64;
 
-	struct Matrix3x2_f64;
+struct Matrix3x2_f64;
 
-	struct Matrix3x3_f64;
+struct Matrix3x3_f64;
 
-	struct Matrix3x4_f64;
+struct Matrix3x4_f64;
 
-	struct Matrix4x2_f64;
+struct Matrix4x2_f64;
 
-	struct Matrix4x3_f64;
+struct Matrix4x3_f64;
 
-	struct Matrix4x4_f64;
+struct Matrix4x4_f64;
 
-	struct ColorRGB_f64;
+struct ColorRGB_f64;
 
-	struct ColorRGBA_f64;
+struct ColorRGBA_f64;
 
-	///-----------------------------------------------------------------------------
-	/// float types
-	/// 2D vector of floats
-	MANUALLY_ALIGNED_STRUCT(4) Vector2_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		float x_;
-		float y_;
+///-----------------------------------------------------------------------------
+/// float types
+/// 2D vector of floats
+MANUALLY_ALIGNED_STRUCT(4) Vector2_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  float x_;
+  float y_;
 
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector2_f32";
-		}
-		Vector2_f32()
-		{
-			memset(this, 0, sizeof(Vector2_f32));
-		}
-		Vector2_f32(const Vector2_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector2_f32));
-		}
-		Vector2_f32(float _x, float _y) : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y))
-		{
-		}
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector2_f32";
+  }
+  Vector2_f32() { memset(this, 0, sizeof(Vector2_f32)); }
+  Vector2_f32(const Vector2_f32 &_o) { memcpy(this, &_o, sizeof(Vector2_f32)); }
+  Vector2_f32(float _x, float _y)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)) { }
 
-		float x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(float _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		float y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(float _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-	};
-	STRUCT_END(Vector2_f32, 8);
+  float x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(float _x) { flatbuffers::WriteScalar(&x_, _x); }
+  float y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(float _y) { flatbuffers::WriteScalar(&y_, _y); }
+};
+STRUCT_END(Vector2_f32, 8);
 
-	/// 3D vector of floats
-	MANUALLY_ALIGNED_STRUCT(4) Vector3_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		float x_;
-		float y_;
-		float z_;
+/// 3D vector of floats
+MANUALLY_ALIGNED_STRUCT(4) Vector3_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  float x_;
+  float y_;
+  float z_;
 
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector3_f32";
-		}
-		Vector3_f32()
-		{
-			memset(this, 0, sizeof(Vector3_f32));
-		}
-		Vector3_f32(const Vector3_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector3_f32));
-		}
-		Vector3_f32(float _x, float _y, float _z)
-			: x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z))
-		{
-		}
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector3_f32";
+  }
+  Vector3_f32() { memset(this, 0, sizeof(Vector3_f32)); }
+  Vector3_f32(const Vector3_f32 &_o) { memcpy(this, &_o, sizeof(Vector3_f32)); }
+  Vector3_f32(float _x, float _y, float _z)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)) { }
 
-		float x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(float _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		float y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(float _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		float z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(float _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-	};
-	STRUCT_END(Vector3_f32, 12);
+  float x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(float _x) { flatbuffers::WriteScalar(&x_, _x); }
+  float y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(float _y) { flatbuffers::WriteScalar(&y_, _y); }
+  float z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(float _z) { flatbuffers::WriteScalar(&z_, _z); }
+};
+STRUCT_END(Vector3_f32, 12);
 
-	/// 4D vector of floats (homogenous coordinates)
-	MANUALLY_ALIGNED_STRUCT(4) Vector4_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		float x_;
-		float y_;
-		float z_;
-		float w_;
+/// 4D vector of floats (homogenous coordinates)
+MANUALLY_ALIGNED_STRUCT(4) Vector4_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  float x_;
+  float y_;
+  float z_;
+  float w_;
 
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector4_f32";
-		}
-		Vector4_f32()
-		{
-			memset(this, 0, sizeof(Vector4_f32));
-		}
-		Vector4_f32(const Vector4_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector4_f32));
-		}
-		Vector4_f32(float _x, float _y, float _z, float _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector4_f32";
+  }
+  Vector4_f32() { memset(this, 0, sizeof(Vector4_f32)); }
+  Vector4_f32(const Vector4_f32 &_o) { memcpy(this, &_o, sizeof(Vector4_f32)); }
+  Vector4_f32(float _x, float _y, float _z, float _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
 
-		float x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(float _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		float y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(float _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		float z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(float _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		float w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(float _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Vector4_f32, 16);
-
-	/// 4D hypercomplex of floats
-	MANUALLY_ALIGNED_STRUCT(4) Quaternion_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		float x_;
-		float y_;
-		float z_;
-		float w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Quaternion_f32";
-		}
-		Quaternion_f32()
-		{
-			memset(this, 0, sizeof(Quaternion_f32));
-		}
-		Quaternion_f32(const Quaternion_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(Quaternion_f32));
-		}
-		Quaternion_f32(float _x, float _y, float _z, float _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		float x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(float _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		float y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(float _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		float z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(float _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		float w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(float _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Quaternion_f32, 16);
-
-	/// 2x2 matrix of floats
-	MANUALLY_ALIGNED_STRUCT(4) Matrix2x2_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_f32 _0_;
-		Vector2_f32 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x2_f32";
-		}
-		Matrix2x2_f32()
-		{
-			memset(this, 0, sizeof(Matrix2x2_f32));
-		}
-		Matrix2x2_f32(const Matrix2x2_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x2_f32));
-		}
-		Matrix2x2_f32(const Vector2_f32& __0, const Vector2_f32& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector2_f32& _0() const
-		{
-			return _0_;
-		}
-		Vector2_f32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_f32& _1() const
-		{
-			return _1_;
-		}
-		Vector2_f32& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x2_f32, 16);
-
-	/// 2x3 matrix of floats
-	MANUALLY_ALIGNED_STRUCT(4) Matrix2x3_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_f32 _0_;
-		Vector3_f32 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x3_f32";
-		}
-		Matrix2x3_f32()
-		{
-			memset(this, 0, sizeof(Matrix2x3_f32));
-		}
-		Matrix2x3_f32(const Matrix2x3_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x3_f32));
-		}
-		Matrix2x3_f32(const Vector3_f32& __0, const Vector3_f32& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector3_f32& _0() const
-		{
-			return _0_;
-		}
-		Vector3_f32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_f32& _1() const
-		{
-			return _1_;
-		}
-		Vector3_f32& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x3_f32, 24);
-
-	/// 2x4 matrix of floats
-	MANUALLY_ALIGNED_STRUCT(4) Matrix2x4_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_f32 _0_;
-		Vector4_f32 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x4_f32";
-		}
-		Matrix2x4_f32()
-		{
-			memset(this, 0, sizeof(Matrix2x4_f32));
-		}
-		Matrix2x4_f32(const Matrix2x4_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x4_f32));
-		}
-		Matrix2x4_f32(const Vector4_f32& __0, const Vector4_f32& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector4_f32& _0() const
-		{
-			return _0_;
-		}
-		Vector4_f32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_f32& _1() const
-		{
-			return _1_;
-		}
-		Vector4_f32& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x4_f32, 32);
-
-	/// 3x2 matrix of floats
-	MANUALLY_ALIGNED_STRUCT(4) Matrix3x2_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_f32 _0_;
-		Vector2_f32 _1_;
-		Vector2_f32 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x2_f32";
-		}
-		Matrix3x2_f32()
-		{
-			memset(this, 0, sizeof(Matrix3x2_f32));
-		}
-		Matrix3x2_f32(const Matrix3x2_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x2_f32));
-		}
-		Matrix3x2_f32(const Vector2_f32& __0, const Vector2_f32& __1, const Vector2_f32& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector2_f32& _0() const
-		{
-			return _0_;
-		}
-		Vector2_f32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_f32& _1() const
-		{
-			return _1_;
-		}
-		Vector2_f32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_f32& _2() const
-		{
-			return _2_;
-		}
-		Vector2_f32& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x2_f32, 24);
-
-	/// 3x3 matrix of floats
-	MANUALLY_ALIGNED_STRUCT(4) Matrix3x3_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_f32 _0_;
-		Vector3_f32 _1_;
-		Vector3_f32 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x3_f32";
-		}
-		Matrix3x3_f32()
-		{
-			memset(this, 0, sizeof(Matrix3x3_f32));
-		}
-		Matrix3x3_f32(const Matrix3x3_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x3_f32));
-		}
-		Matrix3x3_f32(const Vector3_f32& __0, const Vector3_f32& __1, const Vector3_f32& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector3_f32& _0() const
-		{
-			return _0_;
-		}
-		Vector3_f32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_f32& _1() const
-		{
-			return _1_;
-		}
-		Vector3_f32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_f32& _2() const
-		{
-			return _2_;
-		}
-		Vector3_f32& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x3_f32, 36);
-
-	/// 3x4 matrix of floats
-	MANUALLY_ALIGNED_STRUCT(4) Matrix3x4_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_f32 _0_;
-		Vector4_f32 _1_;
-		Vector4_f32 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x4_f32";
-		}
-		Matrix3x4_f32()
-		{
-			memset(this, 0, sizeof(Matrix3x4_f32));
-		}
-		Matrix3x4_f32(const Matrix3x4_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x4_f32));
-		}
-		Matrix3x4_f32(const Vector4_f32& __0, const Vector4_f32& __1, const Vector4_f32& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector4_f32& _0() const
-		{
-			return _0_;
-		}
-		Vector4_f32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_f32& _1() const
-		{
-			return _1_;
-		}
-		Vector4_f32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_f32& _2() const
-		{
-			return _2_;
-		}
-		Vector4_f32& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x4_f32, 48);
-
-	/// 4x2 matrix of floats
-	MANUALLY_ALIGNED_STRUCT(4) Matrix4x2_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_f32 _0_;
-		Vector2_f32 _1_;
-		Vector2_f32 _2_;
-		Vector2_f32 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x2_f32";
-		}
-		Matrix4x2_f32()
-		{
-			memset(this, 0, sizeof(Matrix4x2_f32));
-		}
-		Matrix4x2_f32(const Matrix4x2_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x2_f32));
-		}
-		Matrix4x2_f32(const Vector2_f32& __0, const Vector2_f32& __1, const Vector2_f32& __2, const Vector2_f32& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector2_f32& _0() const
-		{
-			return _0_;
-		}
-		Vector2_f32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_f32& _1() const
-		{
-			return _1_;
-		}
-		Vector2_f32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_f32& _2() const
-		{
-			return _2_;
-		}
-		Vector2_f32& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector2_f32& _3() const
-		{
-			return _3_;
-		}
-		Vector2_f32& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x2_f32, 32);
-
-	/// 4x3 matrix of floats
-	MANUALLY_ALIGNED_STRUCT(4) Matrix4x3_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_f32 _0_;
-		Vector3_f32 _1_;
-		Vector3_f32 _2_;
-		Vector3_f32 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x3_f32";
-		}
-		Matrix4x3_f32()
-		{
-			memset(this, 0, sizeof(Matrix4x3_f32));
-		}
-		Matrix4x3_f32(const Matrix4x3_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x3_f32));
-		}
-		Matrix4x3_f32(const Vector3_f32& __0, const Vector3_f32& __1, const Vector3_f32& __2, const Vector3_f32& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector3_f32& _0() const
-		{
-			return _0_;
-		}
-		Vector3_f32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_f32& _1() const
-		{
-			return _1_;
-		}
-		Vector3_f32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_f32& _2() const
-		{
-			return _2_;
-		}
-		Vector3_f32& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector3_f32& _3() const
-		{
-			return _3_;
-		}
-		Vector3_f32& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x3_f32, 48);
-
-	/// 4x4 matrix of floats
-	MANUALLY_ALIGNED_STRUCT(4) Matrix4x4_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_f32 _0_;
-		Vector4_f32 _1_;
-		Vector4_f32 _2_;
-		Vector4_f32 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x4_f32";
-		}
-		Matrix4x4_f32()
-		{
-			memset(this, 0, sizeof(Matrix4x4_f32));
-		}
-		Matrix4x4_f32(const Matrix4x4_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x4_f32));
-		}
-		Matrix4x4_f32(const Vector4_f32& __0, const Vector4_f32& __1, const Vector4_f32& __2, const Vector4_f32& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector4_f32& _0() const
-		{
-			return _0_;
-		}
-		Vector4_f32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_f32& _1() const
-		{
-			return _1_;
-		}
-		Vector4_f32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_f32& _2() const
-		{
-			return _2_;
-		}
-		Vector4_f32& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector4_f32& _3() const
-		{
-			return _3_;
-		}
-		Vector4_f32& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x4_f32, 64);
-
-	/// RGB color of float components
-	MANUALLY_ALIGNED_STRUCT(4) ColorRGB_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		float r_;
-		float g_;
-		float b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_f32";
-		}
-		ColorRGB_f32()
-		{
-			memset(this, 0, sizeof(ColorRGB_f32));
-		}
-		ColorRGB_f32(const ColorRGB_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_f32));
-		}
-		ColorRGB_f32(float _r, float _g, float _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-
-		float r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(float _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		float g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(float _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		float b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(float _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_f32, 12);
-
-	/// RGBA color of float components
-	MANUALLY_ALIGNED_STRUCT(4) ColorRGBA_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		float r_;
-		float g_;
-		float b_;
-		float a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_f32";
-		}
-		ColorRGBA_f32()
-		{
-			memset(this, 0, sizeof(ColorRGBA_f32));
-		}
-		ColorRGBA_f32(const ColorRGBA_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_f32));
-		}
-		ColorRGBA_f32(float _r, float _g, float _b, float _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-
-		float r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(float _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		float g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(float _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		float b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(float _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		float a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(float _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_f32, 16);
-
-	///-----------------------------------------------------------------------------
-	///-----------------------------------------------------------------------------
-	/// int types
-	/// 2D vector of ints
-	MANUALLY_ALIGNED_STRUCT(4) Vector2_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int32_t x_;
-		int32_t y_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector2_i32";
-		}
-		Vector2_i32()
-		{
-			memset(this, 0, sizeof(Vector2_i32));
-		}
-		Vector2_i32(const Vector2_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector2_i32));
-		}
-		Vector2_i32(int32_t _x, int32_t _y) : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y))
-		{
-		}
-
-		int32_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int32_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int32_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int32_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-	};
-	STRUCT_END(Vector2_i32, 8);
-
-	/// 3D vector of ints
-	MANUALLY_ALIGNED_STRUCT(4) Vector3_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int32_t x_;
-		int32_t y_;
-		int32_t z_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector3_i32";
-		}
-		Vector3_i32()
-		{
-			memset(this, 0, sizeof(Vector3_i32));
-		}
-		Vector3_i32(const Vector3_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector3_i32));
-		}
-		Vector3_i32(int32_t _x, int32_t _y, int32_t _z)
-			: x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z))
-		{
-		}
-
-		int32_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int32_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int32_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int32_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		int32_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(int32_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-	};
-	STRUCT_END(Vector3_i32, 12);
-
-	/// 4D vector of ints (homogenous coordinates)
-	MANUALLY_ALIGNED_STRUCT(4) Vector4_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int32_t x_;
-		int32_t y_;
-		int32_t z_;
-		int32_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector4_i32";
-		}
-		Vector4_i32()
-		{
-			memset(this, 0, sizeof(Vector4_i32));
-		}
-		Vector4_i32(const Vector4_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector4_i32));
-		}
-		Vector4_i32(int32_t _x, int32_t _y, int32_t _z, int32_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		int32_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int32_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int32_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int32_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		int32_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(int32_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		int32_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(int32_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Vector4_i32, 16);
-
-	/// 4D hypercomplex of ints
-	MANUALLY_ALIGNED_STRUCT(4) Quaternion_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int32_t x_;
-		int32_t y_;
-		int32_t z_;
-		int32_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Quaternion_i32";
-		}
-		Quaternion_i32()
-		{
-			memset(this, 0, sizeof(Quaternion_i32));
-		}
-		Quaternion_i32(const Quaternion_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(Quaternion_i32));
-		}
-		Quaternion_i32(int32_t _x, int32_t _y, int32_t _z, int32_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		int32_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int32_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int32_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int32_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		int32_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(int32_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		int32_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(int32_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Quaternion_i32, 16);
-
-	/// 2x2 matrix of ints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix2x2_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_i32 _0_;
-		Vector2_i32 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x2_i32";
-		}
-		Matrix2x2_i32()
-		{
-			memset(this, 0, sizeof(Matrix2x2_i32));
-		}
-		Matrix2x2_i32(const Matrix2x2_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x2_i32));
-		}
-		Matrix2x2_i32(const Vector2_i32& __0, const Vector2_i32& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector2_i32& _0() const
-		{
-			return _0_;
-		}
-		Vector2_i32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_i32& _1() const
-		{
-			return _1_;
-		}
-		Vector2_i32& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x2_i32, 16);
-
-	/// 2x3 matrix of ints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix2x3_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_i32 _0_;
-		Vector3_i32 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x3_i32";
-		}
-		Matrix2x3_i32()
-		{
-			memset(this, 0, sizeof(Matrix2x3_i32));
-		}
-		Matrix2x3_i32(const Matrix2x3_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x3_i32));
-		}
-		Matrix2x3_i32(const Vector3_i32& __0, const Vector3_i32& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector3_i32& _0() const
-		{
-			return _0_;
-		}
-		Vector3_i32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_i32& _1() const
-		{
-			return _1_;
-		}
-		Vector3_i32& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x3_i32, 24);
-
-	/// 2x4 matrix of ints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix2x4_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_i32 _0_;
-		Vector4_i32 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x4_i32";
-		}
-		Matrix2x4_i32()
-		{
-			memset(this, 0, sizeof(Matrix2x4_i32));
-		}
-		Matrix2x4_i32(const Matrix2x4_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x4_i32));
-		}
-		Matrix2x4_i32(const Vector4_i32& __0, const Vector4_i32& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector4_i32& _0() const
-		{
-			return _0_;
-		}
-		Vector4_i32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_i32& _1() const
-		{
-			return _1_;
-		}
-		Vector4_i32& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x4_i32, 32);
-
-	/// 3x2 matrix of ints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix3x2_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_i32 _0_;
-		Vector2_i32 _1_;
-		Vector2_i32 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x2_i32";
-		}
-		Matrix3x2_i32()
-		{
-			memset(this, 0, sizeof(Matrix3x2_i32));
-		}
-		Matrix3x2_i32(const Matrix3x2_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x2_i32));
-		}
-		Matrix3x2_i32(const Vector2_i32& __0, const Vector2_i32& __1, const Vector2_i32& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector2_i32& _0() const
-		{
-			return _0_;
-		}
-		Vector2_i32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_i32& _1() const
-		{
-			return _1_;
-		}
-		Vector2_i32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_i32& _2() const
-		{
-			return _2_;
-		}
-		Vector2_i32& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x2_i32, 24);
-
-	/// 3x3 matrix of ints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix3x3_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_i32 _0_;
-		Vector3_i32 _1_;
-		Vector3_i32 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x3_i32";
-		}
-		Matrix3x3_i32()
-		{
-			memset(this, 0, sizeof(Matrix3x3_i32));
-		}
-		Matrix3x3_i32(const Matrix3x3_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x3_i32));
-		}
-		Matrix3x3_i32(const Vector3_i32& __0, const Vector3_i32& __1, const Vector3_i32& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector3_i32& _0() const
-		{
-			return _0_;
-		}
-		Vector3_i32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_i32& _1() const
-		{
-			return _1_;
-		}
-		Vector3_i32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_i32& _2() const
-		{
-			return _2_;
-		}
-		Vector3_i32& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x3_i32, 36);
-
-	/// 3x4 matrix of ints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix3x4_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_i32 _0_;
-		Vector4_i32 _1_;
-		Vector4_i32 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x4_i32";
-		}
-		Matrix3x4_i32()
-		{
-			memset(this, 0, sizeof(Matrix3x4_i32));
-		}
-		Matrix3x4_i32(const Matrix3x4_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x4_i32));
-		}
-		Matrix3x4_i32(const Vector4_i32& __0, const Vector4_i32& __1, const Vector4_i32& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector4_i32& _0() const
-		{
-			return _0_;
-		}
-		Vector4_i32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_i32& _1() const
-		{
-			return _1_;
-		}
-		Vector4_i32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_i32& _2() const
-		{
-			return _2_;
-		}
-		Vector4_i32& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x4_i32, 48);
-
-	/// 4x2 matrix of ints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix4x2_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_i32 _0_;
-		Vector2_i32 _1_;
-		Vector2_i32 _2_;
-		Vector2_i32 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x2_i32";
-		}
-		Matrix4x2_i32()
-		{
-			memset(this, 0, sizeof(Matrix4x2_i32));
-		}
-		Matrix4x2_i32(const Matrix4x2_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x2_i32));
-		}
-		Matrix4x2_i32(const Vector2_i32& __0, const Vector2_i32& __1, const Vector2_i32& __2, const Vector2_i32& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector2_i32& _0() const
-		{
-			return _0_;
-		}
-		Vector2_i32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_i32& _1() const
-		{
-			return _1_;
-		}
-		Vector2_i32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_i32& _2() const
-		{
-			return _2_;
-		}
-		Vector2_i32& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector2_i32& _3() const
-		{
-			return _3_;
-		}
-		Vector2_i32& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x2_i32, 32);
-
-	/// 4x3 matrix of ints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix4x3_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_i32 _0_;
-		Vector3_i32 _1_;
-		Vector3_i32 _2_;
-		Vector3_i32 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x3_i32";
-		}
-		Matrix4x3_i32()
-		{
-			memset(this, 0, sizeof(Matrix4x3_i32));
-		}
-		Matrix4x3_i32(const Matrix4x3_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x3_i32));
-		}
-		Matrix4x3_i32(const Vector3_i32& __0, const Vector3_i32& __1, const Vector3_i32& __2, const Vector3_i32& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector3_i32& _0() const
-		{
-			return _0_;
-		}
-		Vector3_i32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_i32& _1() const
-		{
-			return _1_;
-		}
-		Vector3_i32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_i32& _2() const
-		{
-			return _2_;
-		}
-		Vector3_i32& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector3_i32& _3() const
-		{
-			return _3_;
-		}
-		Vector3_i32& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x3_i32, 48);
-
-	/// 4x4 matrix of ints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix4x4_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_i32 _0_;
-		Vector4_i32 _1_;
-		Vector4_i32 _2_;
-		Vector4_i32 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x4_i32";
-		}
-		Matrix4x4_i32()
-		{
-			memset(this, 0, sizeof(Matrix4x4_i32));
-		}
-		Matrix4x4_i32(const Matrix4x4_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x4_i32));
-		}
-		Matrix4x4_i32(const Vector4_i32& __0, const Vector4_i32& __1, const Vector4_i32& __2, const Vector4_i32& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector4_i32& _0() const
-		{
-			return _0_;
-		}
-		Vector4_i32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_i32& _1() const
-		{
-			return _1_;
-		}
-		Vector4_i32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_i32& _2() const
-		{
-			return _2_;
-		}
-		Vector4_i32& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector4_i32& _3() const
-		{
-			return _3_;
-		}
-		Vector4_i32& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x4_i32, 64);
-
-	/// RGB color of int components
-	MANUALLY_ALIGNED_STRUCT(4) ColorRGB_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int32_t r_;
-		int32_t g_;
-		int32_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_i32";
-		}
-		ColorRGB_i32()
-		{
-			memset(this, 0, sizeof(ColorRGB_i32));
-		}
-		ColorRGB_i32(const ColorRGB_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_i32));
-		}
-		ColorRGB_i32(int32_t _r, int32_t _g, int32_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-
-		int32_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int32_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int32_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int32_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int32_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int32_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_i32, 12);
-
-	/// RGBA color of int components
-	MANUALLY_ALIGNED_STRUCT(4) ColorRGBA_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int32_t r_;
-		int32_t g_;
-		int32_t b_;
-		int32_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_i32";
-		}
-		ColorRGBA_i32()
-		{
-			memset(this, 0, sizeof(ColorRGBA_i32));
-		}
-		ColorRGBA_i32(const ColorRGBA_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_i32));
-		}
-		ColorRGBA_i32(int32_t _r, int32_t _g, int32_t _b, int32_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-
-		int32_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int32_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int32_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int32_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int32_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int32_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		int32_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(int32_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_i32, 16);
-
-	///-----------------------------------------------------------------------------
-	///-----------------------------------------------------------------------------
-	/// uint types
-	/// 2D vector of uints
-	MANUALLY_ALIGNED_STRUCT(4) Vector2_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint32_t x_;
-		uint32_t y_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector2_u32";
-		}
-		Vector2_u32()
-		{
-			memset(this, 0, sizeof(Vector2_u32));
-		}
-		Vector2_u32(const Vector2_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector2_u32));
-		}
-		Vector2_u32(uint32_t _x, uint32_t _y) : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y))
-		{
-		}
-
-		uint32_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint32_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint32_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint32_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-	};
-	STRUCT_END(Vector2_u32, 8);
-
-	/// 3D vector of uints
-	MANUALLY_ALIGNED_STRUCT(4) Vector3_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint32_t x_;
-		uint32_t y_;
-		uint32_t z_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector3_u32";
-		}
-		Vector3_u32()
-		{
-			memset(this, 0, sizeof(Vector3_u32));
-		}
-		Vector3_u32(const Vector3_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector3_u32));
-		}
-		Vector3_u32(uint32_t _x, uint32_t _y, uint32_t _z)
-			: x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z))
-		{
-		}
-
-		uint32_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint32_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint32_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint32_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		uint32_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(uint32_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-	};
-	STRUCT_END(Vector3_u32, 12);
-
-	/// 4D vector of uints (homogenous coordinates)
-	MANUALLY_ALIGNED_STRUCT(4) Vector4_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint32_t x_;
-		uint32_t y_;
-		uint32_t z_;
-		uint32_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector4_u32";
-		}
-		Vector4_u32()
-		{
-			memset(this, 0, sizeof(Vector4_u32));
-		}
-		Vector4_u32(const Vector4_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector4_u32));
-		}
-		Vector4_u32(uint32_t _x, uint32_t _y, uint32_t _z, uint32_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		uint32_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint32_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint32_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint32_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		uint32_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(uint32_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		uint32_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(uint32_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Vector4_u32, 16);
-
-	/// 4D hypercomplex of uints
-	MANUALLY_ALIGNED_STRUCT(4) Quaternion_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint32_t x_;
-		uint32_t y_;
-		uint32_t z_;
-		uint32_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Quaternion_u32";
-		}
-		Quaternion_u32()
-		{
-			memset(this, 0, sizeof(Quaternion_u32));
-		}
-		Quaternion_u32(const Quaternion_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(Quaternion_u32));
-		}
-		Quaternion_u32(uint32_t _x, uint32_t _y, uint32_t _z, uint32_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		uint32_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint32_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint32_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint32_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		uint32_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(uint32_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		uint32_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(uint32_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Quaternion_u32, 16);
-
-	/// 2x2 matrix of uints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix2x2_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_u32 _0_;
-		Vector2_u32 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x2_u32";
-		}
-		Matrix2x2_u32()
-		{
-			memset(this, 0, sizeof(Matrix2x2_u32));
-		}
-		Matrix2x2_u32(const Matrix2x2_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x2_u32));
-		}
-		Matrix2x2_u32(const Vector2_u32& __0, const Vector2_u32& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector2_u32& _0() const
-		{
-			return _0_;
-		}
-		Vector2_u32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_u32& _1() const
-		{
-			return _1_;
-		}
-		Vector2_u32& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x2_u32, 16);
-
-	/// 2x3 matrix of uints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix2x3_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_u32 _0_;
-		Vector3_u32 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x3_u32";
-		}
-		Matrix2x3_u32()
-		{
-			memset(this, 0, sizeof(Matrix2x3_u32));
-		}
-		Matrix2x3_u32(const Matrix2x3_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x3_u32));
-		}
-		Matrix2x3_u32(const Vector3_u32& __0, const Vector3_u32& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector3_u32& _0() const
-		{
-			return _0_;
-		}
-		Vector3_u32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_u32& _1() const
-		{
-			return _1_;
-		}
-		Vector3_u32& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x3_u32, 24);
-
-	/// 2x4 matrix of uints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix2x4_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_u32 _0_;
-		Vector4_u32 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x4_u32";
-		}
-		Matrix2x4_u32()
-		{
-			memset(this, 0, sizeof(Matrix2x4_u32));
-		}
-		Matrix2x4_u32(const Matrix2x4_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x4_u32));
-		}
-		Matrix2x4_u32(const Vector4_u32& __0, const Vector4_u32& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector4_u32& _0() const
-		{
-			return _0_;
-		}
-		Vector4_u32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_u32& _1() const
-		{
-			return _1_;
-		}
-		Vector4_u32& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x4_u32, 32);
-
-	/// 3x2 matrix of uints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix3x2_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_u32 _0_;
-		Vector2_u32 _1_;
-		Vector2_u32 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x2_u32";
-		}
-		Matrix3x2_u32()
-		{
-			memset(this, 0, sizeof(Matrix3x2_u32));
-		}
-		Matrix3x2_u32(const Matrix3x2_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x2_u32));
-		}
-		Matrix3x2_u32(const Vector2_u32& __0, const Vector2_u32& __1, const Vector2_u32& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector2_u32& _0() const
-		{
-			return _0_;
-		}
-		Vector2_u32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_u32& _1() const
-		{
-			return _1_;
-		}
-		Vector2_u32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_u32& _2() const
-		{
-			return _2_;
-		}
-		Vector2_u32& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x2_u32, 24);
-
-	/// 3x3 matrix of uints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix3x3_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_u32 _0_;
-		Vector3_u32 _1_;
-		Vector3_u32 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x3_u32";
-		}
-		Matrix3x3_u32()
-		{
-			memset(this, 0, sizeof(Matrix3x3_u32));
-		}
-		Matrix3x3_u32(const Matrix3x3_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x3_u32));
-		}
-		Matrix3x3_u32(const Vector3_u32& __0, const Vector3_u32& __1, const Vector3_u32& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector3_u32& _0() const
-		{
-			return _0_;
-		}
-		Vector3_u32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_u32& _1() const
-		{
-			return _1_;
-		}
-		Vector3_u32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_u32& _2() const
-		{
-			return _2_;
-		}
-		Vector3_u32& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x3_u32, 36);
-
-	/// 3x4 matrix of uints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix3x4_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_u32 _0_;
-		Vector4_u32 _1_;
-		Vector4_u32 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x4_u32";
-		}
-		Matrix3x4_u32()
-		{
-			memset(this, 0, sizeof(Matrix3x4_u32));
-		}
-		Matrix3x4_u32(const Matrix3x4_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x4_u32));
-		}
-		Matrix3x4_u32(const Vector4_u32& __0, const Vector4_u32& __1, const Vector4_u32& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector4_u32& _0() const
-		{
-			return _0_;
-		}
-		Vector4_u32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_u32& _1() const
-		{
-			return _1_;
-		}
-		Vector4_u32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_u32& _2() const
-		{
-			return _2_;
-		}
-		Vector4_u32& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x4_u32, 48);
-
-	/// 4x2 matrix of uints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix4x2_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_u32 _0_;
-		Vector2_u32 _1_;
-		Vector2_u32 _2_;
-		Vector2_u32 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x2_u32";
-		}
-		Matrix4x2_u32()
-		{
-			memset(this, 0, sizeof(Matrix4x2_u32));
-		}
-		Matrix4x2_u32(const Matrix4x2_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x2_u32));
-		}
-		Matrix4x2_u32(const Vector2_u32& __0, const Vector2_u32& __1, const Vector2_u32& __2, const Vector2_u32& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector2_u32& _0() const
-		{
-			return _0_;
-		}
-		Vector2_u32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_u32& _1() const
-		{
-			return _1_;
-		}
-		Vector2_u32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_u32& _2() const
-		{
-			return _2_;
-		}
-		Vector2_u32& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector2_u32& _3() const
-		{
-			return _3_;
-		}
-		Vector2_u32& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x2_u32, 32);
-
-	/// 4x3 matrix of uints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix4x3_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_u32 _0_;
-		Vector3_u32 _1_;
-		Vector3_u32 _2_;
-		Vector3_u32 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x3_u32";
-		}
-		Matrix4x3_u32()
-		{
-			memset(this, 0, sizeof(Matrix4x3_u32));
-		}
-		Matrix4x3_u32(const Matrix4x3_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x3_u32));
-		}
-		Matrix4x3_u32(const Vector3_u32& __0, const Vector3_u32& __1, const Vector3_u32& __2, const Vector3_u32& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector3_u32& _0() const
-		{
-			return _0_;
-		}
-		Vector3_u32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_u32& _1() const
-		{
-			return _1_;
-		}
-		Vector3_u32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_u32& _2() const
-		{
-			return _2_;
-		}
-		Vector3_u32& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector3_u32& _3() const
-		{
-			return _3_;
-		}
-		Vector3_u32& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x3_u32, 48);
-
-	/// 4x4 matrix of uints
-	MANUALLY_ALIGNED_STRUCT(4) Matrix4x4_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_u32 _0_;
-		Vector4_u32 _1_;
-		Vector4_u32 _2_;
-		Vector4_u32 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x4_u32";
-		}
-		Matrix4x4_u32()
-		{
-			memset(this, 0, sizeof(Matrix4x4_u32));
-		}
-		Matrix4x4_u32(const Matrix4x4_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x4_u32));
-		}
-		Matrix4x4_u32(const Vector4_u32& __0, const Vector4_u32& __1, const Vector4_u32& __2, const Vector4_u32& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector4_u32& _0() const
-		{
-			return _0_;
-		}
-		Vector4_u32& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_u32& _1() const
-		{
-			return _1_;
-		}
-		Vector4_u32& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_u32& _2() const
-		{
-			return _2_;
-		}
-		Vector4_u32& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector4_u32& _3() const
-		{
-			return _3_;
-		}
-		Vector4_u32& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x4_u32, 64);
-
-	/// RGB color of uint components
-	MANUALLY_ALIGNED_STRUCT(4) ColorRGB_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint32_t r_;
-		uint32_t g_;
-		uint32_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_u32";
-		}
-		ColorRGB_u32()
-		{
-			memset(this, 0, sizeof(ColorRGB_u32));
-		}
-		ColorRGB_u32(const ColorRGB_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_u32));
-		}
-		ColorRGB_u32(uint32_t _r, uint32_t _g, uint32_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-
-		uint32_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint32_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint32_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint32_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint32_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint32_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_u32, 12);
-
-	/// RGBA color of uint components
-	MANUALLY_ALIGNED_STRUCT(4) ColorRGBA_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint32_t r_;
-		uint32_t g_;
-		uint32_t b_;
-		uint32_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_u32";
-		}
-		ColorRGBA_u32()
-		{
-			memset(this, 0, sizeof(ColorRGBA_u32));
-		}
-		ColorRGBA_u32(const ColorRGBA_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_u32));
-		}
-		ColorRGBA_u32(uint32_t _r, uint32_t _g, uint32_t _b, uint32_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-
-		uint32_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint32_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint32_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint32_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint32_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint32_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		uint32_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(uint32_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_u32, 16);
-
-	///-----------------------------------------------------------------------------
-	///-----------------------------------------------------------------------------
-	/// short types
-	/// 2D vector of shorts
-	MANUALLY_ALIGNED_STRUCT(2) Vector2_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int16_t x_;
-		int16_t y_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector2_i16";
-		}
-		Vector2_i16()
-		{
-			memset(this, 0, sizeof(Vector2_i16));
-		}
-		Vector2_i16(const Vector2_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector2_i16));
-		}
-		Vector2_i16(int16_t _x, int16_t _y) : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y))
-		{
-		}
-
-		int16_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int16_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int16_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int16_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-	};
-	STRUCT_END(Vector2_i16, 4);
-
-	/// 3D vector of shorts
-	MANUALLY_ALIGNED_STRUCT(2) Vector3_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int16_t x_;
-		int16_t y_;
-		int16_t z_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector3_i16";
-		}
-		Vector3_i16()
-		{
-			memset(this, 0, sizeof(Vector3_i16));
-		}
-		Vector3_i16(const Vector3_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector3_i16));
-		}
-		Vector3_i16(int16_t _x, int16_t _y, int16_t _z)
-			: x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z))
-		{
-		}
-
-		int16_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int16_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int16_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int16_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		int16_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(int16_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-	};
-	STRUCT_END(Vector3_i16, 6);
-
-	/// 4D vector of shorts (homogenous coordinates)
-	MANUALLY_ALIGNED_STRUCT(2) Vector4_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int16_t x_;
-		int16_t y_;
-		int16_t z_;
-		int16_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector4_i16";
-		}
-		Vector4_i16()
-		{
-			memset(this, 0, sizeof(Vector4_i16));
-		}
-		Vector4_i16(const Vector4_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector4_i16));
-		}
-		Vector4_i16(int16_t _x, int16_t _y, int16_t _z, int16_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		int16_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int16_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int16_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int16_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		int16_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(int16_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		int16_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(int16_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Vector4_i16, 8);
-
-	/// 4D hypercomplex of shorts
-	MANUALLY_ALIGNED_STRUCT(2) Quaternion_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int16_t x_;
-		int16_t y_;
-		int16_t z_;
-		int16_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Quaternion_i16";
-		}
-		Quaternion_i16()
-		{
-			memset(this, 0, sizeof(Quaternion_i16));
-		}
-		Quaternion_i16(const Quaternion_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(Quaternion_i16));
-		}
-		Quaternion_i16(int16_t _x, int16_t _y, int16_t _z, int16_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		int16_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int16_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int16_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int16_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		int16_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(int16_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		int16_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(int16_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Quaternion_i16, 8);
-
-	/// 2x2 matrix of shorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix2x2_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_i16 _0_;
-		Vector2_i16 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x2_i16";
-		}
-		Matrix2x2_i16()
-		{
-			memset(this, 0, sizeof(Matrix2x2_i16));
-		}
-		Matrix2x2_i16(const Matrix2x2_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x2_i16));
-		}
-		Matrix2x2_i16(const Vector2_i16& __0, const Vector2_i16& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector2_i16& _0() const
-		{
-			return _0_;
-		}
-		Vector2_i16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_i16& _1() const
-		{
-			return _1_;
-		}
-		Vector2_i16& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x2_i16, 8);
-
-	/// 2x3 matrix of shorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix2x3_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_i16 _0_;
-		Vector3_i16 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x3_i16";
-		}
-		Matrix2x3_i16()
-		{
-			memset(this, 0, sizeof(Matrix2x3_i16));
-		}
-		Matrix2x3_i16(const Matrix2x3_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x3_i16));
-		}
-		Matrix2x3_i16(const Vector3_i16& __0, const Vector3_i16& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector3_i16& _0() const
-		{
-			return _0_;
-		}
-		Vector3_i16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_i16& _1() const
-		{
-			return _1_;
-		}
-		Vector3_i16& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x3_i16, 12);
-
-	/// 2x4 matrix of shorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix2x4_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_i16 _0_;
-		Vector4_i16 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x4_i16";
-		}
-		Matrix2x4_i16()
-		{
-			memset(this, 0, sizeof(Matrix2x4_i16));
-		}
-		Matrix2x4_i16(const Matrix2x4_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x4_i16));
-		}
-		Matrix2x4_i16(const Vector4_i16& __0, const Vector4_i16& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector4_i16& _0() const
-		{
-			return _0_;
-		}
-		Vector4_i16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_i16& _1() const
-		{
-			return _1_;
-		}
-		Vector4_i16& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x4_i16, 16);
-
-	/// 3x2 matrix of shorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix3x2_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_i16 _0_;
-		Vector2_i16 _1_;
-		Vector2_i16 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x2_i16";
-		}
-		Matrix3x2_i16()
-		{
-			memset(this, 0, sizeof(Matrix3x2_i16));
-		}
-		Matrix3x2_i16(const Matrix3x2_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x2_i16));
-		}
-		Matrix3x2_i16(const Vector2_i16& __0, const Vector2_i16& __1, const Vector2_i16& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector2_i16& _0() const
-		{
-			return _0_;
-		}
-		Vector2_i16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_i16& _1() const
-		{
-			return _1_;
-		}
-		Vector2_i16& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_i16& _2() const
-		{
-			return _2_;
-		}
-		Vector2_i16& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x2_i16, 12);
-
-	/// 3x3 matrix of shorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix3x3_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_i16 _0_;
-		Vector3_i16 _1_;
-		Vector3_i16 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x3_i16";
-		}
-		Matrix3x3_i16()
-		{
-			memset(this, 0, sizeof(Matrix3x3_i16));
-		}
-		Matrix3x3_i16(const Matrix3x3_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x3_i16));
-		}
-		Matrix3x3_i16(const Vector3_i16& __0, const Vector3_i16& __1, const Vector3_i16& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector3_i16& _0() const
-		{
-			return _0_;
-		}
-		Vector3_i16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_i16& _1() const
-		{
-			return _1_;
-		}
-		Vector3_i16& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_i16& _2() const
-		{
-			return _2_;
-		}
-		Vector3_i16& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x3_i16, 18);
-
-	/// 3x4 matrix of shorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix3x4_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_i16 _0_;
-		Vector4_i16 _1_;
-		Vector4_i16 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x4_i16";
-		}
-		Matrix3x4_i16()
-		{
-			memset(this, 0, sizeof(Matrix3x4_i16));
-		}
-		Matrix3x4_i16(const Matrix3x4_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x4_i16));
-		}
-		Matrix3x4_i16(const Vector4_i16& __0, const Vector4_i16& __1, const Vector4_i16& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector4_i16& _0() const
-		{
-			return _0_;
-		}
-		Vector4_i16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_i16& _1() const
-		{
-			return _1_;
-		}
-		Vector4_i16& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_i16& _2() const
-		{
-			return _2_;
-		}
-		Vector4_i16& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x4_i16, 24);
-
-	/// 4x2 matrix of shorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix4x2_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_i16 _0_;
-		Vector2_i16 _1_;
-		Vector2_i16 _2_;
-		Vector2_i16 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x2_i16";
-		}
-		Matrix4x2_i16()
-		{
-			memset(this, 0, sizeof(Matrix4x2_i16));
-		}
-		Matrix4x2_i16(const Matrix4x2_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x2_i16));
-		}
-		Matrix4x2_i16(const Vector2_i16& __0, const Vector2_i16& __1, const Vector2_i16& __2, const Vector2_i16& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector2_i16& _0() const
-		{
-			return _0_;
-		}
-		Vector2_i16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_i16& _1() const
-		{
-			return _1_;
-		}
-		Vector2_i16& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_i16& _2() const
-		{
-			return _2_;
-		}
-		Vector2_i16& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector2_i16& _3() const
-		{
-			return _3_;
-		}
-		Vector2_i16& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x2_i16, 16);
-
-	/// 4x3 matrix of shorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix4x3_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_i16 _0_;
-		Vector3_i16 _1_;
-		Vector3_i16 _2_;
-		Vector3_i16 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x3_i16";
-		}
-		Matrix4x3_i16()
-		{
-			memset(this, 0, sizeof(Matrix4x3_i16));
-		}
-		Matrix4x3_i16(const Matrix4x3_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x3_i16));
-		}
-		Matrix4x3_i16(const Vector3_i16& __0, const Vector3_i16& __1, const Vector3_i16& __2, const Vector3_i16& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector3_i16& _0() const
-		{
-			return _0_;
-		}
-		Vector3_i16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_i16& _1() const
-		{
-			return _1_;
-		}
-		Vector3_i16& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_i16& _2() const
-		{
-			return _2_;
-		}
-		Vector3_i16& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector3_i16& _3() const
-		{
-			return _3_;
-		}
-		Vector3_i16& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x3_i16, 24);
-
-	/// 4x4 matrix of shorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix4x4_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_i16 _0_;
-		Vector4_i16 _1_;
-		Vector4_i16 _2_;
-		Vector4_i16 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x4_i16";
-		}
-		Matrix4x4_i16()
-		{
-			memset(this, 0, sizeof(Matrix4x4_i16));
-		}
-		Matrix4x4_i16(const Matrix4x4_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x4_i16));
-		}
-		Matrix4x4_i16(const Vector4_i16& __0, const Vector4_i16& __1, const Vector4_i16& __2, const Vector4_i16& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector4_i16& _0() const
-		{
-			return _0_;
-		}
-		Vector4_i16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_i16& _1() const
-		{
-			return _1_;
-		}
-		Vector4_i16& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_i16& _2() const
-		{
-			return _2_;
-		}
-		Vector4_i16& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector4_i16& _3() const
-		{
-			return _3_;
-		}
-		Vector4_i16& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x4_i16, 32);
-
-	/// RGB color of short components
-	MANUALLY_ALIGNED_STRUCT(2) ColorRGB_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int16_t r_;
-		int16_t g_;
-		int16_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_i16";
-		}
-		ColorRGB_i16()
-		{
-			memset(this, 0, sizeof(ColorRGB_i16));
-		}
-		ColorRGB_i16(const ColorRGB_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_i16));
-		}
-		ColorRGB_i16(int16_t _r, int16_t _g, int16_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-
-		int16_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int16_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int16_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int16_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int16_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int16_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_i16, 6);
-
-	/// RGBA color of short components
-	MANUALLY_ALIGNED_STRUCT(2) ColorRGBA_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int16_t r_;
-		int16_t g_;
-		int16_t b_;
-		int16_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_i16";
-		}
-		ColorRGBA_i16()
-		{
-			memset(this, 0, sizeof(ColorRGBA_i16));
-		}
-		ColorRGBA_i16(const ColorRGBA_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_i16));
-		}
-		ColorRGBA_i16(int16_t _r, int16_t _g, int16_t _b, int16_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-
-		int16_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int16_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int16_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int16_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int16_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int16_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		int16_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(int16_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_i16, 8);
-
-	///-----------------------------------------------------------------------------
-	///-----------------------------------------------------------------------------
-	/// ushort types
-	/// 2D vector of ushorts
-	MANUALLY_ALIGNED_STRUCT(2) Vector2_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint16_t x_;
-		uint16_t y_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector2_u16";
-		}
-		Vector2_u16()
-		{
-			memset(this, 0, sizeof(Vector2_u16));
-		}
-		Vector2_u16(const Vector2_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector2_u16));
-		}
-		Vector2_u16(uint16_t _x, uint16_t _y) : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y))
-		{
-		}
-
-		uint16_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint16_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint16_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint16_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-	};
-	STRUCT_END(Vector2_u16, 4);
-
-	/// 3D vector of ushorts
-	MANUALLY_ALIGNED_STRUCT(2) Vector3_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint16_t x_;
-		uint16_t y_;
-		uint16_t z_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector3_u16";
-		}
-		Vector3_u16()
-		{
-			memset(this, 0, sizeof(Vector3_u16));
-		}
-		Vector3_u16(const Vector3_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector3_u16));
-		}
-		Vector3_u16(uint16_t _x, uint16_t _y, uint16_t _z)
-			: x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z))
-		{
-		}
-
-		uint16_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint16_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint16_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint16_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		uint16_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(uint16_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-	};
-	STRUCT_END(Vector3_u16, 6);
-
-	/// 4D vector of ushorts (homogenous coordinates)
-	MANUALLY_ALIGNED_STRUCT(2) Vector4_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint16_t x_;
-		uint16_t y_;
-		uint16_t z_;
-		uint16_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector4_u16";
-		}
-		Vector4_u16()
-		{
-			memset(this, 0, sizeof(Vector4_u16));
-		}
-		Vector4_u16(const Vector4_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector4_u16));
-		}
-		Vector4_u16(uint16_t _x, uint16_t _y, uint16_t _z, uint16_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		uint16_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint16_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint16_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint16_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		uint16_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(uint16_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		uint16_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(uint16_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Vector4_u16, 8);
-
-	/// 4D hypercomplex of ushorts
-	MANUALLY_ALIGNED_STRUCT(2) Quaternion_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint16_t x_;
-		uint16_t y_;
-		uint16_t z_;
-		uint16_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Quaternion_u16";
-		}
-		Quaternion_u16()
-		{
-			memset(this, 0, sizeof(Quaternion_u16));
-		}
-		Quaternion_u16(const Quaternion_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(Quaternion_u16));
-		}
-		Quaternion_u16(uint16_t _x, uint16_t _y, uint16_t _z, uint16_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		uint16_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint16_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint16_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint16_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		uint16_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(uint16_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		uint16_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(uint16_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Quaternion_u16, 8);
-
-	/// 2x2 matrix of ushorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix2x2_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_u16 _0_;
-		Vector2_u16 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x2_u16";
-		}
-		Matrix2x2_u16()
-		{
-			memset(this, 0, sizeof(Matrix2x2_u16));
-		}
-		Matrix2x2_u16(const Matrix2x2_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x2_u16));
-		}
-		Matrix2x2_u16(const Vector2_u16& __0, const Vector2_u16& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector2_u16& _0() const
-		{
-			return _0_;
-		}
-		Vector2_u16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_u16& _1() const
-		{
-			return _1_;
-		}
-		Vector2_u16& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x2_u16, 8);
-
-	/// 2x3 matrix of ushorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix2x3_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_u16 _0_;
-		Vector3_u16 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x3_u16";
-		}
-		Matrix2x3_u16()
-		{
-			memset(this, 0, sizeof(Matrix2x3_u16));
-		}
-		Matrix2x3_u16(const Matrix2x3_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x3_u16));
-		}
-		Matrix2x3_u16(const Vector3_u16& __0, const Vector3_u16& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector3_u16& _0() const
-		{
-			return _0_;
-		}
-		Vector3_u16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_u16& _1() const
-		{
-			return _1_;
-		}
-		Vector3_u16& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x3_u16, 12);
-
-	/// 2x4 matrix of ushorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix2x4_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_u16 _0_;
-		Vector4_u16 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x4_u16";
-		}
-		Matrix2x4_u16()
-		{
-			memset(this, 0, sizeof(Matrix2x4_u16));
-		}
-		Matrix2x4_u16(const Matrix2x4_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x4_u16));
-		}
-		Matrix2x4_u16(const Vector4_u16& __0, const Vector4_u16& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector4_u16& _0() const
-		{
-			return _0_;
-		}
-		Vector4_u16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_u16& _1() const
-		{
-			return _1_;
-		}
-		Vector4_u16& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x4_u16, 16);
-
-	/// 3x2 matrix of ushorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix3x2_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_u16 _0_;
-		Vector2_u16 _1_;
-		Vector2_u16 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x2_u16";
-		}
-		Matrix3x2_u16()
-		{
-			memset(this, 0, sizeof(Matrix3x2_u16));
-		}
-		Matrix3x2_u16(const Matrix3x2_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x2_u16));
-		}
-		Matrix3x2_u16(const Vector2_u16& __0, const Vector2_u16& __1, const Vector2_u16& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector2_u16& _0() const
-		{
-			return _0_;
-		}
-		Vector2_u16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_u16& _1() const
-		{
-			return _1_;
-		}
-		Vector2_u16& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_u16& _2() const
-		{
-			return _2_;
-		}
-		Vector2_u16& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x2_u16, 12);
-
-	/// 3x3 matrix of ushorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix3x3_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_u16 _0_;
-		Vector3_u16 _1_;
-		Vector3_u16 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x3_u16";
-		}
-		Matrix3x3_u16()
-		{
-			memset(this, 0, sizeof(Matrix3x3_u16));
-		}
-		Matrix3x3_u16(const Matrix3x3_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x3_u16));
-		}
-		Matrix3x3_u16(const Vector3_u16& __0, const Vector3_u16& __1, const Vector3_u16& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector3_u16& _0() const
-		{
-			return _0_;
-		}
-		Vector3_u16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_u16& _1() const
-		{
-			return _1_;
-		}
-		Vector3_u16& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_u16& _2() const
-		{
-			return _2_;
-		}
-		Vector3_u16& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x3_u16, 18);
-
-	/// 3x4 matrix of ushorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix3x4_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_u16 _0_;
-		Vector4_u16 _1_;
-		Vector4_u16 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x4_u16";
-		}
-		Matrix3x4_u16()
-		{
-			memset(this, 0, sizeof(Matrix3x4_u16));
-		}
-		Matrix3x4_u16(const Matrix3x4_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x4_u16));
-		}
-		Matrix3x4_u16(const Vector4_u16& __0, const Vector4_u16& __1, const Vector4_u16& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector4_u16& _0() const
-		{
-			return _0_;
-		}
-		Vector4_u16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_u16& _1() const
-		{
-			return _1_;
-		}
-		Vector4_u16& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_u16& _2() const
-		{
-			return _2_;
-		}
-		Vector4_u16& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x4_u16, 24);
-
-	/// 4x2 matrix of ushorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix4x2_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_u16 _0_;
-		Vector2_u16 _1_;
-		Vector2_u16 _2_;
-		Vector2_u16 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x2_u16";
-		}
-		Matrix4x2_u16()
-		{
-			memset(this, 0, sizeof(Matrix4x2_u16));
-		}
-		Matrix4x2_u16(const Matrix4x2_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x2_u16));
-		}
-		Matrix4x2_u16(const Vector2_u16& __0, const Vector2_u16& __1, const Vector2_u16& __2, const Vector2_u16& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector2_u16& _0() const
-		{
-			return _0_;
-		}
-		Vector2_u16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_u16& _1() const
-		{
-			return _1_;
-		}
-		Vector2_u16& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_u16& _2() const
-		{
-			return _2_;
-		}
-		Vector2_u16& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector2_u16& _3() const
-		{
-			return _3_;
-		}
-		Vector2_u16& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x2_u16, 16);
-
-	/// 4x3 matrix of ushorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix4x3_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_u16 _0_;
-		Vector3_u16 _1_;
-		Vector3_u16 _2_;
-		Vector3_u16 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x3_u16";
-		}
-		Matrix4x3_u16()
-		{
-			memset(this, 0, sizeof(Matrix4x3_u16));
-		}
-		Matrix4x3_u16(const Matrix4x3_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x3_u16));
-		}
-		Matrix4x3_u16(const Vector3_u16& __0, const Vector3_u16& __1, const Vector3_u16& __2, const Vector3_u16& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector3_u16& _0() const
-		{
-			return _0_;
-		}
-		Vector3_u16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_u16& _1() const
-		{
-			return _1_;
-		}
-		Vector3_u16& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_u16& _2() const
-		{
-			return _2_;
-		}
-		Vector3_u16& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector3_u16& _3() const
-		{
-			return _3_;
-		}
-		Vector3_u16& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x3_u16, 24);
-
-	/// 4x4 matrix of ushorts
-	MANUALLY_ALIGNED_STRUCT(2) Matrix4x4_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_u16 _0_;
-		Vector4_u16 _1_;
-		Vector4_u16 _2_;
-		Vector4_u16 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x4_u16";
-		}
-		Matrix4x4_u16()
-		{
-			memset(this, 0, sizeof(Matrix4x4_u16));
-		}
-		Matrix4x4_u16(const Matrix4x4_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x4_u16));
-		}
-		Matrix4x4_u16(const Vector4_u16& __0, const Vector4_u16& __1, const Vector4_u16& __2, const Vector4_u16& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector4_u16& _0() const
-		{
-			return _0_;
-		}
-		Vector4_u16& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_u16& _1() const
-		{
-			return _1_;
-		}
-		Vector4_u16& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_u16& _2() const
-		{
-			return _2_;
-		}
-		Vector4_u16& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector4_u16& _3() const
-		{
-			return _3_;
-		}
-		Vector4_u16& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x4_u16, 32);
-
-	/// RGB color of ushort components
-	MANUALLY_ALIGNED_STRUCT(2) ColorRGB_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint16_t r_;
-		uint16_t g_;
-		uint16_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_u16";
-		}
-		ColorRGB_u16()
-		{
-			memset(this, 0, sizeof(ColorRGB_u16));
-		}
-		ColorRGB_u16(const ColorRGB_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_u16));
-		}
-		ColorRGB_u16(uint16_t _r, uint16_t _g, uint16_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-
-		uint16_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint16_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint16_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint16_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint16_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint16_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_u16, 6);
-
-	/// RGBA color of ushort components
-	MANUALLY_ALIGNED_STRUCT(2) ColorRGBA_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint16_t r_;
-		uint16_t g_;
-		uint16_t b_;
-		uint16_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_u16";
-		}
-		ColorRGBA_u16()
-		{
-			memset(this, 0, sizeof(ColorRGBA_u16));
-		}
-		ColorRGBA_u16(const ColorRGBA_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_u16));
-		}
-		ColorRGBA_u16(uint16_t _r, uint16_t _g, uint16_t _b, uint16_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-
-		uint16_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint16_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint16_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint16_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint16_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint16_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		uint16_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(uint16_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_u16, 8);
-
-	///-----------------------------------------------------------------------------
-	///-----------------------------------------------------------------------------
-	/// byte types
-	/// 2D vector of bytes
-	MANUALLY_ALIGNED_STRUCT(1) Vector2_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int8_t x_;
-		int8_t y_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector2_i8";
-		}
-		Vector2_i8()
-		{
-			memset(this, 0, sizeof(Vector2_i8));
-		}
-		Vector2_i8(const Vector2_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector2_i8));
-		}
-		Vector2_i8(int8_t _x, int8_t _y) : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y))
-		{
-		}
-
-		int8_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int8_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int8_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int8_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-	};
-	STRUCT_END(Vector2_i8, 2);
-
-	/// 3D vector of bytes
-	MANUALLY_ALIGNED_STRUCT(1) Vector3_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int8_t x_;
-		int8_t y_;
-		int8_t z_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector3_i8";
-		}
-		Vector3_i8()
-		{
-			memset(this, 0, sizeof(Vector3_i8));
-		}
-		Vector3_i8(const Vector3_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector3_i8));
-		}
-		Vector3_i8(int8_t _x, int8_t _y, int8_t _z)
-			: x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z))
-		{
-		}
-
-		int8_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int8_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int8_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int8_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		int8_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(int8_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-	};
-	STRUCT_END(Vector3_i8, 3);
-
-	/// 4D vector of bytes (homogenous coordinates)
-	MANUALLY_ALIGNED_STRUCT(1) Vector4_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int8_t x_;
-		int8_t y_;
-		int8_t z_;
-		int8_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector4_i8";
-		}
-		Vector4_i8()
-		{
-			memset(this, 0, sizeof(Vector4_i8));
-		}
-		Vector4_i8(const Vector4_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector4_i8));
-		}
-		Vector4_i8(int8_t _x, int8_t _y, int8_t _z, int8_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		int8_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int8_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int8_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int8_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		int8_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(int8_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		int8_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(int8_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Vector4_i8, 4);
-
-	/// 4D hypercomplex of bytes
-	MANUALLY_ALIGNED_STRUCT(1) Quaternion_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int8_t x_;
-		int8_t y_;
-		int8_t z_;
-		int8_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Quaternion_i8";
-		}
-		Quaternion_i8()
-		{
-			memset(this, 0, sizeof(Quaternion_i8));
-		}
-		Quaternion_i8(const Quaternion_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(Quaternion_i8));
-		}
-		Quaternion_i8(int8_t _x, int8_t _y, int8_t _z, int8_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		int8_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int8_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int8_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int8_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		int8_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(int8_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		int8_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(int8_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Quaternion_i8, 4);
-
-	/// 2x2 matrix of bytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix2x2_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_i8 _0_;
-		Vector2_i8 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x2_i8";
-		}
-		Matrix2x2_i8()
-		{
-			memset(this, 0, sizeof(Matrix2x2_i8));
-		}
-		Matrix2x2_i8(const Matrix2x2_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x2_i8));
-		}
-		Matrix2x2_i8(const Vector2_i8& __0, const Vector2_i8& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector2_i8& _0() const
-		{
-			return _0_;
-		}
-		Vector2_i8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_i8& _1() const
-		{
-			return _1_;
-		}
-		Vector2_i8& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x2_i8, 4);
-
-	/// 2x3 matrix of bytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix2x3_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_i8 _0_;
-		Vector3_i8 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x3_i8";
-		}
-		Matrix2x3_i8()
-		{
-			memset(this, 0, sizeof(Matrix2x3_i8));
-		}
-		Matrix2x3_i8(const Matrix2x3_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x3_i8));
-		}
-		Matrix2x3_i8(const Vector3_i8& __0, const Vector3_i8& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector3_i8& _0() const
-		{
-			return _0_;
-		}
-		Vector3_i8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_i8& _1() const
-		{
-			return _1_;
-		}
-		Vector3_i8& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x3_i8, 6);
-
-	/// 2x4 matrix of bytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix2x4_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_i8 _0_;
-		Vector4_i8 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x4_i8";
-		}
-		Matrix2x4_i8()
-		{
-			memset(this, 0, sizeof(Matrix2x4_i8));
-		}
-		Matrix2x4_i8(const Matrix2x4_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x4_i8));
-		}
-		Matrix2x4_i8(const Vector4_i8& __0, const Vector4_i8& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector4_i8& _0() const
-		{
-			return _0_;
-		}
-		Vector4_i8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_i8& _1() const
-		{
-			return _1_;
-		}
-		Vector4_i8& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x4_i8, 8);
-
-	/// 3x2 matrix of bytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix3x2_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_i8 _0_;
-		Vector2_i8 _1_;
-		Vector2_i8 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x2_i8";
-		}
-		Matrix3x2_i8()
-		{
-			memset(this, 0, sizeof(Matrix3x2_i8));
-		}
-		Matrix3x2_i8(const Matrix3x2_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x2_i8));
-		}
-		Matrix3x2_i8(const Vector2_i8& __0, const Vector2_i8& __1, const Vector2_i8& __2) : _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector2_i8& _0() const
-		{
-			return _0_;
-		}
-		Vector2_i8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_i8& _1() const
-		{
-			return _1_;
-		}
-		Vector2_i8& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_i8& _2() const
-		{
-			return _2_;
-		}
-		Vector2_i8& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x2_i8, 6);
-
-	/// 3x3 matrix of bytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix3x3_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_i8 _0_;
-		Vector3_i8 _1_;
-		Vector3_i8 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x3_i8";
-		}
-		Matrix3x3_i8()
-		{
-			memset(this, 0, sizeof(Matrix3x3_i8));
-		}
-		Matrix3x3_i8(const Matrix3x3_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x3_i8));
-		}
-		Matrix3x3_i8(const Vector3_i8& __0, const Vector3_i8& __1, const Vector3_i8& __2) : _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector3_i8& _0() const
-		{
-			return _0_;
-		}
-		Vector3_i8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_i8& _1() const
-		{
-			return _1_;
-		}
-		Vector3_i8& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_i8& _2() const
-		{
-			return _2_;
-		}
-		Vector3_i8& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x3_i8, 9);
-
-	/// 3x4 matrix of bytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix3x4_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_i8 _0_;
-		Vector4_i8 _1_;
-		Vector4_i8 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x4_i8";
-		}
-		Matrix3x4_i8()
-		{
-			memset(this, 0, sizeof(Matrix3x4_i8));
-		}
-		Matrix3x4_i8(const Matrix3x4_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x4_i8));
-		}
-		Matrix3x4_i8(const Vector4_i8& __0, const Vector4_i8& __1, const Vector4_i8& __2) : _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector4_i8& _0() const
-		{
-			return _0_;
-		}
-		Vector4_i8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_i8& _1() const
-		{
-			return _1_;
-		}
-		Vector4_i8& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_i8& _2() const
-		{
-			return _2_;
-		}
-		Vector4_i8& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x4_i8, 12);
-
-	/// 4x2 matrix of bytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix4x2_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_i8 _0_;
-		Vector2_i8 _1_;
-		Vector2_i8 _2_;
-		Vector2_i8 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x2_i8";
-		}
-		Matrix4x2_i8()
-		{
-			memset(this, 0, sizeof(Matrix4x2_i8));
-		}
-		Matrix4x2_i8(const Matrix4x2_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x2_i8));
-		}
-		Matrix4x2_i8(const Vector2_i8& __0, const Vector2_i8& __1, const Vector2_i8& __2, const Vector2_i8& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector2_i8& _0() const
-		{
-			return _0_;
-		}
-		Vector2_i8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_i8& _1() const
-		{
-			return _1_;
-		}
-		Vector2_i8& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_i8& _2() const
-		{
-			return _2_;
-		}
-		Vector2_i8& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector2_i8& _3() const
-		{
-			return _3_;
-		}
-		Vector2_i8& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x2_i8, 8);
-
-	/// 4x3 matrix of bytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix4x3_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_i8 _0_;
-		Vector3_i8 _1_;
-		Vector3_i8 _2_;
-		Vector3_i8 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x3_i8";
-		}
-		Matrix4x3_i8()
-		{
-			memset(this, 0, sizeof(Matrix4x3_i8));
-		}
-		Matrix4x3_i8(const Matrix4x3_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x3_i8));
-		}
-		Matrix4x3_i8(const Vector3_i8& __0, const Vector3_i8& __1, const Vector3_i8& __2, const Vector3_i8& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector3_i8& _0() const
-		{
-			return _0_;
-		}
-		Vector3_i8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_i8& _1() const
-		{
-			return _1_;
-		}
-		Vector3_i8& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_i8& _2() const
-		{
-			return _2_;
-		}
-		Vector3_i8& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector3_i8& _3() const
-		{
-			return _3_;
-		}
-		Vector3_i8& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x3_i8, 12);
-
-	/// 4x4 matrix of bytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix4x4_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_i8 _0_;
-		Vector4_i8 _1_;
-		Vector4_i8 _2_;
-		Vector4_i8 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x4_i8";
-		}
-		Matrix4x4_i8()
-		{
-			memset(this, 0, sizeof(Matrix4x4_i8));
-		}
-		Matrix4x4_i8(const Matrix4x4_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x4_i8));
-		}
-		Matrix4x4_i8(const Vector4_i8& __0, const Vector4_i8& __1, const Vector4_i8& __2, const Vector4_i8& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector4_i8& _0() const
-		{
-			return _0_;
-		}
-		Vector4_i8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_i8& _1() const
-		{
-			return _1_;
-		}
-		Vector4_i8& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_i8& _2() const
-		{
-			return _2_;
-		}
-		Vector4_i8& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector4_i8& _3() const
-		{
-			return _3_;
-		}
-		Vector4_i8& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x4_i8, 16);
-
-	/// RGB color of byte components
-	MANUALLY_ALIGNED_STRUCT(1) ColorRGB_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int8_t r_;
-		int8_t g_;
-		int8_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_i8";
-		}
-		ColorRGB_i8()
-		{
-			memset(this, 0, sizeof(ColorRGB_i8));
-		}
-		ColorRGB_i8(const ColorRGB_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_i8));
-		}
-		ColorRGB_i8(int8_t _r, int8_t _g, int8_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-
-		int8_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int8_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int8_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int8_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int8_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int8_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_i8, 3);
-
-	/// RGBA color of byte components
-	MANUALLY_ALIGNED_STRUCT(1) ColorRGBA_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int8_t r_;
-		int8_t g_;
-		int8_t b_;
-		int8_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_i8";
-		}
-		ColorRGBA_i8()
-		{
-			memset(this, 0, sizeof(ColorRGBA_i8));
-		}
-		ColorRGBA_i8(const ColorRGBA_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_i8));
-		}
-		ColorRGBA_i8(int8_t _r, int8_t _g, int8_t _b, int8_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-
-		int8_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int8_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int8_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int8_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int8_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int8_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		int8_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(int8_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_i8, 4);
-
-	///-----------------------------------------------------------------------------
-	///-----------------------------------------------------------------------------
-	/// ubyte types
-	/// 2D vector of ubytes
-	MANUALLY_ALIGNED_STRUCT(1) Vector2_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint8_t x_;
-		uint8_t y_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector2_u8";
-		}
-		Vector2_u8()
-		{
-			memset(this, 0, sizeof(Vector2_u8));
-		}
-		Vector2_u8(const Vector2_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector2_u8));
-		}
-		Vector2_u8(uint8_t _x, uint8_t _y) : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y))
-		{
-		}
-
-		uint8_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint8_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint8_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint8_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-	};
-	STRUCT_END(Vector2_u8, 2);
-
-	/// 3D vector of ubytes
-	MANUALLY_ALIGNED_STRUCT(1) Vector3_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint8_t x_;
-		uint8_t y_;
-		uint8_t z_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector3_u8";
-		}
-		Vector3_u8()
-		{
-			memset(this, 0, sizeof(Vector3_u8));
-		}
-		Vector3_u8(const Vector3_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector3_u8));
-		}
-		Vector3_u8(uint8_t _x, uint8_t _y, uint8_t _z)
-			: x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z))
-		{
-		}
-
-		uint8_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint8_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint8_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint8_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		uint8_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(uint8_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-	};
-	STRUCT_END(Vector3_u8, 3);
-
-	/// 4D vector of ubytes (homogenous coordinates)
-	MANUALLY_ALIGNED_STRUCT(1) Vector4_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint8_t x_;
-		uint8_t y_;
-		uint8_t z_;
-		uint8_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector4_u8";
-		}
-		Vector4_u8()
-		{
-			memset(this, 0, sizeof(Vector4_u8));
-		}
-		Vector4_u8(const Vector4_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector4_u8));
-		}
-		Vector4_u8(uint8_t _x, uint8_t _y, uint8_t _z, uint8_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		uint8_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint8_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint8_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint8_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		uint8_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(uint8_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		uint8_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(uint8_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Vector4_u8, 4);
-
-	/// 4D hypercomplex of ubytes
-	MANUALLY_ALIGNED_STRUCT(1) Quaternion_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint8_t x_;
-		uint8_t y_;
-		uint8_t z_;
-		uint8_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Quaternion_u8";
-		}
-		Quaternion_u8()
-		{
-			memset(this, 0, sizeof(Quaternion_u8));
-		}
-		Quaternion_u8(const Quaternion_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(Quaternion_u8));
-		}
-		Quaternion_u8(uint8_t _x, uint8_t _y, uint8_t _z, uint8_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		uint8_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint8_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint8_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint8_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		uint8_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(uint8_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		uint8_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(uint8_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Quaternion_u8, 4);
-
-	/// 2x2 matrix of ubytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix2x2_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_u8 _0_;
-		Vector2_u8 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x2_u8";
-		}
-		Matrix2x2_u8()
-		{
-			memset(this, 0, sizeof(Matrix2x2_u8));
-		}
-		Matrix2x2_u8(const Matrix2x2_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x2_u8));
-		}
-		Matrix2x2_u8(const Vector2_u8& __0, const Vector2_u8& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector2_u8& _0() const
-		{
-			return _0_;
-		}
-		Vector2_u8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_u8& _1() const
-		{
-			return _1_;
-		}
-		Vector2_u8& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x2_u8, 4);
-
-	/// 2x3 matrix of ubytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix2x3_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_u8 _0_;
-		Vector3_u8 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x3_u8";
-		}
-		Matrix2x3_u8()
-		{
-			memset(this, 0, sizeof(Matrix2x3_u8));
-		}
-		Matrix2x3_u8(const Matrix2x3_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x3_u8));
-		}
-		Matrix2x3_u8(const Vector3_u8& __0, const Vector3_u8& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector3_u8& _0() const
-		{
-			return _0_;
-		}
-		Vector3_u8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_u8& _1() const
-		{
-			return _1_;
-		}
-		Vector3_u8& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x3_u8, 6);
-
-	/// 2x4 matrix of ubytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix2x4_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_u8 _0_;
-		Vector4_u8 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x4_u8";
-		}
-		Matrix2x4_u8()
-		{
-			memset(this, 0, sizeof(Matrix2x4_u8));
-		}
-		Matrix2x4_u8(const Matrix2x4_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x4_u8));
-		}
-		Matrix2x4_u8(const Vector4_u8& __0, const Vector4_u8& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector4_u8& _0() const
-		{
-			return _0_;
-		}
-		Vector4_u8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_u8& _1() const
-		{
-			return _1_;
-		}
-		Vector4_u8& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x4_u8, 8);
-
-	/// 3x2 matrix of ubytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix3x2_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_u8 _0_;
-		Vector2_u8 _1_;
-		Vector2_u8 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x2_u8";
-		}
-		Matrix3x2_u8()
-		{
-			memset(this, 0, sizeof(Matrix3x2_u8));
-		}
-		Matrix3x2_u8(const Matrix3x2_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x2_u8));
-		}
-		Matrix3x2_u8(const Vector2_u8& __0, const Vector2_u8& __1, const Vector2_u8& __2) : _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector2_u8& _0() const
-		{
-			return _0_;
-		}
-		Vector2_u8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_u8& _1() const
-		{
-			return _1_;
-		}
-		Vector2_u8& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_u8& _2() const
-		{
-			return _2_;
-		}
-		Vector2_u8& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x2_u8, 6);
-
-	/// 3x3 matrix of ubytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix3x3_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_u8 _0_;
-		Vector3_u8 _1_;
-		Vector3_u8 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x3_u8";
-		}
-		Matrix3x3_u8()
-		{
-			memset(this, 0, sizeof(Matrix3x3_u8));
-		}
-		Matrix3x3_u8(const Matrix3x3_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x3_u8));
-		}
-		Matrix3x3_u8(const Vector3_u8& __0, const Vector3_u8& __1, const Vector3_u8& __2) : _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector3_u8& _0() const
-		{
-			return _0_;
-		}
-		Vector3_u8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_u8& _1() const
-		{
-			return _1_;
-		}
-		Vector3_u8& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_u8& _2() const
-		{
-			return _2_;
-		}
-		Vector3_u8& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x3_u8, 9);
-
-	/// 3x4 matrix of ubytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix3x4_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_u8 _0_;
-		Vector4_u8 _1_;
-		Vector4_u8 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x4_u8";
-		}
-		Matrix3x4_u8()
-		{
-			memset(this, 0, sizeof(Matrix3x4_u8));
-		}
-		Matrix3x4_u8(const Matrix3x4_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x4_u8));
-		}
-		Matrix3x4_u8(const Vector4_u8& __0, const Vector4_u8& __1, const Vector4_u8& __2) : _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector4_u8& _0() const
-		{
-			return _0_;
-		}
-		Vector4_u8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_u8& _1() const
-		{
-			return _1_;
-		}
-		Vector4_u8& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_u8& _2() const
-		{
-			return _2_;
-		}
-		Vector4_u8& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x4_u8, 12);
-
-	/// 4x2 matrix of ubytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix4x2_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_u8 _0_;
-		Vector2_u8 _1_;
-		Vector2_u8 _2_;
-		Vector2_u8 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x2_u8";
-		}
-		Matrix4x2_u8()
-		{
-			memset(this, 0, sizeof(Matrix4x2_u8));
-		}
-		Matrix4x2_u8(const Matrix4x2_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x2_u8));
-		}
-		Matrix4x2_u8(const Vector2_u8& __0, const Vector2_u8& __1, const Vector2_u8& __2, const Vector2_u8& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector2_u8& _0() const
-		{
-			return _0_;
-		}
-		Vector2_u8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_u8& _1() const
-		{
-			return _1_;
-		}
-		Vector2_u8& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_u8& _2() const
-		{
-			return _2_;
-		}
-		Vector2_u8& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector2_u8& _3() const
-		{
-			return _3_;
-		}
-		Vector2_u8& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x2_u8, 8);
-
-	/// 4x3 matrix of ubytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix4x3_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_u8 _0_;
-		Vector3_u8 _1_;
-		Vector3_u8 _2_;
-		Vector3_u8 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x3_u8";
-		}
-		Matrix4x3_u8()
-		{
-			memset(this, 0, sizeof(Matrix4x3_u8));
-		}
-		Matrix4x3_u8(const Matrix4x3_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x3_u8));
-		}
-		Matrix4x3_u8(const Vector3_u8& __0, const Vector3_u8& __1, const Vector3_u8& __2, const Vector3_u8& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector3_u8& _0() const
-		{
-			return _0_;
-		}
-		Vector3_u8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_u8& _1() const
-		{
-			return _1_;
-		}
-		Vector3_u8& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_u8& _2() const
-		{
-			return _2_;
-		}
-		Vector3_u8& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector3_u8& _3() const
-		{
-			return _3_;
-		}
-		Vector3_u8& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x3_u8, 12);
-
-	/// 4x4 matrix of ubytes
-	MANUALLY_ALIGNED_STRUCT(1) Matrix4x4_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_u8 _0_;
-		Vector4_u8 _1_;
-		Vector4_u8 _2_;
-		Vector4_u8 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x4_u8";
-		}
-		Matrix4x4_u8()
-		{
-			memset(this, 0, sizeof(Matrix4x4_u8));
-		}
-		Matrix4x4_u8(const Matrix4x4_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x4_u8));
-		}
-		Matrix4x4_u8(const Vector4_u8& __0, const Vector4_u8& __1, const Vector4_u8& __2, const Vector4_u8& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector4_u8& _0() const
-		{
-			return _0_;
-		}
-		Vector4_u8& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_u8& _1() const
-		{
-			return _1_;
-		}
-		Vector4_u8& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_u8& _2() const
-		{
-			return _2_;
-		}
-		Vector4_u8& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector4_u8& _3() const
-		{
-			return _3_;
-		}
-		Vector4_u8& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x4_u8, 16);
-
-	/// RGB color of ubyte components
-	MANUALLY_ALIGNED_STRUCT(1) ColorRGB_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint8_t r_;
-		uint8_t g_;
-		uint8_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_u8";
-		}
-		ColorRGB_u8()
-		{
-			memset(this, 0, sizeof(ColorRGB_u8));
-		}
-		ColorRGB_u8(const ColorRGB_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_u8));
-		}
-		ColorRGB_u8(uint8_t _r, uint8_t _g, uint8_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-
-		uint8_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint8_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint8_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint8_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint8_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint8_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_u8, 3);
-
-	/// RGBA color of ubyte components
-	MANUALLY_ALIGNED_STRUCT(1) ColorRGBA_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint8_t r_;
-		uint8_t g_;
-		uint8_t b_;
-		uint8_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_u8";
-		}
-		ColorRGBA_u8()
-		{
-			memset(this, 0, sizeof(ColorRGBA_u8));
-		}
-		ColorRGBA_u8(const ColorRGBA_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_u8));
-		}
-		ColorRGBA_u8(uint8_t _r, uint8_t _g, uint8_t _b, uint8_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-
-		uint8_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint8_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint8_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint8_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint8_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint8_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		uint8_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(uint8_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_u8, 4);
-
-	///-----------------------------------------------------------------------------
-	///-----------------------------------------------------------------------------
-	/// long types
-	/// 2D vector of longs
-	MANUALLY_ALIGNED_STRUCT(8) Vector2_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int64_t x_;
-		int64_t y_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector2_i64";
-		}
-		Vector2_i64()
-		{
-			memset(this, 0, sizeof(Vector2_i64));
-		}
-		Vector2_i64(const Vector2_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector2_i64));
-		}
-		Vector2_i64(int64_t _x, int64_t _y) : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y))
-		{
-		}
-
-		int64_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int64_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int64_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int64_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-	};
-	STRUCT_END(Vector2_i64, 16);
-
-	/// 3D vector of longs
-	MANUALLY_ALIGNED_STRUCT(8) Vector3_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int64_t x_;
-		int64_t y_;
-		int64_t z_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector3_i64";
-		}
-		Vector3_i64()
-		{
-			memset(this, 0, sizeof(Vector3_i64));
-		}
-		Vector3_i64(const Vector3_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector3_i64));
-		}
-		Vector3_i64(int64_t _x, int64_t _y, int64_t _z)
-			: x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z))
-		{
-		}
-
-		int64_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int64_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int64_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int64_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		int64_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(int64_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-	};
-	STRUCT_END(Vector3_i64, 24);
-
-	/// 4D vector of longs (homogenous coordinates)
-	MANUALLY_ALIGNED_STRUCT(8) Vector4_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int64_t x_;
-		int64_t y_;
-		int64_t z_;
-		int64_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector4_i64";
-		}
-		Vector4_i64()
-		{
-			memset(this, 0, sizeof(Vector4_i64));
-		}
-		Vector4_i64(const Vector4_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector4_i64));
-		}
-		Vector4_i64(int64_t _x, int64_t _y, int64_t _z, int64_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		int64_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int64_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int64_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int64_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		int64_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(int64_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		int64_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(int64_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Vector4_i64, 32);
-
-	/// 4D hypercomplex of longs
-	MANUALLY_ALIGNED_STRUCT(8) Quaternion_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int64_t x_;
-		int64_t y_;
-		int64_t z_;
-		int64_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Quaternion_i64";
-		}
-		Quaternion_i64()
-		{
-			memset(this, 0, sizeof(Quaternion_i64));
-		}
-		Quaternion_i64(const Quaternion_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(Quaternion_i64));
-		}
-		Quaternion_i64(int64_t _x, int64_t _y, int64_t _z, int64_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		int64_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(int64_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		int64_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(int64_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		int64_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(int64_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		int64_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(int64_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Quaternion_i64, 32);
-
-	/// 2x2 matrix of longs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix2x2_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_i64 _0_;
-		Vector2_i64 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x2_i64";
-		}
-		Matrix2x2_i64()
-		{
-			memset(this, 0, sizeof(Matrix2x2_i64));
-		}
-		Matrix2x2_i64(const Matrix2x2_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x2_i64));
-		}
-		Matrix2x2_i64(const Vector2_i64& __0, const Vector2_i64& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector2_i64& _0() const
-		{
-			return _0_;
-		}
-		Vector2_i64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_i64& _1() const
-		{
-			return _1_;
-		}
-		Vector2_i64& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x2_i64, 32);
-
-	/// 2x3 matrix of longs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix2x3_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_i64 _0_;
-		Vector3_i64 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x3_i64";
-		}
-		Matrix2x3_i64()
-		{
-			memset(this, 0, sizeof(Matrix2x3_i64));
-		}
-		Matrix2x3_i64(const Matrix2x3_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x3_i64));
-		}
-		Matrix2x3_i64(const Vector3_i64& __0, const Vector3_i64& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector3_i64& _0() const
-		{
-			return _0_;
-		}
-		Vector3_i64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_i64& _1() const
-		{
-			return _1_;
-		}
-		Vector3_i64& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x3_i64, 48);
-
-	/// 2x4 matrix of longs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix2x4_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_i64 _0_;
-		Vector4_i64 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x4_i64";
-		}
-		Matrix2x4_i64()
-		{
-			memset(this, 0, sizeof(Matrix2x4_i64));
-		}
-		Matrix2x4_i64(const Matrix2x4_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x4_i64));
-		}
-		Matrix2x4_i64(const Vector4_i64& __0, const Vector4_i64& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector4_i64& _0() const
-		{
-			return _0_;
-		}
-		Vector4_i64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_i64& _1() const
-		{
-			return _1_;
-		}
-		Vector4_i64& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x4_i64, 64);
-
-	/// 3x2 matrix of longs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix3x2_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_i64 _0_;
-		Vector2_i64 _1_;
-		Vector2_i64 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x2_i64";
-		}
-		Matrix3x2_i64()
-		{
-			memset(this, 0, sizeof(Matrix3x2_i64));
-		}
-		Matrix3x2_i64(const Matrix3x2_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x2_i64));
-		}
-		Matrix3x2_i64(const Vector2_i64& __0, const Vector2_i64& __1, const Vector2_i64& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector2_i64& _0() const
-		{
-			return _0_;
-		}
-		Vector2_i64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_i64& _1() const
-		{
-			return _1_;
-		}
-		Vector2_i64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_i64& _2() const
-		{
-			return _2_;
-		}
-		Vector2_i64& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x2_i64, 48);
-
-	/// 3x3 matrix of longs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix3x3_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_i64 _0_;
-		Vector3_i64 _1_;
-		Vector3_i64 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x3_i64";
-		}
-		Matrix3x3_i64()
-		{
-			memset(this, 0, sizeof(Matrix3x3_i64));
-		}
-		Matrix3x3_i64(const Matrix3x3_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x3_i64));
-		}
-		Matrix3x3_i64(const Vector3_i64& __0, const Vector3_i64& __1, const Vector3_i64& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector3_i64& _0() const
-		{
-			return _0_;
-		}
-		Vector3_i64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_i64& _1() const
-		{
-			return _1_;
-		}
-		Vector3_i64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_i64& _2() const
-		{
-			return _2_;
-		}
-		Vector3_i64& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x3_i64, 72);
-
-	/// 3x4 matrix of longs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix3x4_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_i64 _0_;
-		Vector4_i64 _1_;
-		Vector4_i64 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x4_i64";
-		}
-		Matrix3x4_i64()
-		{
-			memset(this, 0, sizeof(Matrix3x4_i64));
-		}
-		Matrix3x4_i64(const Matrix3x4_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x4_i64));
-		}
-		Matrix3x4_i64(const Vector4_i64& __0, const Vector4_i64& __1, const Vector4_i64& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector4_i64& _0() const
-		{
-			return _0_;
-		}
-		Vector4_i64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_i64& _1() const
-		{
-			return _1_;
-		}
-		Vector4_i64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_i64& _2() const
-		{
-			return _2_;
-		}
-		Vector4_i64& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x4_i64, 96);
-
-	/// 4x2 matrix of longs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix4x2_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_i64 _0_;
-		Vector2_i64 _1_;
-		Vector2_i64 _2_;
-		Vector2_i64 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x2_i64";
-		}
-		Matrix4x2_i64()
-		{
-			memset(this, 0, sizeof(Matrix4x2_i64));
-		}
-		Matrix4x2_i64(const Matrix4x2_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x2_i64));
-		}
-		Matrix4x2_i64(const Vector2_i64& __0, const Vector2_i64& __1, const Vector2_i64& __2, const Vector2_i64& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector2_i64& _0() const
-		{
-			return _0_;
-		}
-		Vector2_i64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_i64& _1() const
-		{
-			return _1_;
-		}
-		Vector2_i64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_i64& _2() const
-		{
-			return _2_;
-		}
-		Vector2_i64& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector2_i64& _3() const
-		{
-			return _3_;
-		}
-		Vector2_i64& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x2_i64, 64);
-
-	/// 4x3 matrix of longs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix4x3_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_i64 _0_;
-		Vector3_i64 _1_;
-		Vector3_i64 _2_;
-		Vector3_i64 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x3_i64";
-		}
-		Matrix4x3_i64()
-		{
-			memset(this, 0, sizeof(Matrix4x3_i64));
-		}
-		Matrix4x3_i64(const Matrix4x3_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x3_i64));
-		}
-		Matrix4x3_i64(const Vector3_i64& __0, const Vector3_i64& __1, const Vector3_i64& __2, const Vector3_i64& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector3_i64& _0() const
-		{
-			return _0_;
-		}
-		Vector3_i64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_i64& _1() const
-		{
-			return _1_;
-		}
-		Vector3_i64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_i64& _2() const
-		{
-			return _2_;
-		}
-		Vector3_i64& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector3_i64& _3() const
-		{
-			return _3_;
-		}
-		Vector3_i64& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x3_i64, 96);
-
-	/// 4x4 matrix of longs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix4x4_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_i64 _0_;
-		Vector4_i64 _1_;
-		Vector4_i64 _2_;
-		Vector4_i64 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x4_i64";
-		}
-		Matrix4x4_i64()
-		{
-			memset(this, 0, sizeof(Matrix4x4_i64));
-		}
-		Matrix4x4_i64(const Matrix4x4_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x4_i64));
-		}
-		Matrix4x4_i64(const Vector4_i64& __0, const Vector4_i64& __1, const Vector4_i64& __2, const Vector4_i64& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector4_i64& _0() const
-		{
-			return _0_;
-		}
-		Vector4_i64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_i64& _1() const
-		{
-			return _1_;
-		}
-		Vector4_i64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_i64& _2() const
-		{
-			return _2_;
-		}
-		Vector4_i64& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector4_i64& _3() const
-		{
-			return _3_;
-		}
-		Vector4_i64& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x4_i64, 128);
-
-	/// RGB color of long components
-	MANUALLY_ALIGNED_STRUCT(8) ColorRGB_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int64_t r_;
-		int64_t g_;
-		int64_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_i64";
-		}
-		ColorRGB_i64()
-		{
-			memset(this, 0, sizeof(ColorRGB_i64));
-		}
-		ColorRGB_i64(const ColorRGB_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_i64));
-		}
-		ColorRGB_i64(int64_t _r, int64_t _g, int64_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-
-		int64_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int64_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int64_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int64_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int64_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int64_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_i64, 24);
-
-	/// RGBA color of long components
-	MANUALLY_ALIGNED_STRUCT(8) ColorRGBA_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int64_t r_;
-		int64_t g_;
-		int64_t b_;
-		int64_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_i64";
-		}
-		ColorRGBA_i64()
-		{
-			memset(this, 0, sizeof(ColorRGBA_i64));
-		}
-		ColorRGBA_i64(const ColorRGBA_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_i64));
-		}
-		ColorRGBA_i64(int64_t _r, int64_t _g, int64_t _b, int64_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-
-		int64_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int64_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int64_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int64_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int64_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int64_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		int64_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(int64_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_i64, 32);
-
-	///-----------------------------------------------------------------------------
-	///-----------------------------------------------------------------------------
-	/// ulong types
-	/// 2D vector of ulongs
-	MANUALLY_ALIGNED_STRUCT(8) Vector2_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint64_t x_;
-		uint64_t y_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector2_u64";
-		}
-		Vector2_u64()
-		{
-			memset(this, 0, sizeof(Vector2_u64));
-		}
-		Vector2_u64(const Vector2_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector2_u64));
-		}
-		Vector2_u64(uint64_t _x, uint64_t _y) : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y))
-		{
-		}
-
-		uint64_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint64_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint64_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint64_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-	};
-	STRUCT_END(Vector2_u64, 16);
-
-	/// 3D vector of ulongs
-	MANUALLY_ALIGNED_STRUCT(8) Vector3_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint64_t x_;
-		uint64_t y_;
-		uint64_t z_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector3_u64";
-		}
-		Vector3_u64()
-		{
-			memset(this, 0, sizeof(Vector3_u64));
-		}
-		Vector3_u64(const Vector3_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector3_u64));
-		}
-		Vector3_u64(uint64_t _x, uint64_t _y, uint64_t _z)
-			: x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z))
-		{
-		}
-
-		uint64_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint64_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint64_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint64_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		uint64_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(uint64_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-	};
-	STRUCT_END(Vector3_u64, 24);
-
-	/// 4D vector of ulongs (homogenous coordinates)
-	MANUALLY_ALIGNED_STRUCT(8) Vector4_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint64_t x_;
-		uint64_t y_;
-		uint64_t z_;
-		uint64_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector4_u64";
-		}
-		Vector4_u64()
-		{
-			memset(this, 0, sizeof(Vector4_u64));
-		}
-		Vector4_u64(const Vector4_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector4_u64));
-		}
-		Vector4_u64(uint64_t _x, uint64_t _y, uint64_t _z, uint64_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		uint64_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint64_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint64_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint64_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		uint64_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(uint64_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		uint64_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(uint64_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Vector4_u64, 32);
-
-	/// 4D hypercomplex of ulongs
-	MANUALLY_ALIGNED_STRUCT(8) Quaternion_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint64_t x_;
-		uint64_t y_;
-		uint64_t z_;
-		uint64_t w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Quaternion_u64";
-		}
-		Quaternion_u64()
-		{
-			memset(this, 0, sizeof(Quaternion_u64));
-		}
-		Quaternion_u64(const Quaternion_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(Quaternion_u64));
-		}
-		Quaternion_u64(uint64_t _x, uint64_t _y, uint64_t _z, uint64_t _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		uint64_t x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(uint64_t _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		uint64_t y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(uint64_t _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		uint64_t z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(uint64_t _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		uint64_t w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(uint64_t _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Quaternion_u64, 32);
-
-	/// 2x2 matrix of ulongs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix2x2_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_u64 _0_;
-		Vector2_u64 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x2_u64";
-		}
-		Matrix2x2_u64()
-		{
-			memset(this, 0, sizeof(Matrix2x2_u64));
-		}
-		Matrix2x2_u64(const Matrix2x2_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x2_u64));
-		}
-		Matrix2x2_u64(const Vector2_u64& __0, const Vector2_u64& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector2_u64& _0() const
-		{
-			return _0_;
-		}
-		Vector2_u64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_u64& _1() const
-		{
-			return _1_;
-		}
-		Vector2_u64& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x2_u64, 32);
-
-	/// 2x3 matrix of ulongs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix2x3_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_u64 _0_;
-		Vector3_u64 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x3_u64";
-		}
-		Matrix2x3_u64()
-		{
-			memset(this, 0, sizeof(Matrix2x3_u64));
-		}
-		Matrix2x3_u64(const Matrix2x3_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x3_u64));
-		}
-		Matrix2x3_u64(const Vector3_u64& __0, const Vector3_u64& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector3_u64& _0() const
-		{
-			return _0_;
-		}
-		Vector3_u64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_u64& _1() const
-		{
-			return _1_;
-		}
-		Vector3_u64& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x3_u64, 48);
-
-	/// 2x4 matrix of ulongs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix2x4_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_u64 _0_;
-		Vector4_u64 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x4_u64";
-		}
-		Matrix2x4_u64()
-		{
-			memset(this, 0, sizeof(Matrix2x4_u64));
-		}
-		Matrix2x4_u64(const Matrix2x4_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x4_u64));
-		}
-		Matrix2x4_u64(const Vector4_u64& __0, const Vector4_u64& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector4_u64& _0() const
-		{
-			return _0_;
-		}
-		Vector4_u64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_u64& _1() const
-		{
-			return _1_;
-		}
-		Vector4_u64& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x4_u64, 64);
-
-	/// 3x2 matrix of ulongs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix3x2_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_u64 _0_;
-		Vector2_u64 _1_;
-		Vector2_u64 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x2_u64";
-		}
-		Matrix3x2_u64()
-		{
-			memset(this, 0, sizeof(Matrix3x2_u64));
-		}
-		Matrix3x2_u64(const Matrix3x2_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x2_u64));
-		}
-		Matrix3x2_u64(const Vector2_u64& __0, const Vector2_u64& __1, const Vector2_u64& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector2_u64& _0() const
-		{
-			return _0_;
-		}
-		Vector2_u64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_u64& _1() const
-		{
-			return _1_;
-		}
-		Vector2_u64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_u64& _2() const
-		{
-			return _2_;
-		}
-		Vector2_u64& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x2_u64, 48);
-
-	/// 3x3 matrix of ulongs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix3x3_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_u64 _0_;
-		Vector3_u64 _1_;
-		Vector3_u64 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x3_u64";
-		}
-		Matrix3x3_u64()
-		{
-			memset(this, 0, sizeof(Matrix3x3_u64));
-		}
-		Matrix3x3_u64(const Matrix3x3_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x3_u64));
-		}
-		Matrix3x3_u64(const Vector3_u64& __0, const Vector3_u64& __1, const Vector3_u64& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector3_u64& _0() const
-		{
-			return _0_;
-		}
-		Vector3_u64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_u64& _1() const
-		{
-			return _1_;
-		}
-		Vector3_u64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_u64& _2() const
-		{
-			return _2_;
-		}
-		Vector3_u64& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x3_u64, 72);
-
-	/// 3x4 matrix of ulongs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix3x4_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_u64 _0_;
-		Vector4_u64 _1_;
-		Vector4_u64 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x4_u64";
-		}
-		Matrix3x4_u64()
-		{
-			memset(this, 0, sizeof(Matrix3x4_u64));
-		}
-		Matrix3x4_u64(const Matrix3x4_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x4_u64));
-		}
-		Matrix3x4_u64(const Vector4_u64& __0, const Vector4_u64& __1, const Vector4_u64& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector4_u64& _0() const
-		{
-			return _0_;
-		}
-		Vector4_u64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_u64& _1() const
-		{
-			return _1_;
-		}
-		Vector4_u64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_u64& _2() const
-		{
-			return _2_;
-		}
-		Vector4_u64& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x4_u64, 96);
-
-	/// 4x2 matrix of ulongs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix4x2_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_u64 _0_;
-		Vector2_u64 _1_;
-		Vector2_u64 _2_;
-		Vector2_u64 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x2_u64";
-		}
-		Matrix4x2_u64()
-		{
-			memset(this, 0, sizeof(Matrix4x2_u64));
-		}
-		Matrix4x2_u64(const Matrix4x2_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x2_u64));
-		}
-		Matrix4x2_u64(const Vector2_u64& __0, const Vector2_u64& __1, const Vector2_u64& __2, const Vector2_u64& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector2_u64& _0() const
-		{
-			return _0_;
-		}
-		Vector2_u64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_u64& _1() const
-		{
-			return _1_;
-		}
-		Vector2_u64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_u64& _2() const
-		{
-			return _2_;
-		}
-		Vector2_u64& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector2_u64& _3() const
-		{
-			return _3_;
-		}
-		Vector2_u64& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x2_u64, 64);
-
-	/// 4x3 matrix of ulongs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix4x3_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_u64 _0_;
-		Vector3_u64 _1_;
-		Vector3_u64 _2_;
-		Vector3_u64 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x3_u64";
-		}
-		Matrix4x3_u64()
-		{
-			memset(this, 0, sizeof(Matrix4x3_u64));
-		}
-		Matrix4x3_u64(const Matrix4x3_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x3_u64));
-		}
-		Matrix4x3_u64(const Vector3_u64& __0, const Vector3_u64& __1, const Vector3_u64& __2, const Vector3_u64& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector3_u64& _0() const
-		{
-			return _0_;
-		}
-		Vector3_u64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_u64& _1() const
-		{
-			return _1_;
-		}
-		Vector3_u64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_u64& _2() const
-		{
-			return _2_;
-		}
-		Vector3_u64& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector3_u64& _3() const
-		{
-			return _3_;
-		}
-		Vector3_u64& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x3_u64, 96);
-
-	/// 4x4 matrix of ulongs
-	MANUALLY_ALIGNED_STRUCT(8) Matrix4x4_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_u64 _0_;
-		Vector4_u64 _1_;
-		Vector4_u64 _2_;
-		Vector4_u64 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x4_u64";
-		}
-		Matrix4x4_u64()
-		{
-			memset(this, 0, sizeof(Matrix4x4_u64));
-		}
-		Matrix4x4_u64(const Matrix4x4_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x4_u64));
-		}
-		Matrix4x4_u64(const Vector4_u64& __0, const Vector4_u64& __1, const Vector4_u64& __2, const Vector4_u64& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector4_u64& _0() const
-		{
-			return _0_;
-		}
-		Vector4_u64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_u64& _1() const
-		{
-			return _1_;
-		}
-		Vector4_u64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_u64& _2() const
-		{
-			return _2_;
-		}
-		Vector4_u64& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector4_u64& _3() const
-		{
-			return _3_;
-		}
-		Vector4_u64& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x4_u64, 128);
-
-	/// RGB color of ulong components
-	MANUALLY_ALIGNED_STRUCT(8) ColorRGB_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint64_t r_;
-		uint64_t g_;
-		uint64_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_u64";
-		}
-		ColorRGB_u64()
-		{
-			memset(this, 0, sizeof(ColorRGB_u64));
-		}
-		ColorRGB_u64(const ColorRGB_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_u64));
-		}
-		ColorRGB_u64(uint64_t _r, uint64_t _g, uint64_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-
-		uint64_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint64_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint64_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint64_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint64_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint64_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_u64, 24);
-
-	/// RGBA color of ulong components
-	MANUALLY_ALIGNED_STRUCT(8) ColorRGBA_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint64_t r_;
-		uint64_t g_;
-		uint64_t b_;
-		uint64_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_u64";
-		}
-		ColorRGBA_u64()
-		{
-			memset(this, 0, sizeof(ColorRGBA_u64));
-		}
-		ColorRGBA_u64(const ColorRGBA_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_u64));
-		}
-		ColorRGBA_u64(uint64_t _r, uint64_t _g, uint64_t _b, uint64_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-
-		uint64_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint64_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint64_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint64_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint64_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint64_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		uint64_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(uint64_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_u64, 32);
-
-	///-----------------------------------------------------------------------------
-	///-----------------------------------------------------------------------------
-	/// double types
-	/// 2D vector of doubles
-	MANUALLY_ALIGNED_STRUCT(8) Vector2_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		double x_;
-		double y_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector2_f64";
-		}
-		Vector2_f64()
-		{
-			memset(this, 0, sizeof(Vector2_f64));
-		}
-		Vector2_f64(const Vector2_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector2_f64));
-		}
-		Vector2_f64(double _x, double _y) : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y))
-		{
-		}
-
-		double x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(double _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		double y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(double _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-	};
-	STRUCT_END(Vector2_f64, 16);
-
-	/// 3D vector of doubles
-	MANUALLY_ALIGNED_STRUCT(8) Vector3_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		double x_;
-		double y_;
-		double z_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector3_f64";
-		}
-		Vector3_f64()
-		{
-			memset(this, 0, sizeof(Vector3_f64));
-		}
-		Vector3_f64(const Vector3_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector3_f64));
-		}
-		Vector3_f64(double _x, double _y, double _z)
-			: x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z))
-		{
-		}
-
-		double x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(double _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		double y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(double _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		double z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(double _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-	};
-	STRUCT_END(Vector3_f64, 24);
-
-	/// 4D vector of doubles (homogenous coordinates)
-	MANUALLY_ALIGNED_STRUCT(8) Vector4_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		double x_;
-		double y_;
-		double z_;
-		double w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Vector4_f64";
-		}
-		Vector4_f64()
-		{
-			memset(this, 0, sizeof(Vector4_f64));
-		}
-		Vector4_f64(const Vector4_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(Vector4_f64));
-		}
-		Vector4_f64(double _x, double _y, double _z, double _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		double x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(double _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		double y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(double _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		double z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(double _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		double w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(double _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Vector4_f64, 32);
-
-	/// 4D hypercomplex of doubles
-	MANUALLY_ALIGNED_STRUCT(8) Quaternion_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		double x_;
-		double y_;
-		double z_;
-		double w_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Quaternion_f64";
-		}
-		Quaternion_f64()
-		{
-			memset(this, 0, sizeof(Quaternion_f64));
-		}
-		Quaternion_f64(const Quaternion_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(Quaternion_f64));
-		}
-		Quaternion_f64(double _x, double _y, double _z, double _w)
-			: x_(flatbuffers::EndianScalar(_x))
-			, y_(flatbuffers::EndianScalar(_y))
-			, z_(flatbuffers::EndianScalar(_z))
-			, w_(flatbuffers::EndianScalar(_w))
-		{
-		}
-
-		double x() const
-		{
-			return flatbuffers::EndianScalar(x_);
-		}
-		void mutate_x(double _x)
-		{
-			flatbuffers::WriteScalar(&x_, _x);
-		}
-		double y() const
-		{
-			return flatbuffers::EndianScalar(y_);
-		}
-		void mutate_y(double _y)
-		{
-			flatbuffers::WriteScalar(&y_, _y);
-		}
-		double z() const
-		{
-			return flatbuffers::EndianScalar(z_);
-		}
-		void mutate_z(double _z)
-		{
-			flatbuffers::WriteScalar(&z_, _z);
-		}
-		double w() const
-		{
-			return flatbuffers::EndianScalar(w_);
-		}
-		void mutate_w(double _w)
-		{
-			flatbuffers::WriteScalar(&w_, _w);
-		}
-	};
-	STRUCT_END(Quaternion_f64, 32);
-
-	/// 2x2 matrix of doubles
-	MANUALLY_ALIGNED_STRUCT(8) Matrix2x2_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_f64 _0_;
-		Vector2_f64 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x2_f64";
-		}
-		Matrix2x2_f64()
-		{
-			memset(this, 0, sizeof(Matrix2x2_f64));
-		}
-		Matrix2x2_f64(const Matrix2x2_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x2_f64));
-		}
-		Matrix2x2_f64(const Vector2_f64& __0, const Vector2_f64& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector2_f64& _0() const
-		{
-			return _0_;
-		}
-		Vector2_f64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_f64& _1() const
-		{
-			return _1_;
-		}
-		Vector2_f64& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x2_f64, 32);
-
-	/// 2x3 matrix of doubles
-	MANUALLY_ALIGNED_STRUCT(8) Matrix2x3_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_f64 _0_;
-		Vector3_f64 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x3_f64";
-		}
-		Matrix2x3_f64()
-		{
-			memset(this, 0, sizeof(Matrix2x3_f64));
-		}
-		Matrix2x3_f64(const Matrix2x3_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x3_f64));
-		}
-		Matrix2x3_f64(const Vector3_f64& __0, const Vector3_f64& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector3_f64& _0() const
-		{
-			return _0_;
-		}
-		Vector3_f64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_f64& _1() const
-		{
-			return _1_;
-		}
-		Vector3_f64& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x3_f64, 48);
-
-	/// 2x4 matrix of doubles
-	MANUALLY_ALIGNED_STRUCT(8) Matrix2x4_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_f64 _0_;
-		Vector4_f64 _1_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix2x4_f64";
-		}
-		Matrix2x4_f64()
-		{
-			memset(this, 0, sizeof(Matrix2x4_f64));
-		}
-		Matrix2x4_f64(const Matrix2x4_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix2x4_f64));
-		}
-		Matrix2x4_f64(const Vector4_f64& __0, const Vector4_f64& __1) : _0_(__0), _1_(__1)
-		{
-		}
-
-		const Vector4_f64& _0() const
-		{
-			return _0_;
-		}
-		Vector4_f64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_f64& _1() const
-		{
-			return _1_;
-		}
-		Vector4_f64& mutable__1()
-		{
-			return _1_;
-		}
-	};
-	STRUCT_END(Matrix2x4_f64, 64);
-
-	/// 3x2 matrix of doubles
-	MANUALLY_ALIGNED_STRUCT(8) Matrix3x2_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_f64 _0_;
-		Vector2_f64 _1_;
-		Vector2_f64 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x2_f64";
-		}
-		Matrix3x2_f64()
-		{
-			memset(this, 0, sizeof(Matrix3x2_f64));
-		}
-		Matrix3x2_f64(const Matrix3x2_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x2_f64));
-		}
-		Matrix3x2_f64(const Vector2_f64& __0, const Vector2_f64& __1, const Vector2_f64& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector2_f64& _0() const
-		{
-			return _0_;
-		}
-		Vector2_f64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_f64& _1() const
-		{
-			return _1_;
-		}
-		Vector2_f64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_f64& _2() const
-		{
-			return _2_;
-		}
-		Vector2_f64& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x2_f64, 48);
-
-	/// 3x3 matrix of doubles
-	MANUALLY_ALIGNED_STRUCT(8) Matrix3x3_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_f64 _0_;
-		Vector3_f64 _1_;
-		Vector3_f64 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x3_f64";
-		}
-		Matrix3x3_f64()
-		{
-			memset(this, 0, sizeof(Matrix3x3_f64));
-		}
-		Matrix3x3_f64(const Matrix3x3_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x3_f64));
-		}
-		Matrix3x3_f64(const Vector3_f64& __0, const Vector3_f64& __1, const Vector3_f64& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector3_f64& _0() const
-		{
-			return _0_;
-		}
-		Vector3_f64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_f64& _1() const
-		{
-			return _1_;
-		}
-		Vector3_f64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_f64& _2() const
-		{
-			return _2_;
-		}
-		Vector3_f64& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x3_f64, 72);
-
-	/// 3x4 matrix of doubles
-	MANUALLY_ALIGNED_STRUCT(8) Matrix3x4_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_f64 _0_;
-		Vector4_f64 _1_;
-		Vector4_f64 _2_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix3x4_f64";
-		}
-		Matrix3x4_f64()
-		{
-			memset(this, 0, sizeof(Matrix3x4_f64));
-		}
-		Matrix3x4_f64(const Matrix3x4_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix3x4_f64));
-		}
-		Matrix3x4_f64(const Vector4_f64& __0, const Vector4_f64& __1, const Vector4_f64& __2)
-			: _0_(__0), _1_(__1), _2_(__2)
-		{
-		}
-
-		const Vector4_f64& _0() const
-		{
-			return _0_;
-		}
-		Vector4_f64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_f64& _1() const
-		{
-			return _1_;
-		}
-		Vector4_f64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_f64& _2() const
-		{
-			return _2_;
-		}
-		Vector4_f64& mutable__2()
-		{
-			return _2_;
-		}
-	};
-	STRUCT_END(Matrix3x4_f64, 96);
-
-	/// 4x2 matrix of doubles
-	MANUALLY_ALIGNED_STRUCT(8) Matrix4x2_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector2_f64 _0_;
-		Vector2_f64 _1_;
-		Vector2_f64 _2_;
-		Vector2_f64 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x2_f64";
-		}
-		Matrix4x2_f64()
-		{
-			memset(this, 0, sizeof(Matrix4x2_f64));
-		}
-		Matrix4x2_f64(const Matrix4x2_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x2_f64));
-		}
-		Matrix4x2_f64(const Vector2_f64& __0, const Vector2_f64& __1, const Vector2_f64& __2, const Vector2_f64& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector2_f64& _0() const
-		{
-			return _0_;
-		}
-		Vector2_f64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector2_f64& _1() const
-		{
-			return _1_;
-		}
-		Vector2_f64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector2_f64& _2() const
-		{
-			return _2_;
-		}
-		Vector2_f64& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector2_f64& _3() const
-		{
-			return _3_;
-		}
-		Vector2_f64& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x2_f64, 64);
-
-	/// 4x3 matrix of doubles
-	MANUALLY_ALIGNED_STRUCT(8) Matrix4x3_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector3_f64 _0_;
-		Vector3_f64 _1_;
-		Vector3_f64 _2_;
-		Vector3_f64 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x3_f64";
-		}
-		Matrix4x3_f64()
-		{
-			memset(this, 0, sizeof(Matrix4x3_f64));
-		}
-		Matrix4x3_f64(const Matrix4x3_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x3_f64));
-		}
-		Matrix4x3_f64(const Vector3_f64& __0, const Vector3_f64& __1, const Vector3_f64& __2, const Vector3_f64& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector3_f64& _0() const
-		{
-			return _0_;
-		}
-		Vector3_f64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector3_f64& _1() const
-		{
-			return _1_;
-		}
-		Vector3_f64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector3_f64& _2() const
-		{
-			return _2_;
-		}
-		Vector3_f64& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector3_f64& _3() const
-		{
-			return _3_;
-		}
-		Vector3_f64& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x3_f64, 96);
-
-	/// 4x4 matrix of doubles
-	MANUALLY_ALIGNED_STRUCT(8) Matrix4x4_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		Vector4_f64 _0_;
-		Vector4_f64 _1_;
-		Vector4_f64 _2_;
-		Vector4_f64 _3_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.Matrix4x4_f64";
-		}
-		Matrix4x4_f64()
-		{
-			memset(this, 0, sizeof(Matrix4x4_f64));
-		}
-		Matrix4x4_f64(const Matrix4x4_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(Matrix4x4_f64));
-		}
-		Matrix4x4_f64(const Vector4_f64& __0, const Vector4_f64& __1, const Vector4_f64& __2, const Vector4_f64& __3)
-			: _0_(__0), _1_(__1), _2_(__2), _3_(__3)
-		{
-		}
-
-		const Vector4_f64& _0() const
-		{
-			return _0_;
-		}
-		Vector4_f64& mutable__0()
-		{
-			return _0_;
-		}
-		const Vector4_f64& _1() const
-		{
-			return _1_;
-		}
-		Vector4_f64& mutable__1()
-		{
-			return _1_;
-		}
-		const Vector4_f64& _2() const
-		{
-			return _2_;
-		}
-		Vector4_f64& mutable__2()
-		{
-			return _2_;
-		}
-		const Vector4_f64& _3() const
-		{
-			return _3_;
-		}
-		Vector4_f64& mutable__3()
-		{
-			return _3_;
-		}
-	};
-	STRUCT_END(Matrix4x4_f64, 128);
-
-	/// RGB color of double components
-	MANUALLY_ALIGNED_STRUCT(8) ColorRGB_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		double r_;
-		double g_;
-		double b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_f64";
-		}
-		ColorRGB_f64()
-		{
-			memset(this, 0, sizeof(ColorRGB_f64));
-		}
-		ColorRGB_f64(const ColorRGB_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_f64));
-		}
-		ColorRGB_f64(double _r, double _g, double _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-
-		double r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(double _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		double g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(double _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		double b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(double _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_f64, 24);
-
-	/// RGBA color of double components
-	MANUALLY_ALIGNED_STRUCT(8) ColorRGBA_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		double r_;
-		double g_;
-		double b_;
-		double a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_f64";
-		}
-		ColorRGBA_f64()
-		{
-			memset(this, 0, sizeof(ColorRGBA_f64));
-		}
-		ColorRGBA_f64(const ColorRGBA_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_f64));
-		}
-		ColorRGBA_f64(double _r, double _g, double _b, double _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-
-		double r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(double _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		double g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(double _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		double b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(double _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		double a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(double _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_f64, 32);
-
-}	// namespace flatmath
-
-#endif	// FLATBUFFERS_GENERATED_FLATMATH_FLATMATH_H_
+  float x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(float _x) { flatbuffers::WriteScalar(&x_, _x); }
+  float y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(float _y) { flatbuffers::WriteScalar(&y_, _y); }
+  float z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(float _z) { flatbuffers::WriteScalar(&z_, _z); }
+  float w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(float _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Vector4_f32, 16);
+
+/// 4D hypercomplex of floats
+MANUALLY_ALIGNED_STRUCT(4) Quaternion_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  float x_;
+  float y_;
+  float z_;
+  float w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Quaternion_f32";
+  }
+  Quaternion_f32() { memset(this, 0, sizeof(Quaternion_f32)); }
+  Quaternion_f32(const Quaternion_f32 &_o) { memcpy(this, &_o, sizeof(Quaternion_f32)); }
+  Quaternion_f32(float _x, float _y, float _z, float _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  float x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(float _x) { flatbuffers::WriteScalar(&x_, _x); }
+  float y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(float _y) { flatbuffers::WriteScalar(&y_, _y); }
+  float z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(float _z) { flatbuffers::WriteScalar(&z_, _z); }
+  float w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(float _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Quaternion_f32, 16);
+
+/// 2x2 matrix of floats
+MANUALLY_ALIGNED_STRUCT(4) Matrix2x2_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_f32 _0_;
+  Vector2_f32 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x2_f32";
+  }
+  Matrix2x2_f32() { memset(this, 0, sizeof(Matrix2x2_f32)); }
+  Matrix2x2_f32(const Matrix2x2_f32 &_o) { memcpy(this, &_o, sizeof(Matrix2x2_f32)); }
+  Matrix2x2_f32(const Vector2_f32 &__0, const Vector2_f32 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector2_f32 &_0() const { return _0_; }
+  Vector2_f32 &mutable__0() { return _0_; }
+  const Vector2_f32 &_1() const { return _1_; }
+  Vector2_f32 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x2_f32, 16);
+
+/// 2x3 matrix of floats
+MANUALLY_ALIGNED_STRUCT(4) Matrix2x3_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_f32 _0_;
+  Vector3_f32 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x3_f32";
+  }
+  Matrix2x3_f32() { memset(this, 0, sizeof(Matrix2x3_f32)); }
+  Matrix2x3_f32(const Matrix2x3_f32 &_o) { memcpy(this, &_o, sizeof(Matrix2x3_f32)); }
+  Matrix2x3_f32(const Vector3_f32 &__0, const Vector3_f32 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector3_f32 &_0() const { return _0_; }
+  Vector3_f32 &mutable__0() { return _0_; }
+  const Vector3_f32 &_1() const { return _1_; }
+  Vector3_f32 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x3_f32, 24);
+
+/// 2x4 matrix of floats
+MANUALLY_ALIGNED_STRUCT(4) Matrix2x4_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_f32 _0_;
+  Vector4_f32 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x4_f32";
+  }
+  Matrix2x4_f32() { memset(this, 0, sizeof(Matrix2x4_f32)); }
+  Matrix2x4_f32(const Matrix2x4_f32 &_o) { memcpy(this, &_o, sizeof(Matrix2x4_f32)); }
+  Matrix2x4_f32(const Vector4_f32 &__0, const Vector4_f32 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector4_f32 &_0() const { return _0_; }
+  Vector4_f32 &mutable__0() { return _0_; }
+  const Vector4_f32 &_1() const { return _1_; }
+  Vector4_f32 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x4_f32, 32);
+
+/// 3x2 matrix of floats
+MANUALLY_ALIGNED_STRUCT(4) Matrix3x2_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_f32 _0_;
+  Vector2_f32 _1_;
+  Vector2_f32 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x2_f32";
+  }
+  Matrix3x2_f32() { memset(this, 0, sizeof(Matrix3x2_f32)); }
+  Matrix3x2_f32(const Matrix3x2_f32 &_o) { memcpy(this, &_o, sizeof(Matrix3x2_f32)); }
+  Matrix3x2_f32(const Vector2_f32 &__0, const Vector2_f32 &__1, const Vector2_f32 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector2_f32 &_0() const { return _0_; }
+  Vector2_f32 &mutable__0() { return _0_; }
+  const Vector2_f32 &_1() const { return _1_; }
+  Vector2_f32 &mutable__1() { return _1_; }
+  const Vector2_f32 &_2() const { return _2_; }
+  Vector2_f32 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x2_f32, 24);
+
+/// 3x3 matrix of floats
+MANUALLY_ALIGNED_STRUCT(4) Matrix3x3_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_f32 _0_;
+  Vector3_f32 _1_;
+  Vector3_f32 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x3_f32";
+  }
+  Matrix3x3_f32() { memset(this, 0, sizeof(Matrix3x3_f32)); }
+  Matrix3x3_f32(const Matrix3x3_f32 &_o) { memcpy(this, &_o, sizeof(Matrix3x3_f32)); }
+  Matrix3x3_f32(const Vector3_f32 &__0, const Vector3_f32 &__1, const Vector3_f32 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector3_f32 &_0() const { return _0_; }
+  Vector3_f32 &mutable__0() { return _0_; }
+  const Vector3_f32 &_1() const { return _1_; }
+  Vector3_f32 &mutable__1() { return _1_; }
+  const Vector3_f32 &_2() const { return _2_; }
+  Vector3_f32 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x3_f32, 36);
+
+/// 3x4 matrix of floats
+MANUALLY_ALIGNED_STRUCT(4) Matrix3x4_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_f32 _0_;
+  Vector4_f32 _1_;
+  Vector4_f32 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x4_f32";
+  }
+  Matrix3x4_f32() { memset(this, 0, sizeof(Matrix3x4_f32)); }
+  Matrix3x4_f32(const Matrix3x4_f32 &_o) { memcpy(this, &_o, sizeof(Matrix3x4_f32)); }
+  Matrix3x4_f32(const Vector4_f32 &__0, const Vector4_f32 &__1, const Vector4_f32 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector4_f32 &_0() const { return _0_; }
+  Vector4_f32 &mutable__0() { return _0_; }
+  const Vector4_f32 &_1() const { return _1_; }
+  Vector4_f32 &mutable__1() { return _1_; }
+  const Vector4_f32 &_2() const { return _2_; }
+  Vector4_f32 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x4_f32, 48);
+
+/// 4x2 matrix of floats
+MANUALLY_ALIGNED_STRUCT(4) Matrix4x2_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_f32 _0_;
+  Vector2_f32 _1_;
+  Vector2_f32 _2_;
+  Vector2_f32 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x2_f32";
+  }
+  Matrix4x2_f32() { memset(this, 0, sizeof(Matrix4x2_f32)); }
+  Matrix4x2_f32(const Matrix4x2_f32 &_o) { memcpy(this, &_o, sizeof(Matrix4x2_f32)); }
+  Matrix4x2_f32(const Vector2_f32 &__0, const Vector2_f32 &__1, const Vector2_f32 &__2, const Vector2_f32 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector2_f32 &_0() const { return _0_; }
+  Vector2_f32 &mutable__0() { return _0_; }
+  const Vector2_f32 &_1() const { return _1_; }
+  Vector2_f32 &mutable__1() { return _1_; }
+  const Vector2_f32 &_2() const { return _2_; }
+  Vector2_f32 &mutable__2() { return _2_; }
+  const Vector2_f32 &_3() const { return _3_; }
+  Vector2_f32 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x2_f32, 32);
+
+/// 4x3 matrix of floats
+MANUALLY_ALIGNED_STRUCT(4) Matrix4x3_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_f32 _0_;
+  Vector3_f32 _1_;
+  Vector3_f32 _2_;
+  Vector3_f32 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x3_f32";
+  }
+  Matrix4x3_f32() { memset(this, 0, sizeof(Matrix4x3_f32)); }
+  Matrix4x3_f32(const Matrix4x3_f32 &_o) { memcpy(this, &_o, sizeof(Matrix4x3_f32)); }
+  Matrix4x3_f32(const Vector3_f32 &__0, const Vector3_f32 &__1, const Vector3_f32 &__2, const Vector3_f32 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector3_f32 &_0() const { return _0_; }
+  Vector3_f32 &mutable__0() { return _0_; }
+  const Vector3_f32 &_1() const { return _1_; }
+  Vector3_f32 &mutable__1() { return _1_; }
+  const Vector3_f32 &_2() const { return _2_; }
+  Vector3_f32 &mutable__2() { return _2_; }
+  const Vector3_f32 &_3() const { return _3_; }
+  Vector3_f32 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x3_f32, 48);
+
+/// 4x4 matrix of floats
+MANUALLY_ALIGNED_STRUCT(4) Matrix4x4_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_f32 _0_;
+  Vector4_f32 _1_;
+  Vector4_f32 _2_;
+  Vector4_f32 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x4_f32";
+  }
+  Matrix4x4_f32() { memset(this, 0, sizeof(Matrix4x4_f32)); }
+  Matrix4x4_f32(const Matrix4x4_f32 &_o) { memcpy(this, &_o, sizeof(Matrix4x4_f32)); }
+  Matrix4x4_f32(const Vector4_f32 &__0, const Vector4_f32 &__1, const Vector4_f32 &__2, const Vector4_f32 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector4_f32 &_0() const { return _0_; }
+  Vector4_f32 &mutable__0() { return _0_; }
+  const Vector4_f32 &_1() const { return _1_; }
+  Vector4_f32 &mutable__1() { return _1_; }
+  const Vector4_f32 &_2() const { return _2_; }
+  Vector4_f32 &mutable__2() { return _2_; }
+  const Vector4_f32 &_3() const { return _3_; }
+  Vector4_f32 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x4_f32, 64);
+
+/// RGB color of float components
+MANUALLY_ALIGNED_STRUCT(4) ColorRGB_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  float r_;
+  float g_;
+  float b_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGB_f32";
+  }
+  ColorRGB_f32() { memset(this, 0, sizeof(ColorRGB_f32)); }
+  ColorRGB_f32(const ColorRGB_f32 &_o) { memcpy(this, &_o, sizeof(ColorRGB_f32)); }
+  ColorRGB_f32(float _r, float _g, float _b)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)) { }
+
+  float r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(float _r) { flatbuffers::WriteScalar(&r_, _r); }
+  float g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(float _g) { flatbuffers::WriteScalar(&g_, _g); }
+  float b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(float _b) { flatbuffers::WriteScalar(&b_, _b); }
+};
+STRUCT_END(ColorRGB_f32, 12);
+
+/// RGBA color of float components
+MANUALLY_ALIGNED_STRUCT(4) ColorRGBA_f32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  float r_;
+  float g_;
+  float b_;
+  float a_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGBA_f32";
+  }
+  ColorRGBA_f32() { memset(this, 0, sizeof(ColorRGBA_f32)); }
+  ColorRGBA_f32(const ColorRGBA_f32 &_o) { memcpy(this, &_o, sizeof(ColorRGBA_f32)); }
+  ColorRGBA_f32(float _r, float _g, float _b, float _a)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)), a_(flatbuffers::EndianScalar(_a)) { }
+
+  float r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(float _r) { flatbuffers::WriteScalar(&r_, _r); }
+  float g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(float _g) { flatbuffers::WriteScalar(&g_, _g); }
+  float b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(float _b) { flatbuffers::WriteScalar(&b_, _b); }
+  float a() const { return flatbuffers::EndianScalar(a_); }
+  void mutate_a(float _a) { flatbuffers::WriteScalar(&a_, _a); }
+};
+STRUCT_END(ColorRGBA_f32, 16);
+
+///-----------------------------------------------------------------------------
+///-----------------------------------------------------------------------------
+/// int types
+/// 2D vector of ints
+MANUALLY_ALIGNED_STRUCT(4) Vector2_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int32_t x_;
+  int32_t y_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector2_i32";
+  }
+  Vector2_i32() { memset(this, 0, sizeof(Vector2_i32)); }
+  Vector2_i32(const Vector2_i32 &_o) { memcpy(this, &_o, sizeof(Vector2_i32)); }
+  Vector2_i32(int32_t _x, int32_t _y)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)) { }
+
+  int32_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int32_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int32_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int32_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+};
+STRUCT_END(Vector2_i32, 8);
+
+/// 3D vector of ints
+MANUALLY_ALIGNED_STRUCT(4) Vector3_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int32_t x_;
+  int32_t y_;
+  int32_t z_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector3_i32";
+  }
+  Vector3_i32() { memset(this, 0, sizeof(Vector3_i32)); }
+  Vector3_i32(const Vector3_i32 &_o) { memcpy(this, &_o, sizeof(Vector3_i32)); }
+  Vector3_i32(int32_t _x, int32_t _y, int32_t _z)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)) { }
+
+  int32_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int32_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int32_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int32_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  int32_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(int32_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+};
+STRUCT_END(Vector3_i32, 12);
+
+/// 4D vector of ints (homogenous coordinates)
+MANUALLY_ALIGNED_STRUCT(4) Vector4_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int32_t x_;
+  int32_t y_;
+  int32_t z_;
+  int32_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector4_i32";
+  }
+  Vector4_i32() { memset(this, 0, sizeof(Vector4_i32)); }
+  Vector4_i32(const Vector4_i32 &_o) { memcpy(this, &_o, sizeof(Vector4_i32)); }
+  Vector4_i32(int32_t _x, int32_t _y, int32_t _z, int32_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  int32_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int32_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int32_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int32_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  int32_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(int32_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  int32_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(int32_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Vector4_i32, 16);
+
+/// 4D hypercomplex of ints
+MANUALLY_ALIGNED_STRUCT(4) Quaternion_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int32_t x_;
+  int32_t y_;
+  int32_t z_;
+  int32_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Quaternion_i32";
+  }
+  Quaternion_i32() { memset(this, 0, sizeof(Quaternion_i32)); }
+  Quaternion_i32(const Quaternion_i32 &_o) { memcpy(this, &_o, sizeof(Quaternion_i32)); }
+  Quaternion_i32(int32_t _x, int32_t _y, int32_t _z, int32_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  int32_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int32_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int32_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int32_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  int32_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(int32_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  int32_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(int32_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Quaternion_i32, 16);
+
+/// 2x2 matrix of ints
+MANUALLY_ALIGNED_STRUCT(4) Matrix2x2_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_i32 _0_;
+  Vector2_i32 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x2_i32";
+  }
+  Matrix2x2_i32() { memset(this, 0, sizeof(Matrix2x2_i32)); }
+  Matrix2x2_i32(const Matrix2x2_i32 &_o) { memcpy(this, &_o, sizeof(Matrix2x2_i32)); }
+  Matrix2x2_i32(const Vector2_i32 &__0, const Vector2_i32 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector2_i32 &_0() const { return _0_; }
+  Vector2_i32 &mutable__0() { return _0_; }
+  const Vector2_i32 &_1() const { return _1_; }
+  Vector2_i32 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x2_i32, 16);
+
+/// 2x3 matrix of ints
+MANUALLY_ALIGNED_STRUCT(4) Matrix2x3_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_i32 _0_;
+  Vector3_i32 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x3_i32";
+  }
+  Matrix2x3_i32() { memset(this, 0, sizeof(Matrix2x3_i32)); }
+  Matrix2x3_i32(const Matrix2x3_i32 &_o) { memcpy(this, &_o, sizeof(Matrix2x3_i32)); }
+  Matrix2x3_i32(const Vector3_i32 &__0, const Vector3_i32 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector3_i32 &_0() const { return _0_; }
+  Vector3_i32 &mutable__0() { return _0_; }
+  const Vector3_i32 &_1() const { return _1_; }
+  Vector3_i32 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x3_i32, 24);
+
+/// 2x4 matrix of ints
+MANUALLY_ALIGNED_STRUCT(4) Matrix2x4_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_i32 _0_;
+  Vector4_i32 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x4_i32";
+  }
+  Matrix2x4_i32() { memset(this, 0, sizeof(Matrix2x4_i32)); }
+  Matrix2x4_i32(const Matrix2x4_i32 &_o) { memcpy(this, &_o, sizeof(Matrix2x4_i32)); }
+  Matrix2x4_i32(const Vector4_i32 &__0, const Vector4_i32 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector4_i32 &_0() const { return _0_; }
+  Vector4_i32 &mutable__0() { return _0_; }
+  const Vector4_i32 &_1() const { return _1_; }
+  Vector4_i32 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x4_i32, 32);
+
+/// 3x2 matrix of ints
+MANUALLY_ALIGNED_STRUCT(4) Matrix3x2_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_i32 _0_;
+  Vector2_i32 _1_;
+  Vector2_i32 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x2_i32";
+  }
+  Matrix3x2_i32() { memset(this, 0, sizeof(Matrix3x2_i32)); }
+  Matrix3x2_i32(const Matrix3x2_i32 &_o) { memcpy(this, &_o, sizeof(Matrix3x2_i32)); }
+  Matrix3x2_i32(const Vector2_i32 &__0, const Vector2_i32 &__1, const Vector2_i32 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector2_i32 &_0() const { return _0_; }
+  Vector2_i32 &mutable__0() { return _0_; }
+  const Vector2_i32 &_1() const { return _1_; }
+  Vector2_i32 &mutable__1() { return _1_; }
+  const Vector2_i32 &_2() const { return _2_; }
+  Vector2_i32 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x2_i32, 24);
+
+/// 3x3 matrix of ints
+MANUALLY_ALIGNED_STRUCT(4) Matrix3x3_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_i32 _0_;
+  Vector3_i32 _1_;
+  Vector3_i32 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x3_i32";
+  }
+  Matrix3x3_i32() { memset(this, 0, sizeof(Matrix3x3_i32)); }
+  Matrix3x3_i32(const Matrix3x3_i32 &_o) { memcpy(this, &_o, sizeof(Matrix3x3_i32)); }
+  Matrix3x3_i32(const Vector3_i32 &__0, const Vector3_i32 &__1, const Vector3_i32 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector3_i32 &_0() const { return _0_; }
+  Vector3_i32 &mutable__0() { return _0_; }
+  const Vector3_i32 &_1() const { return _1_; }
+  Vector3_i32 &mutable__1() { return _1_; }
+  const Vector3_i32 &_2() const { return _2_; }
+  Vector3_i32 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x3_i32, 36);
+
+/// 3x4 matrix of ints
+MANUALLY_ALIGNED_STRUCT(4) Matrix3x4_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_i32 _0_;
+  Vector4_i32 _1_;
+  Vector4_i32 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x4_i32";
+  }
+  Matrix3x4_i32() { memset(this, 0, sizeof(Matrix3x4_i32)); }
+  Matrix3x4_i32(const Matrix3x4_i32 &_o) { memcpy(this, &_o, sizeof(Matrix3x4_i32)); }
+  Matrix3x4_i32(const Vector4_i32 &__0, const Vector4_i32 &__1, const Vector4_i32 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector4_i32 &_0() const { return _0_; }
+  Vector4_i32 &mutable__0() { return _0_; }
+  const Vector4_i32 &_1() const { return _1_; }
+  Vector4_i32 &mutable__1() { return _1_; }
+  const Vector4_i32 &_2() const { return _2_; }
+  Vector4_i32 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x4_i32, 48);
+
+/// 4x2 matrix of ints
+MANUALLY_ALIGNED_STRUCT(4) Matrix4x2_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_i32 _0_;
+  Vector2_i32 _1_;
+  Vector2_i32 _2_;
+  Vector2_i32 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x2_i32";
+  }
+  Matrix4x2_i32() { memset(this, 0, sizeof(Matrix4x2_i32)); }
+  Matrix4x2_i32(const Matrix4x2_i32 &_o) { memcpy(this, &_o, sizeof(Matrix4x2_i32)); }
+  Matrix4x2_i32(const Vector2_i32 &__0, const Vector2_i32 &__1, const Vector2_i32 &__2, const Vector2_i32 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector2_i32 &_0() const { return _0_; }
+  Vector2_i32 &mutable__0() { return _0_; }
+  const Vector2_i32 &_1() const { return _1_; }
+  Vector2_i32 &mutable__1() { return _1_; }
+  const Vector2_i32 &_2() const { return _2_; }
+  Vector2_i32 &mutable__2() { return _2_; }
+  const Vector2_i32 &_3() const { return _3_; }
+  Vector2_i32 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x2_i32, 32);
+
+/// 4x3 matrix of ints
+MANUALLY_ALIGNED_STRUCT(4) Matrix4x3_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_i32 _0_;
+  Vector3_i32 _1_;
+  Vector3_i32 _2_;
+  Vector3_i32 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x3_i32";
+  }
+  Matrix4x3_i32() { memset(this, 0, sizeof(Matrix4x3_i32)); }
+  Matrix4x3_i32(const Matrix4x3_i32 &_o) { memcpy(this, &_o, sizeof(Matrix4x3_i32)); }
+  Matrix4x3_i32(const Vector3_i32 &__0, const Vector3_i32 &__1, const Vector3_i32 &__2, const Vector3_i32 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector3_i32 &_0() const { return _0_; }
+  Vector3_i32 &mutable__0() { return _0_; }
+  const Vector3_i32 &_1() const { return _1_; }
+  Vector3_i32 &mutable__1() { return _1_; }
+  const Vector3_i32 &_2() const { return _2_; }
+  Vector3_i32 &mutable__2() { return _2_; }
+  const Vector3_i32 &_3() const { return _3_; }
+  Vector3_i32 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x3_i32, 48);
+
+/// 4x4 matrix of ints
+MANUALLY_ALIGNED_STRUCT(4) Matrix4x4_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_i32 _0_;
+  Vector4_i32 _1_;
+  Vector4_i32 _2_;
+  Vector4_i32 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x4_i32";
+  }
+  Matrix4x4_i32() { memset(this, 0, sizeof(Matrix4x4_i32)); }
+  Matrix4x4_i32(const Matrix4x4_i32 &_o) { memcpy(this, &_o, sizeof(Matrix4x4_i32)); }
+  Matrix4x4_i32(const Vector4_i32 &__0, const Vector4_i32 &__1, const Vector4_i32 &__2, const Vector4_i32 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector4_i32 &_0() const { return _0_; }
+  Vector4_i32 &mutable__0() { return _0_; }
+  const Vector4_i32 &_1() const { return _1_; }
+  Vector4_i32 &mutable__1() { return _1_; }
+  const Vector4_i32 &_2() const { return _2_; }
+  Vector4_i32 &mutable__2() { return _2_; }
+  const Vector4_i32 &_3() const { return _3_; }
+  Vector4_i32 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x4_i32, 64);
+
+/// RGB color of int components
+MANUALLY_ALIGNED_STRUCT(4) ColorRGB_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int32_t r_;
+  int32_t g_;
+  int32_t b_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGB_i32";
+  }
+  ColorRGB_i32() { memset(this, 0, sizeof(ColorRGB_i32)); }
+  ColorRGB_i32(const ColorRGB_i32 &_o) { memcpy(this, &_o, sizeof(ColorRGB_i32)); }
+  ColorRGB_i32(int32_t _r, int32_t _g, int32_t _b)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)) { }
+
+  int32_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(int32_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  int32_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(int32_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  int32_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(int32_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+};
+STRUCT_END(ColorRGB_i32, 12);
+
+/// RGBA color of int components
+MANUALLY_ALIGNED_STRUCT(4) ColorRGBA_i32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int32_t r_;
+  int32_t g_;
+  int32_t b_;
+  int32_t a_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGBA_i32";
+  }
+  ColorRGBA_i32() { memset(this, 0, sizeof(ColorRGBA_i32)); }
+  ColorRGBA_i32(const ColorRGBA_i32 &_o) { memcpy(this, &_o, sizeof(ColorRGBA_i32)); }
+  ColorRGBA_i32(int32_t _r, int32_t _g, int32_t _b, int32_t _a)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)), a_(flatbuffers::EndianScalar(_a)) { }
+
+  int32_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(int32_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  int32_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(int32_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  int32_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(int32_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+  int32_t a() const { return flatbuffers::EndianScalar(a_); }
+  void mutate_a(int32_t _a) { flatbuffers::WriteScalar(&a_, _a); }
+};
+STRUCT_END(ColorRGBA_i32, 16);
+
+///-----------------------------------------------------------------------------
+///-----------------------------------------------------------------------------
+/// uint types
+/// 2D vector of uints
+MANUALLY_ALIGNED_STRUCT(4) Vector2_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint32_t x_;
+  uint32_t y_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector2_u32";
+  }
+  Vector2_u32() { memset(this, 0, sizeof(Vector2_u32)); }
+  Vector2_u32(const Vector2_u32 &_o) { memcpy(this, &_o, sizeof(Vector2_u32)); }
+  Vector2_u32(uint32_t _x, uint32_t _y)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)) { }
+
+  uint32_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint32_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint32_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint32_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+};
+STRUCT_END(Vector2_u32, 8);
+
+/// 3D vector of uints
+MANUALLY_ALIGNED_STRUCT(4) Vector3_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint32_t x_;
+  uint32_t y_;
+  uint32_t z_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector3_u32";
+  }
+  Vector3_u32() { memset(this, 0, sizeof(Vector3_u32)); }
+  Vector3_u32(const Vector3_u32 &_o) { memcpy(this, &_o, sizeof(Vector3_u32)); }
+  Vector3_u32(uint32_t _x, uint32_t _y, uint32_t _z)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)) { }
+
+  uint32_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint32_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint32_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint32_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  uint32_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(uint32_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+};
+STRUCT_END(Vector3_u32, 12);
+
+/// 4D vector of uints (homogenous coordinates)
+MANUALLY_ALIGNED_STRUCT(4) Vector4_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint32_t x_;
+  uint32_t y_;
+  uint32_t z_;
+  uint32_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector4_u32";
+  }
+  Vector4_u32() { memset(this, 0, sizeof(Vector4_u32)); }
+  Vector4_u32(const Vector4_u32 &_o) { memcpy(this, &_o, sizeof(Vector4_u32)); }
+  Vector4_u32(uint32_t _x, uint32_t _y, uint32_t _z, uint32_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  uint32_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint32_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint32_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint32_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  uint32_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(uint32_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  uint32_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(uint32_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Vector4_u32, 16);
+
+/// 4D hypercomplex of uints
+MANUALLY_ALIGNED_STRUCT(4) Quaternion_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint32_t x_;
+  uint32_t y_;
+  uint32_t z_;
+  uint32_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Quaternion_u32";
+  }
+  Quaternion_u32() { memset(this, 0, sizeof(Quaternion_u32)); }
+  Quaternion_u32(const Quaternion_u32 &_o) { memcpy(this, &_o, sizeof(Quaternion_u32)); }
+  Quaternion_u32(uint32_t _x, uint32_t _y, uint32_t _z, uint32_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  uint32_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint32_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint32_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint32_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  uint32_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(uint32_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  uint32_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(uint32_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Quaternion_u32, 16);
+
+/// 2x2 matrix of uints
+MANUALLY_ALIGNED_STRUCT(4) Matrix2x2_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_u32 _0_;
+  Vector2_u32 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x2_u32";
+  }
+  Matrix2x2_u32() { memset(this, 0, sizeof(Matrix2x2_u32)); }
+  Matrix2x2_u32(const Matrix2x2_u32 &_o) { memcpy(this, &_o, sizeof(Matrix2x2_u32)); }
+  Matrix2x2_u32(const Vector2_u32 &__0, const Vector2_u32 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector2_u32 &_0() const { return _0_; }
+  Vector2_u32 &mutable__0() { return _0_; }
+  const Vector2_u32 &_1() const { return _1_; }
+  Vector2_u32 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x2_u32, 16);
+
+/// 2x3 matrix of uints
+MANUALLY_ALIGNED_STRUCT(4) Matrix2x3_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_u32 _0_;
+  Vector3_u32 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x3_u32";
+  }
+  Matrix2x3_u32() { memset(this, 0, sizeof(Matrix2x3_u32)); }
+  Matrix2x3_u32(const Matrix2x3_u32 &_o) { memcpy(this, &_o, sizeof(Matrix2x3_u32)); }
+  Matrix2x3_u32(const Vector3_u32 &__0, const Vector3_u32 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector3_u32 &_0() const { return _0_; }
+  Vector3_u32 &mutable__0() { return _0_; }
+  const Vector3_u32 &_1() const { return _1_; }
+  Vector3_u32 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x3_u32, 24);
+
+/// 2x4 matrix of uints
+MANUALLY_ALIGNED_STRUCT(4) Matrix2x4_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_u32 _0_;
+  Vector4_u32 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x4_u32";
+  }
+  Matrix2x4_u32() { memset(this, 0, sizeof(Matrix2x4_u32)); }
+  Matrix2x4_u32(const Matrix2x4_u32 &_o) { memcpy(this, &_o, sizeof(Matrix2x4_u32)); }
+  Matrix2x4_u32(const Vector4_u32 &__0, const Vector4_u32 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector4_u32 &_0() const { return _0_; }
+  Vector4_u32 &mutable__0() { return _0_; }
+  const Vector4_u32 &_1() const { return _1_; }
+  Vector4_u32 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x4_u32, 32);
+
+/// 3x2 matrix of uints
+MANUALLY_ALIGNED_STRUCT(4) Matrix3x2_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_u32 _0_;
+  Vector2_u32 _1_;
+  Vector2_u32 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x2_u32";
+  }
+  Matrix3x2_u32() { memset(this, 0, sizeof(Matrix3x2_u32)); }
+  Matrix3x2_u32(const Matrix3x2_u32 &_o) { memcpy(this, &_o, sizeof(Matrix3x2_u32)); }
+  Matrix3x2_u32(const Vector2_u32 &__0, const Vector2_u32 &__1, const Vector2_u32 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector2_u32 &_0() const { return _0_; }
+  Vector2_u32 &mutable__0() { return _0_; }
+  const Vector2_u32 &_1() const { return _1_; }
+  Vector2_u32 &mutable__1() { return _1_; }
+  const Vector2_u32 &_2() const { return _2_; }
+  Vector2_u32 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x2_u32, 24);
+
+/// 3x3 matrix of uints
+MANUALLY_ALIGNED_STRUCT(4) Matrix3x3_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_u32 _0_;
+  Vector3_u32 _1_;
+  Vector3_u32 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x3_u32";
+  }
+  Matrix3x3_u32() { memset(this, 0, sizeof(Matrix3x3_u32)); }
+  Matrix3x3_u32(const Matrix3x3_u32 &_o) { memcpy(this, &_o, sizeof(Matrix3x3_u32)); }
+  Matrix3x3_u32(const Vector3_u32 &__0, const Vector3_u32 &__1, const Vector3_u32 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector3_u32 &_0() const { return _0_; }
+  Vector3_u32 &mutable__0() { return _0_; }
+  const Vector3_u32 &_1() const { return _1_; }
+  Vector3_u32 &mutable__1() { return _1_; }
+  const Vector3_u32 &_2() const { return _2_; }
+  Vector3_u32 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x3_u32, 36);
+
+/// 3x4 matrix of uints
+MANUALLY_ALIGNED_STRUCT(4) Matrix3x4_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_u32 _0_;
+  Vector4_u32 _1_;
+  Vector4_u32 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x4_u32";
+  }
+  Matrix3x4_u32() { memset(this, 0, sizeof(Matrix3x4_u32)); }
+  Matrix3x4_u32(const Matrix3x4_u32 &_o) { memcpy(this, &_o, sizeof(Matrix3x4_u32)); }
+  Matrix3x4_u32(const Vector4_u32 &__0, const Vector4_u32 &__1, const Vector4_u32 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector4_u32 &_0() const { return _0_; }
+  Vector4_u32 &mutable__0() { return _0_; }
+  const Vector4_u32 &_1() const { return _1_; }
+  Vector4_u32 &mutable__1() { return _1_; }
+  const Vector4_u32 &_2() const { return _2_; }
+  Vector4_u32 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x4_u32, 48);
+
+/// 4x2 matrix of uints
+MANUALLY_ALIGNED_STRUCT(4) Matrix4x2_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_u32 _0_;
+  Vector2_u32 _1_;
+  Vector2_u32 _2_;
+  Vector2_u32 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x2_u32";
+  }
+  Matrix4x2_u32() { memset(this, 0, sizeof(Matrix4x2_u32)); }
+  Matrix4x2_u32(const Matrix4x2_u32 &_o) { memcpy(this, &_o, sizeof(Matrix4x2_u32)); }
+  Matrix4x2_u32(const Vector2_u32 &__0, const Vector2_u32 &__1, const Vector2_u32 &__2, const Vector2_u32 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector2_u32 &_0() const { return _0_; }
+  Vector2_u32 &mutable__0() { return _0_; }
+  const Vector2_u32 &_1() const { return _1_; }
+  Vector2_u32 &mutable__1() { return _1_; }
+  const Vector2_u32 &_2() const { return _2_; }
+  Vector2_u32 &mutable__2() { return _2_; }
+  const Vector2_u32 &_3() const { return _3_; }
+  Vector2_u32 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x2_u32, 32);
+
+/// 4x3 matrix of uints
+MANUALLY_ALIGNED_STRUCT(4) Matrix4x3_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_u32 _0_;
+  Vector3_u32 _1_;
+  Vector3_u32 _2_;
+  Vector3_u32 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x3_u32";
+  }
+  Matrix4x3_u32() { memset(this, 0, sizeof(Matrix4x3_u32)); }
+  Matrix4x3_u32(const Matrix4x3_u32 &_o) { memcpy(this, &_o, sizeof(Matrix4x3_u32)); }
+  Matrix4x3_u32(const Vector3_u32 &__0, const Vector3_u32 &__1, const Vector3_u32 &__2, const Vector3_u32 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector3_u32 &_0() const { return _0_; }
+  Vector3_u32 &mutable__0() { return _0_; }
+  const Vector3_u32 &_1() const { return _1_; }
+  Vector3_u32 &mutable__1() { return _1_; }
+  const Vector3_u32 &_2() const { return _2_; }
+  Vector3_u32 &mutable__2() { return _2_; }
+  const Vector3_u32 &_3() const { return _3_; }
+  Vector3_u32 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x3_u32, 48);
+
+/// 4x4 matrix of uints
+MANUALLY_ALIGNED_STRUCT(4) Matrix4x4_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_u32 _0_;
+  Vector4_u32 _1_;
+  Vector4_u32 _2_;
+  Vector4_u32 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x4_u32";
+  }
+  Matrix4x4_u32() { memset(this, 0, sizeof(Matrix4x4_u32)); }
+  Matrix4x4_u32(const Matrix4x4_u32 &_o) { memcpy(this, &_o, sizeof(Matrix4x4_u32)); }
+  Matrix4x4_u32(const Vector4_u32 &__0, const Vector4_u32 &__1, const Vector4_u32 &__2, const Vector4_u32 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector4_u32 &_0() const { return _0_; }
+  Vector4_u32 &mutable__0() { return _0_; }
+  const Vector4_u32 &_1() const { return _1_; }
+  Vector4_u32 &mutable__1() { return _1_; }
+  const Vector4_u32 &_2() const { return _2_; }
+  Vector4_u32 &mutable__2() { return _2_; }
+  const Vector4_u32 &_3() const { return _3_; }
+  Vector4_u32 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x4_u32, 64);
+
+/// RGB color of uint components
+MANUALLY_ALIGNED_STRUCT(4) ColorRGB_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint32_t r_;
+  uint32_t g_;
+  uint32_t b_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGB_u32";
+  }
+  ColorRGB_u32() { memset(this, 0, sizeof(ColorRGB_u32)); }
+  ColorRGB_u32(const ColorRGB_u32 &_o) { memcpy(this, &_o, sizeof(ColorRGB_u32)); }
+  ColorRGB_u32(uint32_t _r, uint32_t _g, uint32_t _b)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)) { }
+
+  uint32_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(uint32_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  uint32_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(uint32_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  uint32_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(uint32_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+};
+STRUCT_END(ColorRGB_u32, 12);
+
+/// RGBA color of uint components
+MANUALLY_ALIGNED_STRUCT(4) ColorRGBA_u32 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint32_t r_;
+  uint32_t g_;
+  uint32_t b_;
+  uint32_t a_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGBA_u32";
+  }
+  ColorRGBA_u32() { memset(this, 0, sizeof(ColorRGBA_u32)); }
+  ColorRGBA_u32(const ColorRGBA_u32 &_o) { memcpy(this, &_o, sizeof(ColorRGBA_u32)); }
+  ColorRGBA_u32(uint32_t _r, uint32_t _g, uint32_t _b, uint32_t _a)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)), a_(flatbuffers::EndianScalar(_a)) { }
+
+  uint32_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(uint32_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  uint32_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(uint32_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  uint32_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(uint32_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+  uint32_t a() const { return flatbuffers::EndianScalar(a_); }
+  void mutate_a(uint32_t _a) { flatbuffers::WriteScalar(&a_, _a); }
+};
+STRUCT_END(ColorRGBA_u32, 16);
+
+///-----------------------------------------------------------------------------
+///-----------------------------------------------------------------------------
+/// short types
+/// 2D vector of shorts
+MANUALLY_ALIGNED_STRUCT(2) Vector2_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int16_t x_;
+  int16_t y_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector2_i16";
+  }
+  Vector2_i16() { memset(this, 0, sizeof(Vector2_i16)); }
+  Vector2_i16(const Vector2_i16 &_o) { memcpy(this, &_o, sizeof(Vector2_i16)); }
+  Vector2_i16(int16_t _x, int16_t _y)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)) { }
+
+  int16_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int16_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int16_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int16_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+};
+STRUCT_END(Vector2_i16, 4);
+
+/// 3D vector of shorts
+MANUALLY_ALIGNED_STRUCT(2) Vector3_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int16_t x_;
+  int16_t y_;
+  int16_t z_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector3_i16";
+  }
+  Vector3_i16() { memset(this, 0, sizeof(Vector3_i16)); }
+  Vector3_i16(const Vector3_i16 &_o) { memcpy(this, &_o, sizeof(Vector3_i16)); }
+  Vector3_i16(int16_t _x, int16_t _y, int16_t _z)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)) { }
+
+  int16_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int16_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int16_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int16_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  int16_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(int16_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+};
+STRUCT_END(Vector3_i16, 6);
+
+/// 4D vector of shorts (homogenous coordinates)
+MANUALLY_ALIGNED_STRUCT(2) Vector4_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int16_t x_;
+  int16_t y_;
+  int16_t z_;
+  int16_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector4_i16";
+  }
+  Vector4_i16() { memset(this, 0, sizeof(Vector4_i16)); }
+  Vector4_i16(const Vector4_i16 &_o) { memcpy(this, &_o, sizeof(Vector4_i16)); }
+  Vector4_i16(int16_t _x, int16_t _y, int16_t _z, int16_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  int16_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int16_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int16_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int16_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  int16_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(int16_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  int16_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(int16_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Vector4_i16, 8);
+
+/// 4D hypercomplex of shorts
+MANUALLY_ALIGNED_STRUCT(2) Quaternion_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int16_t x_;
+  int16_t y_;
+  int16_t z_;
+  int16_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Quaternion_i16";
+  }
+  Quaternion_i16() { memset(this, 0, sizeof(Quaternion_i16)); }
+  Quaternion_i16(const Quaternion_i16 &_o) { memcpy(this, &_o, sizeof(Quaternion_i16)); }
+  Quaternion_i16(int16_t _x, int16_t _y, int16_t _z, int16_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  int16_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int16_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int16_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int16_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  int16_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(int16_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  int16_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(int16_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Quaternion_i16, 8);
+
+/// 2x2 matrix of shorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix2x2_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_i16 _0_;
+  Vector2_i16 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x2_i16";
+  }
+  Matrix2x2_i16() { memset(this, 0, sizeof(Matrix2x2_i16)); }
+  Matrix2x2_i16(const Matrix2x2_i16 &_o) { memcpy(this, &_o, sizeof(Matrix2x2_i16)); }
+  Matrix2x2_i16(const Vector2_i16 &__0, const Vector2_i16 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector2_i16 &_0() const { return _0_; }
+  Vector2_i16 &mutable__0() { return _0_; }
+  const Vector2_i16 &_1() const { return _1_; }
+  Vector2_i16 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x2_i16, 8);
+
+/// 2x3 matrix of shorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix2x3_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_i16 _0_;
+  Vector3_i16 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x3_i16";
+  }
+  Matrix2x3_i16() { memset(this, 0, sizeof(Matrix2x3_i16)); }
+  Matrix2x3_i16(const Matrix2x3_i16 &_o) { memcpy(this, &_o, sizeof(Matrix2x3_i16)); }
+  Matrix2x3_i16(const Vector3_i16 &__0, const Vector3_i16 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector3_i16 &_0() const { return _0_; }
+  Vector3_i16 &mutable__0() { return _0_; }
+  const Vector3_i16 &_1() const { return _1_; }
+  Vector3_i16 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x3_i16, 12);
+
+/// 2x4 matrix of shorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix2x4_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_i16 _0_;
+  Vector4_i16 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x4_i16";
+  }
+  Matrix2x4_i16() { memset(this, 0, sizeof(Matrix2x4_i16)); }
+  Matrix2x4_i16(const Matrix2x4_i16 &_o) { memcpy(this, &_o, sizeof(Matrix2x4_i16)); }
+  Matrix2x4_i16(const Vector4_i16 &__0, const Vector4_i16 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector4_i16 &_0() const { return _0_; }
+  Vector4_i16 &mutable__0() { return _0_; }
+  const Vector4_i16 &_1() const { return _1_; }
+  Vector4_i16 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x4_i16, 16);
+
+/// 3x2 matrix of shorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix3x2_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_i16 _0_;
+  Vector2_i16 _1_;
+  Vector2_i16 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x2_i16";
+  }
+  Matrix3x2_i16() { memset(this, 0, sizeof(Matrix3x2_i16)); }
+  Matrix3x2_i16(const Matrix3x2_i16 &_o) { memcpy(this, &_o, sizeof(Matrix3x2_i16)); }
+  Matrix3x2_i16(const Vector2_i16 &__0, const Vector2_i16 &__1, const Vector2_i16 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector2_i16 &_0() const { return _0_; }
+  Vector2_i16 &mutable__0() { return _0_; }
+  const Vector2_i16 &_1() const { return _1_; }
+  Vector2_i16 &mutable__1() { return _1_; }
+  const Vector2_i16 &_2() const { return _2_; }
+  Vector2_i16 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x2_i16, 12);
+
+/// 3x3 matrix of shorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix3x3_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_i16 _0_;
+  Vector3_i16 _1_;
+  Vector3_i16 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x3_i16";
+  }
+  Matrix3x3_i16() { memset(this, 0, sizeof(Matrix3x3_i16)); }
+  Matrix3x3_i16(const Matrix3x3_i16 &_o) { memcpy(this, &_o, sizeof(Matrix3x3_i16)); }
+  Matrix3x3_i16(const Vector3_i16 &__0, const Vector3_i16 &__1, const Vector3_i16 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector3_i16 &_0() const { return _0_; }
+  Vector3_i16 &mutable__0() { return _0_; }
+  const Vector3_i16 &_1() const { return _1_; }
+  Vector3_i16 &mutable__1() { return _1_; }
+  const Vector3_i16 &_2() const { return _2_; }
+  Vector3_i16 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x3_i16, 18);
+
+/// 3x4 matrix of shorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix3x4_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_i16 _0_;
+  Vector4_i16 _1_;
+  Vector4_i16 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x4_i16";
+  }
+  Matrix3x4_i16() { memset(this, 0, sizeof(Matrix3x4_i16)); }
+  Matrix3x4_i16(const Matrix3x4_i16 &_o) { memcpy(this, &_o, sizeof(Matrix3x4_i16)); }
+  Matrix3x4_i16(const Vector4_i16 &__0, const Vector4_i16 &__1, const Vector4_i16 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector4_i16 &_0() const { return _0_; }
+  Vector4_i16 &mutable__0() { return _0_; }
+  const Vector4_i16 &_1() const { return _1_; }
+  Vector4_i16 &mutable__1() { return _1_; }
+  const Vector4_i16 &_2() const { return _2_; }
+  Vector4_i16 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x4_i16, 24);
+
+/// 4x2 matrix of shorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix4x2_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_i16 _0_;
+  Vector2_i16 _1_;
+  Vector2_i16 _2_;
+  Vector2_i16 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x2_i16";
+  }
+  Matrix4x2_i16() { memset(this, 0, sizeof(Matrix4x2_i16)); }
+  Matrix4x2_i16(const Matrix4x2_i16 &_o) { memcpy(this, &_o, sizeof(Matrix4x2_i16)); }
+  Matrix4x2_i16(const Vector2_i16 &__0, const Vector2_i16 &__1, const Vector2_i16 &__2, const Vector2_i16 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector2_i16 &_0() const { return _0_; }
+  Vector2_i16 &mutable__0() { return _0_; }
+  const Vector2_i16 &_1() const { return _1_; }
+  Vector2_i16 &mutable__1() { return _1_; }
+  const Vector2_i16 &_2() const { return _2_; }
+  Vector2_i16 &mutable__2() { return _2_; }
+  const Vector2_i16 &_3() const { return _3_; }
+  Vector2_i16 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x2_i16, 16);
+
+/// 4x3 matrix of shorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix4x3_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_i16 _0_;
+  Vector3_i16 _1_;
+  Vector3_i16 _2_;
+  Vector3_i16 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x3_i16";
+  }
+  Matrix4x3_i16() { memset(this, 0, sizeof(Matrix4x3_i16)); }
+  Matrix4x3_i16(const Matrix4x3_i16 &_o) { memcpy(this, &_o, sizeof(Matrix4x3_i16)); }
+  Matrix4x3_i16(const Vector3_i16 &__0, const Vector3_i16 &__1, const Vector3_i16 &__2, const Vector3_i16 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector3_i16 &_0() const { return _0_; }
+  Vector3_i16 &mutable__0() { return _0_; }
+  const Vector3_i16 &_1() const { return _1_; }
+  Vector3_i16 &mutable__1() { return _1_; }
+  const Vector3_i16 &_2() const { return _2_; }
+  Vector3_i16 &mutable__2() { return _2_; }
+  const Vector3_i16 &_3() const { return _3_; }
+  Vector3_i16 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x3_i16, 24);
+
+/// 4x4 matrix of shorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix4x4_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_i16 _0_;
+  Vector4_i16 _1_;
+  Vector4_i16 _2_;
+  Vector4_i16 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x4_i16";
+  }
+  Matrix4x4_i16() { memset(this, 0, sizeof(Matrix4x4_i16)); }
+  Matrix4x4_i16(const Matrix4x4_i16 &_o) { memcpy(this, &_o, sizeof(Matrix4x4_i16)); }
+  Matrix4x4_i16(const Vector4_i16 &__0, const Vector4_i16 &__1, const Vector4_i16 &__2, const Vector4_i16 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector4_i16 &_0() const { return _0_; }
+  Vector4_i16 &mutable__0() { return _0_; }
+  const Vector4_i16 &_1() const { return _1_; }
+  Vector4_i16 &mutable__1() { return _1_; }
+  const Vector4_i16 &_2() const { return _2_; }
+  Vector4_i16 &mutable__2() { return _2_; }
+  const Vector4_i16 &_3() const { return _3_; }
+  Vector4_i16 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x4_i16, 32);
+
+/// RGB color of short components
+MANUALLY_ALIGNED_STRUCT(2) ColorRGB_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int16_t r_;
+  int16_t g_;
+  int16_t b_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGB_i16";
+  }
+  ColorRGB_i16() { memset(this, 0, sizeof(ColorRGB_i16)); }
+  ColorRGB_i16(const ColorRGB_i16 &_o) { memcpy(this, &_o, sizeof(ColorRGB_i16)); }
+  ColorRGB_i16(int16_t _r, int16_t _g, int16_t _b)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)) { }
+
+  int16_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(int16_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  int16_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(int16_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  int16_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(int16_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+};
+STRUCT_END(ColorRGB_i16, 6);
+
+/// RGBA color of short components
+MANUALLY_ALIGNED_STRUCT(2) ColorRGBA_i16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int16_t r_;
+  int16_t g_;
+  int16_t b_;
+  int16_t a_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGBA_i16";
+  }
+  ColorRGBA_i16() { memset(this, 0, sizeof(ColorRGBA_i16)); }
+  ColorRGBA_i16(const ColorRGBA_i16 &_o) { memcpy(this, &_o, sizeof(ColorRGBA_i16)); }
+  ColorRGBA_i16(int16_t _r, int16_t _g, int16_t _b, int16_t _a)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)), a_(flatbuffers::EndianScalar(_a)) { }
+
+  int16_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(int16_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  int16_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(int16_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  int16_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(int16_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+  int16_t a() const { return flatbuffers::EndianScalar(a_); }
+  void mutate_a(int16_t _a) { flatbuffers::WriteScalar(&a_, _a); }
+};
+STRUCT_END(ColorRGBA_i16, 8);
+
+///-----------------------------------------------------------------------------
+///-----------------------------------------------------------------------------
+/// ushort types
+/// 2D vector of ushorts
+MANUALLY_ALIGNED_STRUCT(2) Vector2_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint16_t x_;
+  uint16_t y_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector2_u16";
+  }
+  Vector2_u16() { memset(this, 0, sizeof(Vector2_u16)); }
+  Vector2_u16(const Vector2_u16 &_o) { memcpy(this, &_o, sizeof(Vector2_u16)); }
+  Vector2_u16(uint16_t _x, uint16_t _y)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)) { }
+
+  uint16_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint16_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint16_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint16_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+};
+STRUCT_END(Vector2_u16, 4);
+
+/// 3D vector of ushorts
+MANUALLY_ALIGNED_STRUCT(2) Vector3_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint16_t x_;
+  uint16_t y_;
+  uint16_t z_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector3_u16";
+  }
+  Vector3_u16() { memset(this, 0, sizeof(Vector3_u16)); }
+  Vector3_u16(const Vector3_u16 &_o) { memcpy(this, &_o, sizeof(Vector3_u16)); }
+  Vector3_u16(uint16_t _x, uint16_t _y, uint16_t _z)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)) { }
+
+  uint16_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint16_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint16_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint16_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  uint16_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(uint16_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+};
+STRUCT_END(Vector3_u16, 6);
+
+/// 4D vector of ushorts (homogenous coordinates)
+MANUALLY_ALIGNED_STRUCT(2) Vector4_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint16_t x_;
+  uint16_t y_;
+  uint16_t z_;
+  uint16_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector4_u16";
+  }
+  Vector4_u16() { memset(this, 0, sizeof(Vector4_u16)); }
+  Vector4_u16(const Vector4_u16 &_o) { memcpy(this, &_o, sizeof(Vector4_u16)); }
+  Vector4_u16(uint16_t _x, uint16_t _y, uint16_t _z, uint16_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  uint16_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint16_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint16_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint16_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  uint16_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(uint16_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  uint16_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(uint16_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Vector4_u16, 8);
+
+/// 4D hypercomplex of ushorts
+MANUALLY_ALIGNED_STRUCT(2) Quaternion_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint16_t x_;
+  uint16_t y_;
+  uint16_t z_;
+  uint16_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Quaternion_u16";
+  }
+  Quaternion_u16() { memset(this, 0, sizeof(Quaternion_u16)); }
+  Quaternion_u16(const Quaternion_u16 &_o) { memcpy(this, &_o, sizeof(Quaternion_u16)); }
+  Quaternion_u16(uint16_t _x, uint16_t _y, uint16_t _z, uint16_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  uint16_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint16_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint16_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint16_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  uint16_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(uint16_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  uint16_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(uint16_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Quaternion_u16, 8);
+
+/// 2x2 matrix of ushorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix2x2_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_u16 _0_;
+  Vector2_u16 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x2_u16";
+  }
+  Matrix2x2_u16() { memset(this, 0, sizeof(Matrix2x2_u16)); }
+  Matrix2x2_u16(const Matrix2x2_u16 &_o) { memcpy(this, &_o, sizeof(Matrix2x2_u16)); }
+  Matrix2x2_u16(const Vector2_u16 &__0, const Vector2_u16 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector2_u16 &_0() const { return _0_; }
+  Vector2_u16 &mutable__0() { return _0_; }
+  const Vector2_u16 &_1() const { return _1_; }
+  Vector2_u16 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x2_u16, 8);
+
+/// 2x3 matrix of ushorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix2x3_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_u16 _0_;
+  Vector3_u16 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x3_u16";
+  }
+  Matrix2x3_u16() { memset(this, 0, sizeof(Matrix2x3_u16)); }
+  Matrix2x3_u16(const Matrix2x3_u16 &_o) { memcpy(this, &_o, sizeof(Matrix2x3_u16)); }
+  Matrix2x3_u16(const Vector3_u16 &__0, const Vector3_u16 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector3_u16 &_0() const { return _0_; }
+  Vector3_u16 &mutable__0() { return _0_; }
+  const Vector3_u16 &_1() const { return _1_; }
+  Vector3_u16 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x3_u16, 12);
+
+/// 2x4 matrix of ushorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix2x4_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_u16 _0_;
+  Vector4_u16 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x4_u16";
+  }
+  Matrix2x4_u16() { memset(this, 0, sizeof(Matrix2x4_u16)); }
+  Matrix2x4_u16(const Matrix2x4_u16 &_o) { memcpy(this, &_o, sizeof(Matrix2x4_u16)); }
+  Matrix2x4_u16(const Vector4_u16 &__0, const Vector4_u16 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector4_u16 &_0() const { return _0_; }
+  Vector4_u16 &mutable__0() { return _0_; }
+  const Vector4_u16 &_1() const { return _1_; }
+  Vector4_u16 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x4_u16, 16);
+
+/// 3x2 matrix of ushorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix3x2_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_u16 _0_;
+  Vector2_u16 _1_;
+  Vector2_u16 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x2_u16";
+  }
+  Matrix3x2_u16() { memset(this, 0, sizeof(Matrix3x2_u16)); }
+  Matrix3x2_u16(const Matrix3x2_u16 &_o) { memcpy(this, &_o, sizeof(Matrix3x2_u16)); }
+  Matrix3x2_u16(const Vector2_u16 &__0, const Vector2_u16 &__1, const Vector2_u16 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector2_u16 &_0() const { return _0_; }
+  Vector2_u16 &mutable__0() { return _0_; }
+  const Vector2_u16 &_1() const { return _1_; }
+  Vector2_u16 &mutable__1() { return _1_; }
+  const Vector2_u16 &_2() const { return _2_; }
+  Vector2_u16 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x2_u16, 12);
+
+/// 3x3 matrix of ushorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix3x3_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_u16 _0_;
+  Vector3_u16 _1_;
+  Vector3_u16 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x3_u16";
+  }
+  Matrix3x3_u16() { memset(this, 0, sizeof(Matrix3x3_u16)); }
+  Matrix3x3_u16(const Matrix3x3_u16 &_o) { memcpy(this, &_o, sizeof(Matrix3x3_u16)); }
+  Matrix3x3_u16(const Vector3_u16 &__0, const Vector3_u16 &__1, const Vector3_u16 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector3_u16 &_0() const { return _0_; }
+  Vector3_u16 &mutable__0() { return _0_; }
+  const Vector3_u16 &_1() const { return _1_; }
+  Vector3_u16 &mutable__1() { return _1_; }
+  const Vector3_u16 &_2() const { return _2_; }
+  Vector3_u16 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x3_u16, 18);
+
+/// 3x4 matrix of ushorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix3x4_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_u16 _0_;
+  Vector4_u16 _1_;
+  Vector4_u16 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x4_u16";
+  }
+  Matrix3x4_u16() { memset(this, 0, sizeof(Matrix3x4_u16)); }
+  Matrix3x4_u16(const Matrix3x4_u16 &_o) { memcpy(this, &_o, sizeof(Matrix3x4_u16)); }
+  Matrix3x4_u16(const Vector4_u16 &__0, const Vector4_u16 &__1, const Vector4_u16 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector4_u16 &_0() const { return _0_; }
+  Vector4_u16 &mutable__0() { return _0_; }
+  const Vector4_u16 &_1() const { return _1_; }
+  Vector4_u16 &mutable__1() { return _1_; }
+  const Vector4_u16 &_2() const { return _2_; }
+  Vector4_u16 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x4_u16, 24);
+
+/// 4x2 matrix of ushorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix4x2_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_u16 _0_;
+  Vector2_u16 _1_;
+  Vector2_u16 _2_;
+  Vector2_u16 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x2_u16";
+  }
+  Matrix4x2_u16() { memset(this, 0, sizeof(Matrix4x2_u16)); }
+  Matrix4x2_u16(const Matrix4x2_u16 &_o) { memcpy(this, &_o, sizeof(Matrix4x2_u16)); }
+  Matrix4x2_u16(const Vector2_u16 &__0, const Vector2_u16 &__1, const Vector2_u16 &__2, const Vector2_u16 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector2_u16 &_0() const { return _0_; }
+  Vector2_u16 &mutable__0() { return _0_; }
+  const Vector2_u16 &_1() const { return _1_; }
+  Vector2_u16 &mutable__1() { return _1_; }
+  const Vector2_u16 &_2() const { return _2_; }
+  Vector2_u16 &mutable__2() { return _2_; }
+  const Vector2_u16 &_3() const { return _3_; }
+  Vector2_u16 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x2_u16, 16);
+
+/// 4x3 matrix of ushorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix4x3_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_u16 _0_;
+  Vector3_u16 _1_;
+  Vector3_u16 _2_;
+  Vector3_u16 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x3_u16";
+  }
+  Matrix4x3_u16() { memset(this, 0, sizeof(Matrix4x3_u16)); }
+  Matrix4x3_u16(const Matrix4x3_u16 &_o) { memcpy(this, &_o, sizeof(Matrix4x3_u16)); }
+  Matrix4x3_u16(const Vector3_u16 &__0, const Vector3_u16 &__1, const Vector3_u16 &__2, const Vector3_u16 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector3_u16 &_0() const { return _0_; }
+  Vector3_u16 &mutable__0() { return _0_; }
+  const Vector3_u16 &_1() const { return _1_; }
+  Vector3_u16 &mutable__1() { return _1_; }
+  const Vector3_u16 &_2() const { return _2_; }
+  Vector3_u16 &mutable__2() { return _2_; }
+  const Vector3_u16 &_3() const { return _3_; }
+  Vector3_u16 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x3_u16, 24);
+
+/// 4x4 matrix of ushorts
+MANUALLY_ALIGNED_STRUCT(2) Matrix4x4_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_u16 _0_;
+  Vector4_u16 _1_;
+  Vector4_u16 _2_;
+  Vector4_u16 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x4_u16";
+  }
+  Matrix4x4_u16() { memset(this, 0, sizeof(Matrix4x4_u16)); }
+  Matrix4x4_u16(const Matrix4x4_u16 &_o) { memcpy(this, &_o, sizeof(Matrix4x4_u16)); }
+  Matrix4x4_u16(const Vector4_u16 &__0, const Vector4_u16 &__1, const Vector4_u16 &__2, const Vector4_u16 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector4_u16 &_0() const { return _0_; }
+  Vector4_u16 &mutable__0() { return _0_; }
+  const Vector4_u16 &_1() const { return _1_; }
+  Vector4_u16 &mutable__1() { return _1_; }
+  const Vector4_u16 &_2() const { return _2_; }
+  Vector4_u16 &mutable__2() { return _2_; }
+  const Vector4_u16 &_3() const { return _3_; }
+  Vector4_u16 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x4_u16, 32);
+
+/// RGB color of ushort components
+MANUALLY_ALIGNED_STRUCT(2) ColorRGB_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint16_t r_;
+  uint16_t g_;
+  uint16_t b_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGB_u16";
+  }
+  ColorRGB_u16() { memset(this, 0, sizeof(ColorRGB_u16)); }
+  ColorRGB_u16(const ColorRGB_u16 &_o) { memcpy(this, &_o, sizeof(ColorRGB_u16)); }
+  ColorRGB_u16(uint16_t _r, uint16_t _g, uint16_t _b)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)) { }
+
+  uint16_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(uint16_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  uint16_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(uint16_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  uint16_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(uint16_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+};
+STRUCT_END(ColorRGB_u16, 6);
+
+/// RGBA color of ushort components
+MANUALLY_ALIGNED_STRUCT(2) ColorRGBA_u16 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint16_t r_;
+  uint16_t g_;
+  uint16_t b_;
+  uint16_t a_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGBA_u16";
+  }
+  ColorRGBA_u16() { memset(this, 0, sizeof(ColorRGBA_u16)); }
+  ColorRGBA_u16(const ColorRGBA_u16 &_o) { memcpy(this, &_o, sizeof(ColorRGBA_u16)); }
+  ColorRGBA_u16(uint16_t _r, uint16_t _g, uint16_t _b, uint16_t _a)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)), a_(flatbuffers::EndianScalar(_a)) { }
+
+  uint16_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(uint16_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  uint16_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(uint16_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  uint16_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(uint16_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+  uint16_t a() const { return flatbuffers::EndianScalar(a_); }
+  void mutate_a(uint16_t _a) { flatbuffers::WriteScalar(&a_, _a); }
+};
+STRUCT_END(ColorRGBA_u16, 8);
+
+///-----------------------------------------------------------------------------
+///-----------------------------------------------------------------------------
+/// byte types
+/// 2D vector of bytes
+MANUALLY_ALIGNED_STRUCT(1) Vector2_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int8_t x_;
+  int8_t y_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector2_i8";
+  }
+  Vector2_i8() { memset(this, 0, sizeof(Vector2_i8)); }
+  Vector2_i8(const Vector2_i8 &_o) { memcpy(this, &_o, sizeof(Vector2_i8)); }
+  Vector2_i8(int8_t _x, int8_t _y)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)) { }
+
+  int8_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int8_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int8_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int8_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+};
+STRUCT_END(Vector2_i8, 2);
+
+/// 3D vector of bytes
+MANUALLY_ALIGNED_STRUCT(1) Vector3_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int8_t x_;
+  int8_t y_;
+  int8_t z_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector3_i8";
+  }
+  Vector3_i8() { memset(this, 0, sizeof(Vector3_i8)); }
+  Vector3_i8(const Vector3_i8 &_o) { memcpy(this, &_o, sizeof(Vector3_i8)); }
+  Vector3_i8(int8_t _x, int8_t _y, int8_t _z)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)) { }
+
+  int8_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int8_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int8_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int8_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  int8_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(int8_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+};
+STRUCT_END(Vector3_i8, 3);
+
+/// 4D vector of bytes (homogenous coordinates)
+MANUALLY_ALIGNED_STRUCT(1) Vector4_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int8_t x_;
+  int8_t y_;
+  int8_t z_;
+  int8_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector4_i8";
+  }
+  Vector4_i8() { memset(this, 0, sizeof(Vector4_i8)); }
+  Vector4_i8(const Vector4_i8 &_o) { memcpy(this, &_o, sizeof(Vector4_i8)); }
+  Vector4_i8(int8_t _x, int8_t _y, int8_t _z, int8_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  int8_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int8_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int8_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int8_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  int8_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(int8_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  int8_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(int8_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Vector4_i8, 4);
+
+/// 4D hypercomplex of bytes
+MANUALLY_ALIGNED_STRUCT(1) Quaternion_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int8_t x_;
+  int8_t y_;
+  int8_t z_;
+  int8_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Quaternion_i8";
+  }
+  Quaternion_i8() { memset(this, 0, sizeof(Quaternion_i8)); }
+  Quaternion_i8(const Quaternion_i8 &_o) { memcpy(this, &_o, sizeof(Quaternion_i8)); }
+  Quaternion_i8(int8_t _x, int8_t _y, int8_t _z, int8_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  int8_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int8_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int8_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int8_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  int8_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(int8_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  int8_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(int8_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Quaternion_i8, 4);
+
+/// 2x2 matrix of bytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix2x2_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_i8 _0_;
+  Vector2_i8 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x2_i8";
+  }
+  Matrix2x2_i8() { memset(this, 0, sizeof(Matrix2x2_i8)); }
+  Matrix2x2_i8(const Matrix2x2_i8 &_o) { memcpy(this, &_o, sizeof(Matrix2x2_i8)); }
+  Matrix2x2_i8(const Vector2_i8 &__0, const Vector2_i8 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector2_i8 &_0() const { return _0_; }
+  Vector2_i8 &mutable__0() { return _0_; }
+  const Vector2_i8 &_1() const { return _1_; }
+  Vector2_i8 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x2_i8, 4);
+
+/// 2x3 matrix of bytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix2x3_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_i8 _0_;
+  Vector3_i8 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x3_i8";
+  }
+  Matrix2x3_i8() { memset(this, 0, sizeof(Matrix2x3_i8)); }
+  Matrix2x3_i8(const Matrix2x3_i8 &_o) { memcpy(this, &_o, sizeof(Matrix2x3_i8)); }
+  Matrix2x3_i8(const Vector3_i8 &__0, const Vector3_i8 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector3_i8 &_0() const { return _0_; }
+  Vector3_i8 &mutable__0() { return _0_; }
+  const Vector3_i8 &_1() const { return _1_; }
+  Vector3_i8 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x3_i8, 6);
+
+/// 2x4 matrix of bytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix2x4_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_i8 _0_;
+  Vector4_i8 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x4_i8";
+  }
+  Matrix2x4_i8() { memset(this, 0, sizeof(Matrix2x4_i8)); }
+  Matrix2x4_i8(const Matrix2x4_i8 &_o) { memcpy(this, &_o, sizeof(Matrix2x4_i8)); }
+  Matrix2x4_i8(const Vector4_i8 &__0, const Vector4_i8 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector4_i8 &_0() const { return _0_; }
+  Vector4_i8 &mutable__0() { return _0_; }
+  const Vector4_i8 &_1() const { return _1_; }
+  Vector4_i8 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x4_i8, 8);
+
+/// 3x2 matrix of bytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix3x2_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_i8 _0_;
+  Vector2_i8 _1_;
+  Vector2_i8 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x2_i8";
+  }
+  Matrix3x2_i8() { memset(this, 0, sizeof(Matrix3x2_i8)); }
+  Matrix3x2_i8(const Matrix3x2_i8 &_o) { memcpy(this, &_o, sizeof(Matrix3x2_i8)); }
+  Matrix3x2_i8(const Vector2_i8 &__0, const Vector2_i8 &__1, const Vector2_i8 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector2_i8 &_0() const { return _0_; }
+  Vector2_i8 &mutable__0() { return _0_; }
+  const Vector2_i8 &_1() const { return _1_; }
+  Vector2_i8 &mutable__1() { return _1_; }
+  const Vector2_i8 &_2() const { return _2_; }
+  Vector2_i8 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x2_i8, 6);
+
+/// 3x3 matrix of bytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix3x3_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_i8 _0_;
+  Vector3_i8 _1_;
+  Vector3_i8 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x3_i8";
+  }
+  Matrix3x3_i8() { memset(this, 0, sizeof(Matrix3x3_i8)); }
+  Matrix3x3_i8(const Matrix3x3_i8 &_o) { memcpy(this, &_o, sizeof(Matrix3x3_i8)); }
+  Matrix3x3_i8(const Vector3_i8 &__0, const Vector3_i8 &__1, const Vector3_i8 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector3_i8 &_0() const { return _0_; }
+  Vector3_i8 &mutable__0() { return _0_; }
+  const Vector3_i8 &_1() const { return _1_; }
+  Vector3_i8 &mutable__1() { return _1_; }
+  const Vector3_i8 &_2() const { return _2_; }
+  Vector3_i8 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x3_i8, 9);
+
+/// 3x4 matrix of bytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix3x4_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_i8 _0_;
+  Vector4_i8 _1_;
+  Vector4_i8 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x4_i8";
+  }
+  Matrix3x4_i8() { memset(this, 0, sizeof(Matrix3x4_i8)); }
+  Matrix3x4_i8(const Matrix3x4_i8 &_o) { memcpy(this, &_o, sizeof(Matrix3x4_i8)); }
+  Matrix3x4_i8(const Vector4_i8 &__0, const Vector4_i8 &__1, const Vector4_i8 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector4_i8 &_0() const { return _0_; }
+  Vector4_i8 &mutable__0() { return _0_; }
+  const Vector4_i8 &_1() const { return _1_; }
+  Vector4_i8 &mutable__1() { return _1_; }
+  const Vector4_i8 &_2() const { return _2_; }
+  Vector4_i8 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x4_i8, 12);
+
+/// 4x2 matrix of bytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix4x2_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_i8 _0_;
+  Vector2_i8 _1_;
+  Vector2_i8 _2_;
+  Vector2_i8 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x2_i8";
+  }
+  Matrix4x2_i8() { memset(this, 0, sizeof(Matrix4x2_i8)); }
+  Matrix4x2_i8(const Matrix4x2_i8 &_o) { memcpy(this, &_o, sizeof(Matrix4x2_i8)); }
+  Matrix4x2_i8(const Vector2_i8 &__0, const Vector2_i8 &__1, const Vector2_i8 &__2, const Vector2_i8 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector2_i8 &_0() const { return _0_; }
+  Vector2_i8 &mutable__0() { return _0_; }
+  const Vector2_i8 &_1() const { return _1_; }
+  Vector2_i8 &mutable__1() { return _1_; }
+  const Vector2_i8 &_2() const { return _2_; }
+  Vector2_i8 &mutable__2() { return _2_; }
+  const Vector2_i8 &_3() const { return _3_; }
+  Vector2_i8 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x2_i8, 8);
+
+/// 4x3 matrix of bytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix4x3_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_i8 _0_;
+  Vector3_i8 _1_;
+  Vector3_i8 _2_;
+  Vector3_i8 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x3_i8";
+  }
+  Matrix4x3_i8() { memset(this, 0, sizeof(Matrix4x3_i8)); }
+  Matrix4x3_i8(const Matrix4x3_i8 &_o) { memcpy(this, &_o, sizeof(Matrix4x3_i8)); }
+  Matrix4x3_i8(const Vector3_i8 &__0, const Vector3_i8 &__1, const Vector3_i8 &__2, const Vector3_i8 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector3_i8 &_0() const { return _0_; }
+  Vector3_i8 &mutable__0() { return _0_; }
+  const Vector3_i8 &_1() const { return _1_; }
+  Vector3_i8 &mutable__1() { return _1_; }
+  const Vector3_i8 &_2() const { return _2_; }
+  Vector3_i8 &mutable__2() { return _2_; }
+  const Vector3_i8 &_3() const { return _3_; }
+  Vector3_i8 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x3_i8, 12);
+
+/// 4x4 matrix of bytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix4x4_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_i8 _0_;
+  Vector4_i8 _1_;
+  Vector4_i8 _2_;
+  Vector4_i8 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x4_i8";
+  }
+  Matrix4x4_i8() { memset(this, 0, sizeof(Matrix4x4_i8)); }
+  Matrix4x4_i8(const Matrix4x4_i8 &_o) { memcpy(this, &_o, sizeof(Matrix4x4_i8)); }
+  Matrix4x4_i8(const Vector4_i8 &__0, const Vector4_i8 &__1, const Vector4_i8 &__2, const Vector4_i8 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector4_i8 &_0() const { return _0_; }
+  Vector4_i8 &mutable__0() { return _0_; }
+  const Vector4_i8 &_1() const { return _1_; }
+  Vector4_i8 &mutable__1() { return _1_; }
+  const Vector4_i8 &_2() const { return _2_; }
+  Vector4_i8 &mutable__2() { return _2_; }
+  const Vector4_i8 &_3() const { return _3_; }
+  Vector4_i8 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x4_i8, 16);
+
+/// RGB color of byte components
+MANUALLY_ALIGNED_STRUCT(1) ColorRGB_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int8_t r_;
+  int8_t g_;
+  int8_t b_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGB_i8";
+  }
+  ColorRGB_i8() { memset(this, 0, sizeof(ColorRGB_i8)); }
+  ColorRGB_i8(const ColorRGB_i8 &_o) { memcpy(this, &_o, sizeof(ColorRGB_i8)); }
+  ColorRGB_i8(int8_t _r, int8_t _g, int8_t _b)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)) { }
+
+  int8_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(int8_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  int8_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(int8_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  int8_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(int8_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+};
+STRUCT_END(ColorRGB_i8, 3);
+
+/// RGBA color of byte components
+MANUALLY_ALIGNED_STRUCT(1) ColorRGBA_i8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int8_t r_;
+  int8_t g_;
+  int8_t b_;
+  int8_t a_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGBA_i8";
+  }
+  ColorRGBA_i8() { memset(this, 0, sizeof(ColorRGBA_i8)); }
+  ColorRGBA_i8(const ColorRGBA_i8 &_o) { memcpy(this, &_o, sizeof(ColorRGBA_i8)); }
+  ColorRGBA_i8(int8_t _r, int8_t _g, int8_t _b, int8_t _a)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)), a_(flatbuffers::EndianScalar(_a)) { }
+
+  int8_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(int8_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  int8_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(int8_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  int8_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(int8_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+  int8_t a() const { return flatbuffers::EndianScalar(a_); }
+  void mutate_a(int8_t _a) { flatbuffers::WriteScalar(&a_, _a); }
+};
+STRUCT_END(ColorRGBA_i8, 4);
+
+///-----------------------------------------------------------------------------
+///-----------------------------------------------------------------------------
+/// ubyte types
+/// 2D vector of ubytes
+MANUALLY_ALIGNED_STRUCT(1) Vector2_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint8_t x_;
+  uint8_t y_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector2_u8";
+  }
+  Vector2_u8() { memset(this, 0, sizeof(Vector2_u8)); }
+  Vector2_u8(const Vector2_u8 &_o) { memcpy(this, &_o, sizeof(Vector2_u8)); }
+  Vector2_u8(uint8_t _x, uint8_t _y)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)) { }
+
+  uint8_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint8_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint8_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint8_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+};
+STRUCT_END(Vector2_u8, 2);
+
+/// 3D vector of ubytes
+MANUALLY_ALIGNED_STRUCT(1) Vector3_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint8_t x_;
+  uint8_t y_;
+  uint8_t z_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector3_u8";
+  }
+  Vector3_u8() { memset(this, 0, sizeof(Vector3_u8)); }
+  Vector3_u8(const Vector3_u8 &_o) { memcpy(this, &_o, sizeof(Vector3_u8)); }
+  Vector3_u8(uint8_t _x, uint8_t _y, uint8_t _z)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)) { }
+
+  uint8_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint8_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint8_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint8_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  uint8_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(uint8_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+};
+STRUCT_END(Vector3_u8, 3);
+
+/// 4D vector of ubytes (homogenous coordinates)
+MANUALLY_ALIGNED_STRUCT(1) Vector4_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint8_t x_;
+  uint8_t y_;
+  uint8_t z_;
+  uint8_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector4_u8";
+  }
+  Vector4_u8() { memset(this, 0, sizeof(Vector4_u8)); }
+  Vector4_u8(const Vector4_u8 &_o) { memcpy(this, &_o, sizeof(Vector4_u8)); }
+  Vector4_u8(uint8_t _x, uint8_t _y, uint8_t _z, uint8_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  uint8_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint8_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint8_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint8_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  uint8_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(uint8_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  uint8_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(uint8_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Vector4_u8, 4);
+
+/// 4D hypercomplex of ubytes
+MANUALLY_ALIGNED_STRUCT(1) Quaternion_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint8_t x_;
+  uint8_t y_;
+  uint8_t z_;
+  uint8_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Quaternion_u8";
+  }
+  Quaternion_u8() { memset(this, 0, sizeof(Quaternion_u8)); }
+  Quaternion_u8(const Quaternion_u8 &_o) { memcpy(this, &_o, sizeof(Quaternion_u8)); }
+  Quaternion_u8(uint8_t _x, uint8_t _y, uint8_t _z, uint8_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  uint8_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint8_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint8_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint8_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  uint8_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(uint8_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  uint8_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(uint8_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Quaternion_u8, 4);
+
+/// 2x2 matrix of ubytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix2x2_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_u8 _0_;
+  Vector2_u8 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x2_u8";
+  }
+  Matrix2x2_u8() { memset(this, 0, sizeof(Matrix2x2_u8)); }
+  Matrix2x2_u8(const Matrix2x2_u8 &_o) { memcpy(this, &_o, sizeof(Matrix2x2_u8)); }
+  Matrix2x2_u8(const Vector2_u8 &__0, const Vector2_u8 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector2_u8 &_0() const { return _0_; }
+  Vector2_u8 &mutable__0() { return _0_; }
+  const Vector2_u8 &_1() const { return _1_; }
+  Vector2_u8 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x2_u8, 4);
+
+/// 2x3 matrix of ubytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix2x3_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_u8 _0_;
+  Vector3_u8 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x3_u8";
+  }
+  Matrix2x3_u8() { memset(this, 0, sizeof(Matrix2x3_u8)); }
+  Matrix2x3_u8(const Matrix2x3_u8 &_o) { memcpy(this, &_o, sizeof(Matrix2x3_u8)); }
+  Matrix2x3_u8(const Vector3_u8 &__0, const Vector3_u8 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector3_u8 &_0() const { return _0_; }
+  Vector3_u8 &mutable__0() { return _0_; }
+  const Vector3_u8 &_1() const { return _1_; }
+  Vector3_u8 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x3_u8, 6);
+
+/// 2x4 matrix of ubytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix2x4_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_u8 _0_;
+  Vector4_u8 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x4_u8";
+  }
+  Matrix2x4_u8() { memset(this, 0, sizeof(Matrix2x4_u8)); }
+  Matrix2x4_u8(const Matrix2x4_u8 &_o) { memcpy(this, &_o, sizeof(Matrix2x4_u8)); }
+  Matrix2x4_u8(const Vector4_u8 &__0, const Vector4_u8 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector4_u8 &_0() const { return _0_; }
+  Vector4_u8 &mutable__0() { return _0_; }
+  const Vector4_u8 &_1() const { return _1_; }
+  Vector4_u8 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x4_u8, 8);
+
+/// 3x2 matrix of ubytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix3x2_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_u8 _0_;
+  Vector2_u8 _1_;
+  Vector2_u8 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x2_u8";
+  }
+  Matrix3x2_u8() { memset(this, 0, sizeof(Matrix3x2_u8)); }
+  Matrix3x2_u8(const Matrix3x2_u8 &_o) { memcpy(this, &_o, sizeof(Matrix3x2_u8)); }
+  Matrix3x2_u8(const Vector2_u8 &__0, const Vector2_u8 &__1, const Vector2_u8 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector2_u8 &_0() const { return _0_; }
+  Vector2_u8 &mutable__0() { return _0_; }
+  const Vector2_u8 &_1() const { return _1_; }
+  Vector2_u8 &mutable__1() { return _1_; }
+  const Vector2_u8 &_2() const { return _2_; }
+  Vector2_u8 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x2_u8, 6);
+
+/// 3x3 matrix of ubytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix3x3_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_u8 _0_;
+  Vector3_u8 _1_;
+  Vector3_u8 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x3_u8";
+  }
+  Matrix3x3_u8() { memset(this, 0, sizeof(Matrix3x3_u8)); }
+  Matrix3x3_u8(const Matrix3x3_u8 &_o) { memcpy(this, &_o, sizeof(Matrix3x3_u8)); }
+  Matrix3x3_u8(const Vector3_u8 &__0, const Vector3_u8 &__1, const Vector3_u8 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector3_u8 &_0() const { return _0_; }
+  Vector3_u8 &mutable__0() { return _0_; }
+  const Vector3_u8 &_1() const { return _1_; }
+  Vector3_u8 &mutable__1() { return _1_; }
+  const Vector3_u8 &_2() const { return _2_; }
+  Vector3_u8 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x3_u8, 9);
+
+/// 3x4 matrix of ubytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix3x4_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_u8 _0_;
+  Vector4_u8 _1_;
+  Vector4_u8 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x4_u8";
+  }
+  Matrix3x4_u8() { memset(this, 0, sizeof(Matrix3x4_u8)); }
+  Matrix3x4_u8(const Matrix3x4_u8 &_o) { memcpy(this, &_o, sizeof(Matrix3x4_u8)); }
+  Matrix3x4_u8(const Vector4_u8 &__0, const Vector4_u8 &__1, const Vector4_u8 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector4_u8 &_0() const { return _0_; }
+  Vector4_u8 &mutable__0() { return _0_; }
+  const Vector4_u8 &_1() const { return _1_; }
+  Vector4_u8 &mutable__1() { return _1_; }
+  const Vector4_u8 &_2() const { return _2_; }
+  Vector4_u8 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x4_u8, 12);
+
+/// 4x2 matrix of ubytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix4x2_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_u8 _0_;
+  Vector2_u8 _1_;
+  Vector2_u8 _2_;
+  Vector2_u8 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x2_u8";
+  }
+  Matrix4x2_u8() { memset(this, 0, sizeof(Matrix4x2_u8)); }
+  Matrix4x2_u8(const Matrix4x2_u8 &_o) { memcpy(this, &_o, sizeof(Matrix4x2_u8)); }
+  Matrix4x2_u8(const Vector2_u8 &__0, const Vector2_u8 &__1, const Vector2_u8 &__2, const Vector2_u8 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector2_u8 &_0() const { return _0_; }
+  Vector2_u8 &mutable__0() { return _0_; }
+  const Vector2_u8 &_1() const { return _1_; }
+  Vector2_u8 &mutable__1() { return _1_; }
+  const Vector2_u8 &_2() const { return _2_; }
+  Vector2_u8 &mutable__2() { return _2_; }
+  const Vector2_u8 &_3() const { return _3_; }
+  Vector2_u8 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x2_u8, 8);
+
+/// 4x3 matrix of ubytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix4x3_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_u8 _0_;
+  Vector3_u8 _1_;
+  Vector3_u8 _2_;
+  Vector3_u8 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x3_u8";
+  }
+  Matrix4x3_u8() { memset(this, 0, sizeof(Matrix4x3_u8)); }
+  Matrix4x3_u8(const Matrix4x3_u8 &_o) { memcpy(this, &_o, sizeof(Matrix4x3_u8)); }
+  Matrix4x3_u8(const Vector3_u8 &__0, const Vector3_u8 &__1, const Vector3_u8 &__2, const Vector3_u8 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector3_u8 &_0() const { return _0_; }
+  Vector3_u8 &mutable__0() { return _0_; }
+  const Vector3_u8 &_1() const { return _1_; }
+  Vector3_u8 &mutable__1() { return _1_; }
+  const Vector3_u8 &_2() const { return _2_; }
+  Vector3_u8 &mutable__2() { return _2_; }
+  const Vector3_u8 &_3() const { return _3_; }
+  Vector3_u8 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x3_u8, 12);
+
+/// 4x4 matrix of ubytes
+MANUALLY_ALIGNED_STRUCT(1) Matrix4x4_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_u8 _0_;
+  Vector4_u8 _1_;
+  Vector4_u8 _2_;
+  Vector4_u8 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x4_u8";
+  }
+  Matrix4x4_u8() { memset(this, 0, sizeof(Matrix4x4_u8)); }
+  Matrix4x4_u8(const Matrix4x4_u8 &_o) { memcpy(this, &_o, sizeof(Matrix4x4_u8)); }
+  Matrix4x4_u8(const Vector4_u8 &__0, const Vector4_u8 &__1, const Vector4_u8 &__2, const Vector4_u8 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector4_u8 &_0() const { return _0_; }
+  Vector4_u8 &mutable__0() { return _0_; }
+  const Vector4_u8 &_1() const { return _1_; }
+  Vector4_u8 &mutable__1() { return _1_; }
+  const Vector4_u8 &_2() const { return _2_; }
+  Vector4_u8 &mutable__2() { return _2_; }
+  const Vector4_u8 &_3() const { return _3_; }
+  Vector4_u8 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x4_u8, 16);
+
+/// RGB color of ubyte components
+MANUALLY_ALIGNED_STRUCT(1) ColorRGB_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint8_t r_;
+  uint8_t g_;
+  uint8_t b_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGB_u8";
+  }
+  ColorRGB_u8() { memset(this, 0, sizeof(ColorRGB_u8)); }
+  ColorRGB_u8(const ColorRGB_u8 &_o) { memcpy(this, &_o, sizeof(ColorRGB_u8)); }
+  ColorRGB_u8(uint8_t _r, uint8_t _g, uint8_t _b)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)) { }
+
+  uint8_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(uint8_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  uint8_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(uint8_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  uint8_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(uint8_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+};
+STRUCT_END(ColorRGB_u8, 3);
+
+/// RGBA color of ubyte components
+MANUALLY_ALIGNED_STRUCT(1) ColorRGBA_u8 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint8_t r_;
+  uint8_t g_;
+  uint8_t b_;
+  uint8_t a_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGBA_u8";
+  }
+  ColorRGBA_u8() { memset(this, 0, sizeof(ColorRGBA_u8)); }
+  ColorRGBA_u8(const ColorRGBA_u8 &_o) { memcpy(this, &_o, sizeof(ColorRGBA_u8)); }
+  ColorRGBA_u8(uint8_t _r, uint8_t _g, uint8_t _b, uint8_t _a)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)), a_(flatbuffers::EndianScalar(_a)) { }
+
+  uint8_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(uint8_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  uint8_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(uint8_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  uint8_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(uint8_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+  uint8_t a() const { return flatbuffers::EndianScalar(a_); }
+  void mutate_a(uint8_t _a) { flatbuffers::WriteScalar(&a_, _a); }
+};
+STRUCT_END(ColorRGBA_u8, 4);
+
+///-----------------------------------------------------------------------------
+///-----------------------------------------------------------------------------
+/// long types
+/// 2D vector of longs
+MANUALLY_ALIGNED_STRUCT(8) Vector2_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int64_t x_;
+  int64_t y_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector2_i64";
+  }
+  Vector2_i64() { memset(this, 0, sizeof(Vector2_i64)); }
+  Vector2_i64(const Vector2_i64 &_o) { memcpy(this, &_o, sizeof(Vector2_i64)); }
+  Vector2_i64(int64_t _x, int64_t _y)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)) { }
+
+  int64_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int64_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int64_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int64_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+};
+STRUCT_END(Vector2_i64, 16);
+
+/// 3D vector of longs
+MANUALLY_ALIGNED_STRUCT(8) Vector3_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int64_t x_;
+  int64_t y_;
+  int64_t z_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector3_i64";
+  }
+  Vector3_i64() { memset(this, 0, sizeof(Vector3_i64)); }
+  Vector3_i64(const Vector3_i64 &_o) { memcpy(this, &_o, sizeof(Vector3_i64)); }
+  Vector3_i64(int64_t _x, int64_t _y, int64_t _z)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)) { }
+
+  int64_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int64_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int64_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int64_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  int64_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(int64_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+};
+STRUCT_END(Vector3_i64, 24);
+
+/// 4D vector of longs (homogenous coordinates)
+MANUALLY_ALIGNED_STRUCT(8) Vector4_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int64_t x_;
+  int64_t y_;
+  int64_t z_;
+  int64_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector4_i64";
+  }
+  Vector4_i64() { memset(this, 0, sizeof(Vector4_i64)); }
+  Vector4_i64(const Vector4_i64 &_o) { memcpy(this, &_o, sizeof(Vector4_i64)); }
+  Vector4_i64(int64_t _x, int64_t _y, int64_t _z, int64_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  int64_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int64_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int64_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int64_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  int64_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(int64_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  int64_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(int64_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Vector4_i64, 32);
+
+/// 4D hypercomplex of longs
+MANUALLY_ALIGNED_STRUCT(8) Quaternion_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int64_t x_;
+  int64_t y_;
+  int64_t z_;
+  int64_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Quaternion_i64";
+  }
+  Quaternion_i64() { memset(this, 0, sizeof(Quaternion_i64)); }
+  Quaternion_i64(const Quaternion_i64 &_o) { memcpy(this, &_o, sizeof(Quaternion_i64)); }
+  Quaternion_i64(int64_t _x, int64_t _y, int64_t _z, int64_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  int64_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(int64_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  int64_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(int64_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  int64_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(int64_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  int64_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(int64_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Quaternion_i64, 32);
+
+/// 2x2 matrix of longs
+MANUALLY_ALIGNED_STRUCT(8) Matrix2x2_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_i64 _0_;
+  Vector2_i64 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x2_i64";
+  }
+  Matrix2x2_i64() { memset(this, 0, sizeof(Matrix2x2_i64)); }
+  Matrix2x2_i64(const Matrix2x2_i64 &_o) { memcpy(this, &_o, sizeof(Matrix2x2_i64)); }
+  Matrix2x2_i64(const Vector2_i64 &__0, const Vector2_i64 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector2_i64 &_0() const { return _0_; }
+  Vector2_i64 &mutable__0() { return _0_; }
+  const Vector2_i64 &_1() const { return _1_; }
+  Vector2_i64 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x2_i64, 32);
+
+/// 2x3 matrix of longs
+MANUALLY_ALIGNED_STRUCT(8) Matrix2x3_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_i64 _0_;
+  Vector3_i64 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x3_i64";
+  }
+  Matrix2x3_i64() { memset(this, 0, sizeof(Matrix2x3_i64)); }
+  Matrix2x3_i64(const Matrix2x3_i64 &_o) { memcpy(this, &_o, sizeof(Matrix2x3_i64)); }
+  Matrix2x3_i64(const Vector3_i64 &__0, const Vector3_i64 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector3_i64 &_0() const { return _0_; }
+  Vector3_i64 &mutable__0() { return _0_; }
+  const Vector3_i64 &_1() const { return _1_; }
+  Vector3_i64 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x3_i64, 48);
+
+/// 2x4 matrix of longs
+MANUALLY_ALIGNED_STRUCT(8) Matrix2x4_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_i64 _0_;
+  Vector4_i64 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x4_i64";
+  }
+  Matrix2x4_i64() { memset(this, 0, sizeof(Matrix2x4_i64)); }
+  Matrix2x4_i64(const Matrix2x4_i64 &_o) { memcpy(this, &_o, sizeof(Matrix2x4_i64)); }
+  Matrix2x4_i64(const Vector4_i64 &__0, const Vector4_i64 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector4_i64 &_0() const { return _0_; }
+  Vector4_i64 &mutable__0() { return _0_; }
+  const Vector4_i64 &_1() const { return _1_; }
+  Vector4_i64 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x4_i64, 64);
+
+/// 3x2 matrix of longs
+MANUALLY_ALIGNED_STRUCT(8) Matrix3x2_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_i64 _0_;
+  Vector2_i64 _1_;
+  Vector2_i64 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x2_i64";
+  }
+  Matrix3x2_i64() { memset(this, 0, sizeof(Matrix3x2_i64)); }
+  Matrix3x2_i64(const Matrix3x2_i64 &_o) { memcpy(this, &_o, sizeof(Matrix3x2_i64)); }
+  Matrix3x2_i64(const Vector2_i64 &__0, const Vector2_i64 &__1, const Vector2_i64 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector2_i64 &_0() const { return _0_; }
+  Vector2_i64 &mutable__0() { return _0_; }
+  const Vector2_i64 &_1() const { return _1_; }
+  Vector2_i64 &mutable__1() { return _1_; }
+  const Vector2_i64 &_2() const { return _2_; }
+  Vector2_i64 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x2_i64, 48);
+
+/// 3x3 matrix of longs
+MANUALLY_ALIGNED_STRUCT(8) Matrix3x3_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_i64 _0_;
+  Vector3_i64 _1_;
+  Vector3_i64 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x3_i64";
+  }
+  Matrix3x3_i64() { memset(this, 0, sizeof(Matrix3x3_i64)); }
+  Matrix3x3_i64(const Matrix3x3_i64 &_o) { memcpy(this, &_o, sizeof(Matrix3x3_i64)); }
+  Matrix3x3_i64(const Vector3_i64 &__0, const Vector3_i64 &__1, const Vector3_i64 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector3_i64 &_0() const { return _0_; }
+  Vector3_i64 &mutable__0() { return _0_; }
+  const Vector3_i64 &_1() const { return _1_; }
+  Vector3_i64 &mutable__1() { return _1_; }
+  const Vector3_i64 &_2() const { return _2_; }
+  Vector3_i64 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x3_i64, 72);
+
+/// 3x4 matrix of longs
+MANUALLY_ALIGNED_STRUCT(8) Matrix3x4_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_i64 _0_;
+  Vector4_i64 _1_;
+  Vector4_i64 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x4_i64";
+  }
+  Matrix3x4_i64() { memset(this, 0, sizeof(Matrix3x4_i64)); }
+  Matrix3x4_i64(const Matrix3x4_i64 &_o) { memcpy(this, &_o, sizeof(Matrix3x4_i64)); }
+  Matrix3x4_i64(const Vector4_i64 &__0, const Vector4_i64 &__1, const Vector4_i64 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector4_i64 &_0() const { return _0_; }
+  Vector4_i64 &mutable__0() { return _0_; }
+  const Vector4_i64 &_1() const { return _1_; }
+  Vector4_i64 &mutable__1() { return _1_; }
+  const Vector4_i64 &_2() const { return _2_; }
+  Vector4_i64 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x4_i64, 96);
+
+/// 4x2 matrix of longs
+MANUALLY_ALIGNED_STRUCT(8) Matrix4x2_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_i64 _0_;
+  Vector2_i64 _1_;
+  Vector2_i64 _2_;
+  Vector2_i64 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x2_i64";
+  }
+  Matrix4x2_i64() { memset(this, 0, sizeof(Matrix4x2_i64)); }
+  Matrix4x2_i64(const Matrix4x2_i64 &_o) { memcpy(this, &_o, sizeof(Matrix4x2_i64)); }
+  Matrix4x2_i64(const Vector2_i64 &__0, const Vector2_i64 &__1, const Vector2_i64 &__2, const Vector2_i64 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector2_i64 &_0() const { return _0_; }
+  Vector2_i64 &mutable__0() { return _0_; }
+  const Vector2_i64 &_1() const { return _1_; }
+  Vector2_i64 &mutable__1() { return _1_; }
+  const Vector2_i64 &_2() const { return _2_; }
+  Vector2_i64 &mutable__2() { return _2_; }
+  const Vector2_i64 &_3() const { return _3_; }
+  Vector2_i64 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x2_i64, 64);
+
+/// 4x3 matrix of longs
+MANUALLY_ALIGNED_STRUCT(8) Matrix4x3_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_i64 _0_;
+  Vector3_i64 _1_;
+  Vector3_i64 _2_;
+  Vector3_i64 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x3_i64";
+  }
+  Matrix4x3_i64() { memset(this, 0, sizeof(Matrix4x3_i64)); }
+  Matrix4x3_i64(const Matrix4x3_i64 &_o) { memcpy(this, &_o, sizeof(Matrix4x3_i64)); }
+  Matrix4x3_i64(const Vector3_i64 &__0, const Vector3_i64 &__1, const Vector3_i64 &__2, const Vector3_i64 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector3_i64 &_0() const { return _0_; }
+  Vector3_i64 &mutable__0() { return _0_; }
+  const Vector3_i64 &_1() const { return _1_; }
+  Vector3_i64 &mutable__1() { return _1_; }
+  const Vector3_i64 &_2() const { return _2_; }
+  Vector3_i64 &mutable__2() { return _2_; }
+  const Vector3_i64 &_3() const { return _3_; }
+  Vector3_i64 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x3_i64, 96);
+
+/// 4x4 matrix of longs
+MANUALLY_ALIGNED_STRUCT(8) Matrix4x4_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_i64 _0_;
+  Vector4_i64 _1_;
+  Vector4_i64 _2_;
+  Vector4_i64 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x4_i64";
+  }
+  Matrix4x4_i64() { memset(this, 0, sizeof(Matrix4x4_i64)); }
+  Matrix4x4_i64(const Matrix4x4_i64 &_o) { memcpy(this, &_o, sizeof(Matrix4x4_i64)); }
+  Matrix4x4_i64(const Vector4_i64 &__0, const Vector4_i64 &__1, const Vector4_i64 &__2, const Vector4_i64 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector4_i64 &_0() const { return _0_; }
+  Vector4_i64 &mutable__0() { return _0_; }
+  const Vector4_i64 &_1() const { return _1_; }
+  Vector4_i64 &mutable__1() { return _1_; }
+  const Vector4_i64 &_2() const { return _2_; }
+  Vector4_i64 &mutable__2() { return _2_; }
+  const Vector4_i64 &_3() const { return _3_; }
+  Vector4_i64 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x4_i64, 128);
+
+/// RGB color of long components
+MANUALLY_ALIGNED_STRUCT(8) ColorRGB_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int64_t r_;
+  int64_t g_;
+  int64_t b_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGB_i64";
+  }
+  ColorRGB_i64() { memset(this, 0, sizeof(ColorRGB_i64)); }
+  ColorRGB_i64(const ColorRGB_i64 &_o) { memcpy(this, &_o, sizeof(ColorRGB_i64)); }
+  ColorRGB_i64(int64_t _r, int64_t _g, int64_t _b)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)) { }
+
+  int64_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(int64_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  int64_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(int64_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  int64_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(int64_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+};
+STRUCT_END(ColorRGB_i64, 24);
+
+/// RGBA color of long components
+MANUALLY_ALIGNED_STRUCT(8) ColorRGBA_i64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  int64_t r_;
+  int64_t g_;
+  int64_t b_;
+  int64_t a_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGBA_i64";
+  }
+  ColorRGBA_i64() { memset(this, 0, sizeof(ColorRGBA_i64)); }
+  ColorRGBA_i64(const ColorRGBA_i64 &_o) { memcpy(this, &_o, sizeof(ColorRGBA_i64)); }
+  ColorRGBA_i64(int64_t _r, int64_t _g, int64_t _b, int64_t _a)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)), a_(flatbuffers::EndianScalar(_a)) { }
+
+  int64_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(int64_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  int64_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(int64_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  int64_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(int64_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+  int64_t a() const { return flatbuffers::EndianScalar(a_); }
+  void mutate_a(int64_t _a) { flatbuffers::WriteScalar(&a_, _a); }
+};
+STRUCT_END(ColorRGBA_i64, 32);
+
+///-----------------------------------------------------------------------------
+///-----------------------------------------------------------------------------
+/// ulong types
+/// 2D vector of ulongs
+MANUALLY_ALIGNED_STRUCT(8) Vector2_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint64_t x_;
+  uint64_t y_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector2_u64";
+  }
+  Vector2_u64() { memset(this, 0, sizeof(Vector2_u64)); }
+  Vector2_u64(const Vector2_u64 &_o) { memcpy(this, &_o, sizeof(Vector2_u64)); }
+  Vector2_u64(uint64_t _x, uint64_t _y)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)) { }
+
+  uint64_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint64_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint64_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint64_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+};
+STRUCT_END(Vector2_u64, 16);
+
+/// 3D vector of ulongs
+MANUALLY_ALIGNED_STRUCT(8) Vector3_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint64_t x_;
+  uint64_t y_;
+  uint64_t z_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector3_u64";
+  }
+  Vector3_u64() { memset(this, 0, sizeof(Vector3_u64)); }
+  Vector3_u64(const Vector3_u64 &_o) { memcpy(this, &_o, sizeof(Vector3_u64)); }
+  Vector3_u64(uint64_t _x, uint64_t _y, uint64_t _z)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)) { }
+
+  uint64_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint64_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint64_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint64_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  uint64_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(uint64_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+};
+STRUCT_END(Vector3_u64, 24);
+
+/// 4D vector of ulongs (homogenous coordinates)
+MANUALLY_ALIGNED_STRUCT(8) Vector4_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint64_t x_;
+  uint64_t y_;
+  uint64_t z_;
+  uint64_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector4_u64";
+  }
+  Vector4_u64() { memset(this, 0, sizeof(Vector4_u64)); }
+  Vector4_u64(const Vector4_u64 &_o) { memcpy(this, &_o, sizeof(Vector4_u64)); }
+  Vector4_u64(uint64_t _x, uint64_t _y, uint64_t _z, uint64_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  uint64_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint64_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint64_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint64_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  uint64_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(uint64_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  uint64_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(uint64_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Vector4_u64, 32);
+
+/// 4D hypercomplex of ulongs
+MANUALLY_ALIGNED_STRUCT(8) Quaternion_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint64_t x_;
+  uint64_t y_;
+  uint64_t z_;
+  uint64_t w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Quaternion_u64";
+  }
+  Quaternion_u64() { memset(this, 0, sizeof(Quaternion_u64)); }
+  Quaternion_u64(const Quaternion_u64 &_o) { memcpy(this, &_o, sizeof(Quaternion_u64)); }
+  Quaternion_u64(uint64_t _x, uint64_t _y, uint64_t _z, uint64_t _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  uint64_t x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(uint64_t _x) { flatbuffers::WriteScalar(&x_, _x); }
+  uint64_t y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(uint64_t _y) { flatbuffers::WriteScalar(&y_, _y); }
+  uint64_t z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(uint64_t _z) { flatbuffers::WriteScalar(&z_, _z); }
+  uint64_t w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(uint64_t _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Quaternion_u64, 32);
+
+/// 2x2 matrix of ulongs
+MANUALLY_ALIGNED_STRUCT(8) Matrix2x2_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_u64 _0_;
+  Vector2_u64 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x2_u64";
+  }
+  Matrix2x2_u64() { memset(this, 0, sizeof(Matrix2x2_u64)); }
+  Matrix2x2_u64(const Matrix2x2_u64 &_o) { memcpy(this, &_o, sizeof(Matrix2x2_u64)); }
+  Matrix2x2_u64(const Vector2_u64 &__0, const Vector2_u64 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector2_u64 &_0() const { return _0_; }
+  Vector2_u64 &mutable__0() { return _0_; }
+  const Vector2_u64 &_1() const { return _1_; }
+  Vector2_u64 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x2_u64, 32);
+
+/// 2x3 matrix of ulongs
+MANUALLY_ALIGNED_STRUCT(8) Matrix2x3_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_u64 _0_;
+  Vector3_u64 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x3_u64";
+  }
+  Matrix2x3_u64() { memset(this, 0, sizeof(Matrix2x3_u64)); }
+  Matrix2x3_u64(const Matrix2x3_u64 &_o) { memcpy(this, &_o, sizeof(Matrix2x3_u64)); }
+  Matrix2x3_u64(const Vector3_u64 &__0, const Vector3_u64 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector3_u64 &_0() const { return _0_; }
+  Vector3_u64 &mutable__0() { return _0_; }
+  const Vector3_u64 &_1() const { return _1_; }
+  Vector3_u64 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x3_u64, 48);
+
+/// 2x4 matrix of ulongs
+MANUALLY_ALIGNED_STRUCT(8) Matrix2x4_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_u64 _0_;
+  Vector4_u64 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x4_u64";
+  }
+  Matrix2x4_u64() { memset(this, 0, sizeof(Matrix2x4_u64)); }
+  Matrix2x4_u64(const Matrix2x4_u64 &_o) { memcpy(this, &_o, sizeof(Matrix2x4_u64)); }
+  Matrix2x4_u64(const Vector4_u64 &__0, const Vector4_u64 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector4_u64 &_0() const { return _0_; }
+  Vector4_u64 &mutable__0() { return _0_; }
+  const Vector4_u64 &_1() const { return _1_; }
+  Vector4_u64 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x4_u64, 64);
+
+/// 3x2 matrix of ulongs
+MANUALLY_ALIGNED_STRUCT(8) Matrix3x2_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_u64 _0_;
+  Vector2_u64 _1_;
+  Vector2_u64 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x2_u64";
+  }
+  Matrix3x2_u64() { memset(this, 0, sizeof(Matrix3x2_u64)); }
+  Matrix3x2_u64(const Matrix3x2_u64 &_o) { memcpy(this, &_o, sizeof(Matrix3x2_u64)); }
+  Matrix3x2_u64(const Vector2_u64 &__0, const Vector2_u64 &__1, const Vector2_u64 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector2_u64 &_0() const { return _0_; }
+  Vector2_u64 &mutable__0() { return _0_; }
+  const Vector2_u64 &_1() const { return _1_; }
+  Vector2_u64 &mutable__1() { return _1_; }
+  const Vector2_u64 &_2() const { return _2_; }
+  Vector2_u64 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x2_u64, 48);
+
+/// 3x3 matrix of ulongs
+MANUALLY_ALIGNED_STRUCT(8) Matrix3x3_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_u64 _0_;
+  Vector3_u64 _1_;
+  Vector3_u64 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x3_u64";
+  }
+  Matrix3x3_u64() { memset(this, 0, sizeof(Matrix3x3_u64)); }
+  Matrix3x3_u64(const Matrix3x3_u64 &_o) { memcpy(this, &_o, sizeof(Matrix3x3_u64)); }
+  Matrix3x3_u64(const Vector3_u64 &__0, const Vector3_u64 &__1, const Vector3_u64 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector3_u64 &_0() const { return _0_; }
+  Vector3_u64 &mutable__0() { return _0_; }
+  const Vector3_u64 &_1() const { return _1_; }
+  Vector3_u64 &mutable__1() { return _1_; }
+  const Vector3_u64 &_2() const { return _2_; }
+  Vector3_u64 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x3_u64, 72);
+
+/// 3x4 matrix of ulongs
+MANUALLY_ALIGNED_STRUCT(8) Matrix3x4_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_u64 _0_;
+  Vector4_u64 _1_;
+  Vector4_u64 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x4_u64";
+  }
+  Matrix3x4_u64() { memset(this, 0, sizeof(Matrix3x4_u64)); }
+  Matrix3x4_u64(const Matrix3x4_u64 &_o) { memcpy(this, &_o, sizeof(Matrix3x4_u64)); }
+  Matrix3x4_u64(const Vector4_u64 &__0, const Vector4_u64 &__1, const Vector4_u64 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector4_u64 &_0() const { return _0_; }
+  Vector4_u64 &mutable__0() { return _0_; }
+  const Vector4_u64 &_1() const { return _1_; }
+  Vector4_u64 &mutable__1() { return _1_; }
+  const Vector4_u64 &_2() const { return _2_; }
+  Vector4_u64 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x4_u64, 96);
+
+/// 4x2 matrix of ulongs
+MANUALLY_ALIGNED_STRUCT(8) Matrix4x2_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_u64 _0_;
+  Vector2_u64 _1_;
+  Vector2_u64 _2_;
+  Vector2_u64 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x2_u64";
+  }
+  Matrix4x2_u64() { memset(this, 0, sizeof(Matrix4x2_u64)); }
+  Matrix4x2_u64(const Matrix4x2_u64 &_o) { memcpy(this, &_o, sizeof(Matrix4x2_u64)); }
+  Matrix4x2_u64(const Vector2_u64 &__0, const Vector2_u64 &__1, const Vector2_u64 &__2, const Vector2_u64 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector2_u64 &_0() const { return _0_; }
+  Vector2_u64 &mutable__0() { return _0_; }
+  const Vector2_u64 &_1() const { return _1_; }
+  Vector2_u64 &mutable__1() { return _1_; }
+  const Vector2_u64 &_2() const { return _2_; }
+  Vector2_u64 &mutable__2() { return _2_; }
+  const Vector2_u64 &_3() const { return _3_; }
+  Vector2_u64 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x2_u64, 64);
+
+/// 4x3 matrix of ulongs
+MANUALLY_ALIGNED_STRUCT(8) Matrix4x3_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_u64 _0_;
+  Vector3_u64 _1_;
+  Vector3_u64 _2_;
+  Vector3_u64 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x3_u64";
+  }
+  Matrix4x3_u64() { memset(this, 0, sizeof(Matrix4x3_u64)); }
+  Matrix4x3_u64(const Matrix4x3_u64 &_o) { memcpy(this, &_o, sizeof(Matrix4x3_u64)); }
+  Matrix4x3_u64(const Vector3_u64 &__0, const Vector3_u64 &__1, const Vector3_u64 &__2, const Vector3_u64 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector3_u64 &_0() const { return _0_; }
+  Vector3_u64 &mutable__0() { return _0_; }
+  const Vector3_u64 &_1() const { return _1_; }
+  Vector3_u64 &mutable__1() { return _1_; }
+  const Vector3_u64 &_2() const { return _2_; }
+  Vector3_u64 &mutable__2() { return _2_; }
+  const Vector3_u64 &_3() const { return _3_; }
+  Vector3_u64 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x3_u64, 96);
+
+/// 4x4 matrix of ulongs
+MANUALLY_ALIGNED_STRUCT(8) Matrix4x4_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_u64 _0_;
+  Vector4_u64 _1_;
+  Vector4_u64 _2_;
+  Vector4_u64 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x4_u64";
+  }
+  Matrix4x4_u64() { memset(this, 0, sizeof(Matrix4x4_u64)); }
+  Matrix4x4_u64(const Matrix4x4_u64 &_o) { memcpy(this, &_o, sizeof(Matrix4x4_u64)); }
+  Matrix4x4_u64(const Vector4_u64 &__0, const Vector4_u64 &__1, const Vector4_u64 &__2, const Vector4_u64 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector4_u64 &_0() const { return _0_; }
+  Vector4_u64 &mutable__0() { return _0_; }
+  const Vector4_u64 &_1() const { return _1_; }
+  Vector4_u64 &mutable__1() { return _1_; }
+  const Vector4_u64 &_2() const { return _2_; }
+  Vector4_u64 &mutable__2() { return _2_; }
+  const Vector4_u64 &_3() const { return _3_; }
+  Vector4_u64 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x4_u64, 128);
+
+/// RGB color of ulong components
+MANUALLY_ALIGNED_STRUCT(8) ColorRGB_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint64_t r_;
+  uint64_t g_;
+  uint64_t b_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGB_u64";
+  }
+  ColorRGB_u64() { memset(this, 0, sizeof(ColorRGB_u64)); }
+  ColorRGB_u64(const ColorRGB_u64 &_o) { memcpy(this, &_o, sizeof(ColorRGB_u64)); }
+  ColorRGB_u64(uint64_t _r, uint64_t _g, uint64_t _b)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)) { }
+
+  uint64_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(uint64_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  uint64_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(uint64_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  uint64_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(uint64_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+};
+STRUCT_END(ColorRGB_u64, 24);
+
+/// RGBA color of ulong components
+MANUALLY_ALIGNED_STRUCT(8) ColorRGBA_u64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  uint64_t r_;
+  uint64_t g_;
+  uint64_t b_;
+  uint64_t a_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGBA_u64";
+  }
+  ColorRGBA_u64() { memset(this, 0, sizeof(ColorRGBA_u64)); }
+  ColorRGBA_u64(const ColorRGBA_u64 &_o) { memcpy(this, &_o, sizeof(ColorRGBA_u64)); }
+  ColorRGBA_u64(uint64_t _r, uint64_t _g, uint64_t _b, uint64_t _a)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)), a_(flatbuffers::EndianScalar(_a)) { }
+
+  uint64_t r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(uint64_t _r) { flatbuffers::WriteScalar(&r_, _r); }
+  uint64_t g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(uint64_t _g) { flatbuffers::WriteScalar(&g_, _g); }
+  uint64_t b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(uint64_t _b) { flatbuffers::WriteScalar(&b_, _b); }
+  uint64_t a() const { return flatbuffers::EndianScalar(a_); }
+  void mutate_a(uint64_t _a) { flatbuffers::WriteScalar(&a_, _a); }
+};
+STRUCT_END(ColorRGBA_u64, 32);
+
+///-----------------------------------------------------------------------------
+///-----------------------------------------------------------------------------
+/// double types
+/// 2D vector of doubles
+MANUALLY_ALIGNED_STRUCT(8) Vector2_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  double x_;
+  double y_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector2_f64";
+  }
+  Vector2_f64() { memset(this, 0, sizeof(Vector2_f64)); }
+  Vector2_f64(const Vector2_f64 &_o) { memcpy(this, &_o, sizeof(Vector2_f64)); }
+  Vector2_f64(double _x, double _y)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)) { }
+
+  double x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(double _x) { flatbuffers::WriteScalar(&x_, _x); }
+  double y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(double _y) { flatbuffers::WriteScalar(&y_, _y); }
+};
+STRUCT_END(Vector2_f64, 16);
+
+/// 3D vector of doubles
+MANUALLY_ALIGNED_STRUCT(8) Vector3_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  double x_;
+  double y_;
+  double z_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector3_f64";
+  }
+  Vector3_f64() { memset(this, 0, sizeof(Vector3_f64)); }
+  Vector3_f64(const Vector3_f64 &_o) { memcpy(this, &_o, sizeof(Vector3_f64)); }
+  Vector3_f64(double _x, double _y, double _z)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)) { }
+
+  double x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(double _x) { flatbuffers::WriteScalar(&x_, _x); }
+  double y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(double _y) { flatbuffers::WriteScalar(&y_, _y); }
+  double z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(double _z) { flatbuffers::WriteScalar(&z_, _z); }
+};
+STRUCT_END(Vector3_f64, 24);
+
+/// 4D vector of doubles (homogenous coordinates)
+MANUALLY_ALIGNED_STRUCT(8) Vector4_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  double x_;
+  double y_;
+  double z_;
+  double w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Vector4_f64";
+  }
+  Vector4_f64() { memset(this, 0, sizeof(Vector4_f64)); }
+  Vector4_f64(const Vector4_f64 &_o) { memcpy(this, &_o, sizeof(Vector4_f64)); }
+  Vector4_f64(double _x, double _y, double _z, double _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  double x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(double _x) { flatbuffers::WriteScalar(&x_, _x); }
+  double y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(double _y) { flatbuffers::WriteScalar(&y_, _y); }
+  double z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(double _z) { flatbuffers::WriteScalar(&z_, _z); }
+  double w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(double _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Vector4_f64, 32);
+
+/// 4D hypercomplex of doubles
+MANUALLY_ALIGNED_STRUCT(8) Quaternion_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  double x_;
+  double y_;
+  double z_;
+  double w_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Quaternion_f64";
+  }
+  Quaternion_f64() { memset(this, 0, sizeof(Quaternion_f64)); }
+  Quaternion_f64(const Quaternion_f64 &_o) { memcpy(this, &_o, sizeof(Quaternion_f64)); }
+  Quaternion_f64(double _x, double _y, double _z, double _w)
+    : x_(flatbuffers::EndianScalar(_x)), y_(flatbuffers::EndianScalar(_y)), z_(flatbuffers::EndianScalar(_z)), w_(flatbuffers::EndianScalar(_w)) { }
+
+  double x() const { return flatbuffers::EndianScalar(x_); }
+  void mutate_x(double _x) { flatbuffers::WriteScalar(&x_, _x); }
+  double y() const { return flatbuffers::EndianScalar(y_); }
+  void mutate_y(double _y) { flatbuffers::WriteScalar(&y_, _y); }
+  double z() const { return flatbuffers::EndianScalar(z_); }
+  void mutate_z(double _z) { flatbuffers::WriteScalar(&z_, _z); }
+  double w() const { return flatbuffers::EndianScalar(w_); }
+  void mutate_w(double _w) { flatbuffers::WriteScalar(&w_, _w); }
+};
+STRUCT_END(Quaternion_f64, 32);
+
+/// 2x2 matrix of doubles
+MANUALLY_ALIGNED_STRUCT(8) Matrix2x2_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_f64 _0_;
+  Vector2_f64 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x2_f64";
+  }
+  Matrix2x2_f64() { memset(this, 0, sizeof(Matrix2x2_f64)); }
+  Matrix2x2_f64(const Matrix2x2_f64 &_o) { memcpy(this, &_o, sizeof(Matrix2x2_f64)); }
+  Matrix2x2_f64(const Vector2_f64 &__0, const Vector2_f64 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector2_f64 &_0() const { return _0_; }
+  Vector2_f64 &mutable__0() { return _0_; }
+  const Vector2_f64 &_1() const { return _1_; }
+  Vector2_f64 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x2_f64, 32);
+
+/// 2x3 matrix of doubles
+MANUALLY_ALIGNED_STRUCT(8) Matrix2x3_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_f64 _0_;
+  Vector3_f64 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x3_f64";
+  }
+  Matrix2x3_f64() { memset(this, 0, sizeof(Matrix2x3_f64)); }
+  Matrix2x3_f64(const Matrix2x3_f64 &_o) { memcpy(this, &_o, sizeof(Matrix2x3_f64)); }
+  Matrix2x3_f64(const Vector3_f64 &__0, const Vector3_f64 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector3_f64 &_0() const { return _0_; }
+  Vector3_f64 &mutable__0() { return _0_; }
+  const Vector3_f64 &_1() const { return _1_; }
+  Vector3_f64 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x3_f64, 48);
+
+/// 2x4 matrix of doubles
+MANUALLY_ALIGNED_STRUCT(8) Matrix2x4_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_f64 _0_;
+  Vector4_f64 _1_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix2x4_f64";
+  }
+  Matrix2x4_f64() { memset(this, 0, sizeof(Matrix2x4_f64)); }
+  Matrix2x4_f64(const Matrix2x4_f64 &_o) { memcpy(this, &_o, sizeof(Matrix2x4_f64)); }
+  Matrix2x4_f64(const Vector4_f64 &__0, const Vector4_f64 &__1)
+    : _0_(__0), _1_(__1) { }
+
+  const Vector4_f64 &_0() const { return _0_; }
+  Vector4_f64 &mutable__0() { return _0_; }
+  const Vector4_f64 &_1() const { return _1_; }
+  Vector4_f64 &mutable__1() { return _1_; }
+};
+STRUCT_END(Matrix2x4_f64, 64);
+
+/// 3x2 matrix of doubles
+MANUALLY_ALIGNED_STRUCT(8) Matrix3x2_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_f64 _0_;
+  Vector2_f64 _1_;
+  Vector2_f64 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x2_f64";
+  }
+  Matrix3x2_f64() { memset(this, 0, sizeof(Matrix3x2_f64)); }
+  Matrix3x2_f64(const Matrix3x2_f64 &_o) { memcpy(this, &_o, sizeof(Matrix3x2_f64)); }
+  Matrix3x2_f64(const Vector2_f64 &__0, const Vector2_f64 &__1, const Vector2_f64 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector2_f64 &_0() const { return _0_; }
+  Vector2_f64 &mutable__0() { return _0_; }
+  const Vector2_f64 &_1() const { return _1_; }
+  Vector2_f64 &mutable__1() { return _1_; }
+  const Vector2_f64 &_2() const { return _2_; }
+  Vector2_f64 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x2_f64, 48);
+
+/// 3x3 matrix of doubles
+MANUALLY_ALIGNED_STRUCT(8) Matrix3x3_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_f64 _0_;
+  Vector3_f64 _1_;
+  Vector3_f64 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x3_f64";
+  }
+  Matrix3x3_f64() { memset(this, 0, sizeof(Matrix3x3_f64)); }
+  Matrix3x3_f64(const Matrix3x3_f64 &_o) { memcpy(this, &_o, sizeof(Matrix3x3_f64)); }
+  Matrix3x3_f64(const Vector3_f64 &__0, const Vector3_f64 &__1, const Vector3_f64 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector3_f64 &_0() const { return _0_; }
+  Vector3_f64 &mutable__0() { return _0_; }
+  const Vector3_f64 &_1() const { return _1_; }
+  Vector3_f64 &mutable__1() { return _1_; }
+  const Vector3_f64 &_2() const { return _2_; }
+  Vector3_f64 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x3_f64, 72);
+
+/// 3x4 matrix of doubles
+MANUALLY_ALIGNED_STRUCT(8) Matrix3x4_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_f64 _0_;
+  Vector4_f64 _1_;
+  Vector4_f64 _2_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix3x4_f64";
+  }
+  Matrix3x4_f64() { memset(this, 0, sizeof(Matrix3x4_f64)); }
+  Matrix3x4_f64(const Matrix3x4_f64 &_o) { memcpy(this, &_o, sizeof(Matrix3x4_f64)); }
+  Matrix3x4_f64(const Vector4_f64 &__0, const Vector4_f64 &__1, const Vector4_f64 &__2)
+    : _0_(__0), _1_(__1), _2_(__2) { }
+
+  const Vector4_f64 &_0() const { return _0_; }
+  Vector4_f64 &mutable__0() { return _0_; }
+  const Vector4_f64 &_1() const { return _1_; }
+  Vector4_f64 &mutable__1() { return _1_; }
+  const Vector4_f64 &_2() const { return _2_; }
+  Vector4_f64 &mutable__2() { return _2_; }
+};
+STRUCT_END(Matrix3x4_f64, 96);
+
+/// 4x2 matrix of doubles
+MANUALLY_ALIGNED_STRUCT(8) Matrix4x2_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector2_f64 _0_;
+  Vector2_f64 _1_;
+  Vector2_f64 _2_;
+  Vector2_f64 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x2_f64";
+  }
+  Matrix4x2_f64() { memset(this, 0, sizeof(Matrix4x2_f64)); }
+  Matrix4x2_f64(const Matrix4x2_f64 &_o) { memcpy(this, &_o, sizeof(Matrix4x2_f64)); }
+  Matrix4x2_f64(const Vector2_f64 &__0, const Vector2_f64 &__1, const Vector2_f64 &__2, const Vector2_f64 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector2_f64 &_0() const { return _0_; }
+  Vector2_f64 &mutable__0() { return _0_; }
+  const Vector2_f64 &_1() const { return _1_; }
+  Vector2_f64 &mutable__1() { return _1_; }
+  const Vector2_f64 &_2() const { return _2_; }
+  Vector2_f64 &mutable__2() { return _2_; }
+  const Vector2_f64 &_3() const { return _3_; }
+  Vector2_f64 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x2_f64, 64);
+
+/// 4x3 matrix of doubles
+MANUALLY_ALIGNED_STRUCT(8) Matrix4x3_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector3_f64 _0_;
+  Vector3_f64 _1_;
+  Vector3_f64 _2_;
+  Vector3_f64 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x3_f64";
+  }
+  Matrix4x3_f64() { memset(this, 0, sizeof(Matrix4x3_f64)); }
+  Matrix4x3_f64(const Matrix4x3_f64 &_o) { memcpy(this, &_o, sizeof(Matrix4x3_f64)); }
+  Matrix4x3_f64(const Vector3_f64 &__0, const Vector3_f64 &__1, const Vector3_f64 &__2, const Vector3_f64 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector3_f64 &_0() const { return _0_; }
+  Vector3_f64 &mutable__0() { return _0_; }
+  const Vector3_f64 &_1() const { return _1_; }
+  Vector3_f64 &mutable__1() { return _1_; }
+  const Vector3_f64 &_2() const { return _2_; }
+  Vector3_f64 &mutable__2() { return _2_; }
+  const Vector3_f64 &_3() const { return _3_; }
+  Vector3_f64 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x3_f64, 96);
+
+/// 4x4 matrix of doubles
+MANUALLY_ALIGNED_STRUCT(8) Matrix4x4_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  Vector4_f64 _0_;
+  Vector4_f64 _1_;
+  Vector4_f64 _2_;
+  Vector4_f64 _3_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.Matrix4x4_f64";
+  }
+  Matrix4x4_f64() { memset(this, 0, sizeof(Matrix4x4_f64)); }
+  Matrix4x4_f64(const Matrix4x4_f64 &_o) { memcpy(this, &_o, sizeof(Matrix4x4_f64)); }
+  Matrix4x4_f64(const Vector4_f64 &__0, const Vector4_f64 &__1, const Vector4_f64 &__2, const Vector4_f64 &__3)
+    : _0_(__0), _1_(__1), _2_(__2), _3_(__3) { }
+
+  const Vector4_f64 &_0() const { return _0_; }
+  Vector4_f64 &mutable__0() { return _0_; }
+  const Vector4_f64 &_1() const { return _1_; }
+  Vector4_f64 &mutable__1() { return _1_; }
+  const Vector4_f64 &_2() const { return _2_; }
+  Vector4_f64 &mutable__2() { return _2_; }
+  const Vector4_f64 &_3() const { return _3_; }
+  Vector4_f64 &mutable__3() { return _3_; }
+};
+STRUCT_END(Matrix4x4_f64, 128);
+
+/// RGB color of double components
+MANUALLY_ALIGNED_STRUCT(8) ColorRGB_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  double r_;
+  double g_;
+  double b_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGB_f64";
+  }
+  ColorRGB_f64() { memset(this, 0, sizeof(ColorRGB_f64)); }
+  ColorRGB_f64(const ColorRGB_f64 &_o) { memcpy(this, &_o, sizeof(ColorRGB_f64)); }
+  ColorRGB_f64(double _r, double _g, double _b)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)) { }
+
+  double r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(double _r) { flatbuffers::WriteScalar(&r_, _r); }
+  double g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(double _g) { flatbuffers::WriteScalar(&g_, _g); }
+  double b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(double _b) { flatbuffers::WriteScalar(&b_, _b); }
+};
+STRUCT_END(ColorRGB_f64, 24);
+
+/// RGBA color of double components
+MANUALLY_ALIGNED_STRUCT(8) ColorRGBA_f64 FLATBUFFERS_FINAL_CLASS {
+ private:
+  double r_;
+  double g_;
+  double b_;
+  double a_;
+
+ public:
+  static FLATBUFFERS_CONSTEXPR const char *GetFullyQualifiedName() {
+    return "flatmath.ColorRGBA_f64";
+  }
+  ColorRGBA_f64() { memset(this, 0, sizeof(ColorRGBA_f64)); }
+  ColorRGBA_f64(const ColorRGBA_f64 &_o) { memcpy(this, &_o, sizeof(ColorRGBA_f64)); }
+  ColorRGBA_f64(double _r, double _g, double _b, double _a)
+    : r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b)), a_(flatbuffers::EndianScalar(_a)) { }
+
+  double r() const { return flatbuffers::EndianScalar(r_); }
+  void mutate_r(double _r) { flatbuffers::WriteScalar(&r_, _r); }
+  double g() const { return flatbuffers::EndianScalar(g_); }
+  void mutate_g(double _g) { flatbuffers::WriteScalar(&g_, _g); }
+  double b() const { return flatbuffers::EndianScalar(b_); }
+  void mutate_b(double _b) { flatbuffers::WriteScalar(&b_, _b); }
+  double a() const { return flatbuffers::EndianScalar(a_); }
+  void mutate_a(double _a) { flatbuffers::WriteScalar(&a_, _a); }
+};
+STRUCT_END(ColorRGBA_f64, 32);
+
+}  // namespace flatmath
+
+#endif  // FLATBUFFERS_GENERATED_FLATMATH_FLATMATH_H_
