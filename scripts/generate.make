@@ -88,5 +88,6 @@ gen_flatmath_flatbuffers: \
 	prn_flatmath_verbose \
 	gen_flatbuffer_flatmath_headers \
 	gen_flatbuffer_flatmath_schema_headers \
+	fmt_flatbuffer_flatmath_headers \
 	gen_flatbuffer_flatmath_go \
 	;
