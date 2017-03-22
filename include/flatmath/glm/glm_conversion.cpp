@@ -1,6 +1,6 @@
 #include "glm_conversion.hpp"
 #include "../mutable/flatmath_generated.h"
-#include "typedefs.hpp"
+#include "../typedefs.hpp"
 
 #define KHUTILS_ASSERTION_INLINE
 #include <khutils/assertion.hpp>
