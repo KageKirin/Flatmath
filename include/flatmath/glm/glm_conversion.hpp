@@ -22,8 +22,6 @@ namespace flatmath
 	glm::mat4x2	to_glm(const Matrix4x2_f32&);
 	glm::mat4x3	to_glm(const Matrix4x3_f32&);
 	glm::mat4x4	to_glm(const Matrix4x4_f32&);
-	glm::vec3	  to_glm(const ColorRGB_f32&);
-	glm::vec4	  to_glm(const ColorRGBA_f32&);
 	glm::ivec2	 to_glm(const Vector2_i32&);
 	glm::ivec3	 to_glm(const Vector3_i32&);
 	glm::ivec4	 to_glm(const Vector4_i32&);
@@ -37,8 +35,6 @@ namespace flatmath
 	glm::imat4x2   to_glm(const Matrix4x2_i32&);
 	glm::imat4x3   to_glm(const Matrix4x3_i32&);
 	glm::imat4x4   to_glm(const Matrix4x4_i32&);
-	glm::ivec3	 to_glm(const ColorRGB_i32&);
-	glm::ivec4	 to_glm(const ColorRGBA_i32&);
 	glm::uvec2	 to_glm(const Vector2_u32&);
 	glm::uvec3	 to_glm(const Vector3_u32&);
 	glm::uvec4	 to_glm(const Vector4_u32&);
@@ -52,8 +48,6 @@ namespace flatmath
 	glm::umat4x2   to_glm(const Matrix4x2_u32&);
 	glm::umat4x3   to_glm(const Matrix4x3_u32&);
 	glm::umat4x4   to_glm(const Matrix4x4_u32&);
-	glm::uvec3	 to_glm(const ColorRGB_u32&);
-	glm::uvec4	 to_glm(const ColorRGBA_u32&);
 	glm::i16vec2   to_glm(const Vector2_i16&);
 	glm::i16vec3   to_glm(const Vector3_i16&);
 	glm::i16vec4   to_glm(const Vector4_i16&);
@@ -67,8 +61,6 @@ namespace flatmath
 	glm::i16mat4x2 to_glm(const Matrix4x2_i16&);
 	glm::i16mat4x3 to_glm(const Matrix4x3_i16&);
 	glm::i16mat4x4 to_glm(const Matrix4x4_i16&);
-	glm::i16vec3   to_glm(const ColorRGB_i16&);
-	glm::i16vec4   to_glm(const ColorRGBA_i16&);
 	glm::u16vec2   to_glm(const Vector2_u16&);
 	glm::u16vec3   to_glm(const Vector3_u16&);
 	glm::u16vec4   to_glm(const Vector4_u16&);
@@ -82,8 +74,6 @@ namespace flatmath
 	glm::u16mat4x2 to_glm(const Matrix4x2_u16&);
 	glm::u16mat4x3 to_glm(const Matrix4x3_u16&);
 	glm::u16mat4x4 to_glm(const Matrix4x4_u16&);
-	glm::u16vec3   to_glm(const ColorRGB_u16&);
-	glm::u16vec4   to_glm(const ColorRGBA_u16&);
 	glm::i8vec2	to_glm(const Vector2_i8&);
 	glm::i8vec3	to_glm(const Vector3_i8&);
 	glm::i8vec4	to_glm(const Vector4_i8&);
@@ -97,8 +87,6 @@ namespace flatmath
 	glm::i8mat4x2  to_glm(const Matrix4x2_i8&);
 	glm::i8mat4x3  to_glm(const Matrix4x3_i8&);
 	glm::i8mat4x4  to_glm(const Matrix4x4_i8&);
-	glm::i8vec3	to_glm(const ColorRGB_i8&);
-	glm::i8vec4	to_glm(const ColorRGBA_i8&);
 	glm::u8vec2	to_glm(const Vector2_u8&);
 	glm::u8vec3	to_glm(const Vector3_u8&);
 	glm::u8vec4	to_glm(const Vector4_u8&);
@@ -112,8 +100,6 @@ namespace flatmath
 	glm::u8mat4x2  to_glm(const Matrix4x2_u8&);
 	glm::u8mat4x3  to_glm(const Matrix4x3_u8&);
 	glm::u8mat4x4  to_glm(const Matrix4x4_u8&);
-	glm::u8vec3	to_glm(const ColorRGB_u8&);
-	glm::u8vec4	to_glm(const ColorRGBA_u8&);
 	glm::i64vec2   to_glm(const Vector2_i64&);
 	glm::i64vec3   to_glm(const Vector3_i64&);
 	glm::i64vec4   to_glm(const Vector4_i64&);
@@ -127,8 +113,6 @@ namespace flatmath
 	glm::i64mat4x2 to_glm(const Matrix4x2_i64&);
 	glm::i64mat4x3 to_glm(const Matrix4x3_i64&);
 	glm::i64mat4x4 to_glm(const Matrix4x4_i64&);
-	glm::i64vec3   to_glm(const ColorRGB_i64&);
-	glm::i64vec4   to_glm(const ColorRGBA_i64&);
 	glm::u64vec2   to_glm(const Vector2_u64&);
 	glm::u64vec3   to_glm(const Vector3_u64&);
 	glm::u64vec4   to_glm(const Vector4_u64&);
@@ -142,8 +126,6 @@ namespace flatmath
 	glm::u64mat4x2 to_glm(const Matrix4x2_u64&);
 	glm::u64mat4x3 to_glm(const Matrix4x3_u64&);
 	glm::u64mat4x4 to_glm(const Matrix4x4_u64&);
-	glm::u64vec3   to_glm(const ColorRGB_u64&);
-	glm::u64vec4   to_glm(const ColorRGBA_u64&);
 	glm::dvec2	 to_glm(const Vector2_f64&);
 	glm::dvec3	 to_glm(const Vector3_f64&);
 	glm::dvec4	 to_glm(const Vector4_f64&);
@@ -157,8 +139,6 @@ namespace flatmath
 	glm::dmat4x2   to_glm(const Matrix4x2_f64&);
 	glm::dmat4x3   to_glm(const Matrix4x3_f64&);
 	glm::dmat4x4   to_glm(const Matrix4x4_f64&);
-	glm::dvec3	 to_glm(const ColorRGB_f64&);
-	glm::dvec4	 to_glm(const ColorRGBA_f64&);
 
 
 	glm::vec2	  to_glm(const Vector2_f32*);
@@ -174,8 +154,6 @@ namespace flatmath
 	glm::mat4x2	to_glm(const Matrix4x2_f32*);
 	glm::mat4x3	to_glm(const Matrix4x3_f32*);
 	glm::mat4x4	to_glm(const Matrix4x4_f32*);
-	glm::vec3	  to_glm(const ColorRGB_f32*);
-	glm::vec4	  to_glm(const ColorRGBA_f32*);
 	glm::ivec2	 to_glm(const Vector2_i32*);
 	glm::ivec3	 to_glm(const Vector3_i32*);
 	glm::ivec4	 to_glm(const Vector4_i32*);
@@ -189,8 +167,6 @@ namespace flatmath
 	glm::imat4x2   to_glm(const Matrix4x2_i32*);
 	glm::imat4x3   to_glm(const Matrix4x3_i32*);
 	glm::imat4x4   to_glm(const Matrix4x4_i32*);
-	glm::ivec3	 to_glm(const ColorRGB_i32*);
-	glm::ivec4	 to_glm(const ColorRGBA_i32*);
 	glm::uvec2	 to_glm(const Vector2_u32*);
 	glm::uvec3	 to_glm(const Vector3_u32*);
 	glm::uvec4	 to_glm(const Vector4_u32*);
@@ -204,8 +180,6 @@ namespace flatmath
 	glm::umat4x2   to_glm(const Matrix4x2_u32*);
 	glm::umat4x3   to_glm(const Matrix4x3_u32*);
 	glm::umat4x4   to_glm(const Matrix4x4_u32*);
-	glm::uvec3	 to_glm(const ColorRGB_u32*);
-	glm::uvec4	 to_glm(const ColorRGBA_u32*);
 	glm::i16vec2   to_glm(const Vector2_i16*);
 	glm::i16vec3   to_glm(const Vector3_i16*);
 	glm::i16vec4   to_glm(const Vector4_i16*);
@@ -219,8 +193,6 @@ namespace flatmath
 	glm::i16mat4x2 to_glm(const Matrix4x2_i16*);
 	glm::i16mat4x3 to_glm(const Matrix4x3_i16*);
 	glm::i16mat4x4 to_glm(const Matrix4x4_i16*);
-	glm::i16vec3   to_glm(const ColorRGB_i16*);
-	glm::i16vec4   to_glm(const ColorRGBA_i16*);
 	glm::u16vec2   to_glm(const Vector2_u16*);
 	glm::u16vec3   to_glm(const Vector3_u16*);
 	glm::u16vec4   to_glm(const Vector4_u16*);
@@ -234,8 +206,6 @@ namespace flatmath
 	glm::u16mat4x2 to_glm(const Matrix4x2_u16*);
 	glm::u16mat4x3 to_glm(const Matrix4x3_u16*);
 	glm::u16mat4x4 to_glm(const Matrix4x4_u16*);
-	glm::u16vec3   to_glm(const ColorRGB_u16*);
-	glm::u16vec4   to_glm(const ColorRGBA_u16*);
 	glm::i8vec2	to_glm(const Vector2_i8*);
 	glm::i8vec3	to_glm(const Vector3_i8*);
 	glm::i8vec4	to_glm(const Vector4_i8*);
@@ -249,8 +219,6 @@ namespace flatmath
 	glm::i8mat4x2  to_glm(const Matrix4x2_i8*);
 	glm::i8mat4x3  to_glm(const Matrix4x3_i8*);
 	glm::i8mat4x4  to_glm(const Matrix4x4_i8*);
-	glm::i8vec3	to_glm(const ColorRGB_i8*);
-	glm::i8vec4	to_glm(const ColorRGBA_i8*);
 	glm::u8vec2	to_glm(const Vector2_u8*);
 	glm::u8vec3	to_glm(const Vector3_u8*);
 	glm::u8vec4	to_glm(const Vector4_u8*);
@@ -264,8 +232,6 @@ namespace flatmath
 	glm::u8mat4x2  to_glm(const Matrix4x2_u8*);
 	glm::u8mat4x3  to_glm(const Matrix4x3_u8*);
 	glm::u8mat4x4  to_glm(const Matrix4x4_u8*);
-	glm::u8vec3	to_glm(const ColorRGB_u8*);
-	glm::u8vec4	to_glm(const ColorRGBA_u8*);
 	glm::i64vec2   to_glm(const Vector2_i64*);
 	glm::i64vec3   to_glm(const Vector3_i64*);
 	glm::i64vec4   to_glm(const Vector4_i64*);
@@ -279,8 +245,6 @@ namespace flatmath
 	glm::i64mat4x2 to_glm(const Matrix4x2_i64*);
 	glm::i64mat4x3 to_glm(const Matrix4x3_i64*);
 	glm::i64mat4x4 to_glm(const Matrix4x4_i64*);
-	glm::i64vec3   to_glm(const ColorRGB_i64*);
-	glm::i64vec4   to_glm(const ColorRGBA_i64*);
 	glm::u64vec2   to_glm(const Vector2_u64*);
 	glm::u64vec3   to_glm(const Vector3_u64*);
 	glm::u64vec4   to_glm(const Vector4_u64*);
@@ -294,8 +258,6 @@ namespace flatmath
 	glm::u64mat4x2 to_glm(const Matrix4x2_u64*);
 	glm::u64mat4x3 to_glm(const Matrix4x3_u64*);
 	glm::u64mat4x4 to_glm(const Matrix4x4_u64*);
-	glm::u64vec3   to_glm(const ColorRGB_u64*);
-	glm::u64vec4   to_glm(const ColorRGBA_u64*);
 	glm::dvec2	 to_glm(const Vector2_f64*);
 	glm::dvec3	 to_glm(const Vector3_f64*);
 	glm::dvec4	 to_glm(const Vector4_f64*);
@@ -309,8 +271,6 @@ namespace flatmath
 	glm::dmat4x2   to_glm(const Matrix4x2_f64*);
 	glm::dmat4x3   to_glm(const Matrix4x3_f64*);
 	glm::dmat4x4   to_glm(const Matrix4x4_f64*);
-	glm::dvec3	 to_glm(const ColorRGB_f64*);
-	glm::dvec4	 to_glm(const ColorRGBA_f64*);
 
 
 	Vector2_f32	from_glm(const glm::vec2&);
@@ -326,8 +286,6 @@ namespace flatmath
 	Matrix4x2_f32  from_glm(const glm::mat4x2&);
 	Matrix4x3_f32  from_glm(const glm::mat4x3&);
 	Matrix4x4_f32  from_glm(const glm::mat4x4&);
-	ColorRGB_f32   color_from_glm(const glm::vec3&);
-	ColorRGBA_f32  color_from_glm(const glm::vec4&);
 	Vector2_i32	from_glm(const glm::ivec2&);
 	Vector3_i32	from_glm(const glm::ivec3&);
 	Vector4_i32	from_glm(const glm::ivec4&);
@@ -341,8 +299,6 @@ namespace flatmath
 	Matrix4x2_i32  from_glm(const glm::imat4x2&);
 	Matrix4x3_i32  from_glm(const glm::imat4x3&);
 	Matrix4x4_i32  from_glm(const glm::imat4x4&);
-	ColorRGB_i32   color_from_glm(const glm::ivec3&);
-	ColorRGBA_i32  color_from_glm(const glm::ivec4&);
 	Vector2_u32	from_glm(const glm::uvec2&);
 	Vector3_u32	from_glm(const glm::uvec3&);
 	Vector4_u32	from_glm(const glm::uvec4&);
@@ -356,8 +312,6 @@ namespace flatmath
 	Matrix4x2_u32  from_glm(const glm::umat4x2&);
 	Matrix4x3_u32  from_glm(const glm::umat4x3&);
 	Matrix4x4_u32  from_glm(const glm::umat4x4&);
-	ColorRGB_u32   color_from_glm(const glm::uvec3&);
-	ColorRGBA_u32  color_from_glm(const glm::uvec4&);
 	Vector2_i16	from_glm(const glm::i16vec2&);
 	Vector3_i16	from_glm(const glm::i16vec3&);
 	Vector4_i16	from_glm(const glm::i16vec4&);
@@ -371,8 +325,6 @@ namespace flatmath
 	Matrix4x2_i16  from_glm(const glm::i16mat4x2&);
 	Matrix4x3_i16  from_glm(const glm::i16mat4x3&);
 	Matrix4x4_i16  from_glm(const glm::i16mat4x4&);
-	ColorRGB_i16   color_from_glm(const glm::i16vec3&);
-	ColorRGBA_i16  color_from_glm(const glm::i16vec4&);
 	Vector2_u16	from_glm(const glm::u16vec2&);
 	Vector3_u16	from_glm(const glm::u16vec3&);
 	Vector4_u16	from_glm(const glm::u16vec4&);
@@ -386,8 +338,6 @@ namespace flatmath
 	Matrix4x2_u16  from_glm(const glm::u16mat4x2&);
 	Matrix4x3_u16  from_glm(const glm::u16mat4x3&);
 	Matrix4x4_u16  from_glm(const glm::u16mat4x4&);
-	ColorRGB_u16   color_from_glm(const glm::u16vec3&);
-	ColorRGBA_u16  color_from_glm(const glm::u16vec4&);
 	Vector2_i8	 from_glm(const glm::i8vec2&);
 	Vector3_i8	 from_glm(const glm::i8vec3&);
 	Vector4_i8	 from_glm(const glm::i8vec4&);
@@ -401,8 +351,6 @@ namespace flatmath
 	Matrix4x2_i8   from_glm(const glm::i8mat4x2&);
 	Matrix4x3_i8   from_glm(const glm::i8mat4x3&);
 	Matrix4x4_i8   from_glm(const glm::i8mat4x4&);
-	ColorRGB_i8	color_from_glm(const glm::i8vec3&);
-	ColorRGBA_i8   color_from_glm(const glm::i8vec4&);
 	Vector2_u8	 from_glm(const glm::u8vec2&);
 	Vector3_u8	 from_glm(const glm::u8vec3&);
 	Vector4_u8	 from_glm(const glm::u8vec4&);
@@ -416,8 +364,6 @@ namespace flatmath
 	Matrix4x2_u8   from_glm(const glm::u8mat4x2&);
 	Matrix4x3_u8   from_glm(const glm::u8mat4x3&);
 	Matrix4x4_u8   from_glm(const glm::u8mat4x4&);
-	ColorRGB_u8	color_from_glm(const glm::u8vec3&);
-	ColorRGBA_u8   color_from_glm(const glm::u8vec4&);
 	Vector2_i64	from_glm(const glm::i64vec2&);
 	Vector3_i64	from_glm(const glm::i64vec3&);
 	Vector4_i64	from_glm(const glm::i64vec4&);
@@ -431,8 +377,6 @@ namespace flatmath
 	Matrix4x2_i64  from_glm(const glm::i64mat4x2&);
 	Matrix4x3_i64  from_glm(const glm::i64mat4x3&);
 	Matrix4x4_i64  from_glm(const glm::i64mat4x4&);
-	ColorRGB_i64   color_from_glm(const glm::i64vec3&);
-	ColorRGBA_i64  color_from_glm(const glm::i64vec4&);
 	Vector2_u64	from_glm(const glm::u64vec2&);
 	Vector3_u64	from_glm(const glm::u64vec3&);
 	Vector4_u64	from_glm(const glm::u64vec4&);
@@ -446,8 +390,6 @@ namespace flatmath
 	Matrix4x2_u64  from_glm(const glm::u64mat4x2&);
 	Matrix4x3_u64  from_glm(const glm::u64mat4x3&);
 	Matrix4x4_u64  from_glm(const glm::u64mat4x4&);
-	ColorRGB_u64   color_from_glm(const glm::u64vec3&);
-	ColorRGBA_u64  color_from_glm(const glm::u64vec4&);
 	Vector2_f64	from_glm(const glm::dvec2&);
 	Vector3_f64	from_glm(const glm::dvec3&);
 	Vector4_f64	from_glm(const glm::dvec4&);
@@ -461,8 +403,6 @@ namespace flatmath
 	Matrix4x2_f64  from_glm(const glm::dmat4x2&);
 	Matrix4x3_f64  from_glm(const glm::dmat4x3&);
 	Matrix4x4_f64  from_glm(const glm::dmat4x4&);
-	ColorRGB_f64   color_from_glm(const glm::dvec3&);
-	ColorRGBA_f64  color_from_glm(const glm::dvec4&);
 
 }	// namespace flatmath
 

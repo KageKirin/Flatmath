@@ -79,16 +79,6 @@ namespace flatbuffers
 		return to_glm(v);
 	}
 
-	glm::vec3 UnPack(const ColorRGB_f32& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::vec4 UnPack(const ColorRGBA_f32& v)
-	{
-		return to_glm(v);
-	}
-
 	glm::ivec2 UnPack(const Vector2_i32& v)
 	{
 		return to_glm(v);
@@ -150,16 +140,6 @@ namespace flatbuffers
 	}
 
 	glm::imat4x4 UnPack(const Matrix4x4_i32& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::ivec3 UnPack(const ColorRGB_i32& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::ivec4 UnPack(const ColorRGBA_i32& v)
 	{
 		return to_glm(v);
 	}
@@ -229,16 +209,6 @@ namespace flatbuffers
 		return to_glm(v);
 	}
 
-	glm::uvec3 UnPack(const ColorRGB_u32& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::uvec4 UnPack(const ColorRGBA_u32& v)
-	{
-		return to_glm(v);
-	}
-
 	glm::i16vec2 UnPack(const Vector2_i16& v)
 	{
 		return to_glm(v);
@@ -300,16 +270,6 @@ namespace flatbuffers
 	}
 
 	glm::i16mat4x4 UnPack(const Matrix4x4_i16& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::i16vec3 UnPack(const ColorRGB_i16& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::i16vec4 UnPack(const ColorRGBA_i16& v)
 	{
 		return to_glm(v);
 	}
@@ -379,16 +339,6 @@ namespace flatbuffers
 		return to_glm(v);
 	}
 
-	glm::u16vec3 UnPack(const ColorRGB_u16& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::u16vec4 UnPack(const ColorRGBA_u16& v)
-	{
-		return to_glm(v);
-	}
-
 	glm::i8vec2 UnPack(const Vector2_i8& v)
 	{
 		return to_glm(v);
@@ -450,16 +400,6 @@ namespace flatbuffers
 	}
 
 	glm::i8mat4x4 UnPack(const Matrix4x4_i8& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::i8vec3 UnPack(const ColorRGB_i8& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::i8vec4 UnPack(const ColorRGBA_i8& v)
 	{
 		return to_glm(v);
 	}
@@ -529,16 +469,6 @@ namespace flatbuffers
 		return to_glm(v);
 	}
 
-	glm::u8vec3 UnPack(const ColorRGB_u8& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::u8vec4 UnPack(const ColorRGBA_u8& v)
-	{
-		return to_glm(v);
-	}
-
 	glm::i64vec2 UnPack(const Vector2_i64& v)
 	{
 		return to_glm(v);
@@ -600,16 +530,6 @@ namespace flatbuffers
 	}
 
 	glm::i64mat4x4 UnPack(const Matrix4x4_i64& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::i64vec3 UnPack(const ColorRGB_i64& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::i64vec4 UnPack(const ColorRGBA_i64& v)
 	{
 		return to_glm(v);
 	}
@@ -679,16 +599,6 @@ namespace flatbuffers
 		return to_glm(v);
 	}
 
-	glm::u64vec3 UnPack(const ColorRGB_u64& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::u64vec4 UnPack(const ColorRGBA_u64& v)
-	{
-		return to_glm(v);
-	}
-
 	glm::dvec2 UnPack(const Vector2_f64& v)
 	{
 		return to_glm(v);
@@ -750,16 +660,6 @@ namespace flatbuffers
 	}
 
 	glm::dmat4x4 UnPack(const Matrix4x4_f64& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::dvec3 UnPack(const ColorRGB_f64& v)
-	{
-		return to_glm(v);
-	}
-
-	glm::dvec4 UnPack(const ColorRGBA_f64& v)
 	{
 		return to_glm(v);
 	}
@@ -830,16 +730,6 @@ namespace flatbuffers
 		return to_glm(v);
 	}
 
-	glm::vec3 UnPack(const ColorRGB_f32* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::vec4 UnPack(const ColorRGBA_f32* v)
-	{
-		return to_glm(v);
-	}
-
 	glm::ivec2 UnPack(const Vector2_i32* v)
 	{
 		return to_glm(v);
@@ -901,16 +791,6 @@ namespace flatbuffers
 	}
 
 	glm::imat4x4 UnPack(const Matrix4x4_i32* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::ivec3 UnPack(const ColorRGB_i32* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::ivec4 UnPack(const ColorRGBA_i32* v)
 	{
 		return to_glm(v);
 	}
@@ -980,16 +860,6 @@ namespace flatbuffers
 		return to_glm(v);
 	}
 
-	glm::uvec3 UnPack(const ColorRGB_u32* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::uvec4 UnPack(const ColorRGBA_u32* v)
-	{
-		return to_glm(v);
-	}
-
 	glm::i16vec2 UnPack(const Vector2_i16* v)
 	{
 		return to_glm(v);
@@ -1051,16 +921,6 @@ namespace flatbuffers
 	}
 
 	glm::i16mat4x4 UnPack(const Matrix4x4_i16* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::i16vec3 UnPack(const ColorRGB_i16* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::i16vec4 UnPack(const ColorRGBA_i16* v)
 	{
 		return to_glm(v);
 	}
@@ -1130,16 +990,6 @@ namespace flatbuffers
 		return to_glm(v);
 	}
 
-	glm::u16vec3 UnPack(const ColorRGB_u16* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::u16vec4 UnPack(const ColorRGBA_u16* v)
-	{
-		return to_glm(v);
-	}
-
 	glm::i8vec2 UnPack(const Vector2_i8* v)
 	{
 		return to_glm(v);
@@ -1201,16 +1051,6 @@ namespace flatbuffers
 	}
 
 	glm::i8mat4x4 UnPack(const Matrix4x4_i8* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::i8vec3 UnPack(const ColorRGB_i8* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::i8vec4 UnPack(const ColorRGBA_i8* v)
 	{
 		return to_glm(v);
 	}
@@ -1280,16 +1120,6 @@ namespace flatbuffers
 		return to_glm(v);
 	}
 
-	glm::u8vec3 UnPack(const ColorRGB_u8* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::u8vec4 UnPack(const ColorRGBA_u8* v)
-	{
-		return to_glm(v);
-	}
-
 	glm::i64vec2 UnPack(const Vector2_i64* v)
 	{
 		return to_glm(v);
@@ -1351,16 +1181,6 @@ namespace flatbuffers
 	}
 
 	glm::i64mat4x4 UnPack(const Matrix4x4_i64* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::i64vec3 UnPack(const ColorRGB_i64* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::i64vec4 UnPack(const ColorRGBA_i64* v)
 	{
 		return to_glm(v);
 	}
@@ -1430,16 +1250,6 @@ namespace flatbuffers
 		return to_glm(v);
 	}
 
-	glm::u64vec3 UnPack(const ColorRGB_u64* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::u64vec4 UnPack(const ColorRGBA_u64* v)
-	{
-		return to_glm(v);
-	}
-
 	glm::dvec2 UnPack(const Vector2_f64* v)
 	{
 		return to_glm(v);
@@ -1501,16 +1311,6 @@ namespace flatbuffers
 	}
 
 	glm::dmat4x4 UnPack(const Matrix4x4_f64* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::dvec3 UnPack(const ColorRGB_f64* v)
-	{
-		return to_glm(v);
-	}
-
-	glm::dvec4 UnPack(const ColorRGBA_f64* v)
 	{
 		return to_glm(v);
 	}
@@ -1581,16 +1381,6 @@ namespace flatbuffers
 		return from_glm(v);
 	}
 
-	ColorRGB_f32 Pack(const glm::vec3& v)
-	{
-		return color_from_glm(v);
-	}
-
-	ColorRGBA_f32 Pack(const glm::vec4& v)
-	{
-		return color_from_glm(v);
-	}
-
 	Vector2_i32 Pack(const glm::ivec2& v)
 	{
 		return from_glm(v);
@@ -1654,16 +1444,6 @@ namespace flatbuffers
 	Matrix4x4_i32 Pack(const glm::imat4x4& v)
 	{
 		return from_glm(v);
-	}
-
-	ColorRGB_i32 Pack(const glm::ivec3& v)
-	{
-		return color_from_glm(v);
-	}
-
-	ColorRGBA_i32 Pack(const glm::ivec4& v)
-	{
-		return color_from_glm(v);
 	}
 
 	Vector2_u32 Pack(const glm::uvec2& v)
@@ -1731,16 +1511,6 @@ namespace flatbuffers
 		return from_glm(v);
 	}
 
-	ColorRGB_u32 Pack(const glm::uvec3& v)
-	{
-		return color_from_glm(v);
-	}
-
-	ColorRGBA_u32 Pack(const glm::uvec4& v)
-	{
-		return color_from_glm(v);
-	}
-
 	Vector2_i16 Pack(const glm::i16vec2& v)
 	{
 		return from_glm(v);
@@ -1804,16 +1574,6 @@ namespace flatbuffers
 	Matrix4x4_i16 Pack(const glm::i16mat4x4& v)
 	{
 		return from_glm(v);
-	}
-
-	ColorRGB_i16 Pack(const glm::i16vec3& v)
-	{
-		return color_from_glm(v);
-	}
-
-	ColorRGBA_i16 Pack(const glm::i16vec4& v)
-	{
-		return color_from_glm(v);
 	}
 
 	Vector2_u16 Pack(const glm::u16vec2& v)
@@ -1881,16 +1641,6 @@ namespace flatbuffers
 		return from_glm(v);
 	}
 
-	ColorRGB_u16 Pack(const glm::u16vec3& v)
-	{
-		return color_from_glm(v);
-	}
-
-	ColorRGBA_u16 Pack(const glm::u16vec4& v)
-	{
-		return color_from_glm(v);
-	}
-
 	Vector2_i8 Pack(const glm::i8vec2& v)
 	{
 		return from_glm(v);
@@ -1954,16 +1704,6 @@ namespace flatbuffers
 	Matrix4x4_i8 Pack(const glm::i8mat4x4& v)
 	{
 		return from_glm(v);
-	}
-
-	ColorRGB_i8 Pack(const glm::i8vec3& v)
-	{
-		return color_from_glm(v);
-	}
-
-	ColorRGBA_i8 Pack(const glm::i8vec4& v)
-	{
-		return color_from_glm(v);
 	}
 
 	Vector2_u8 Pack(const glm::u8vec2& v)
@@ -2031,16 +1771,6 @@ namespace flatbuffers
 		return from_glm(v);
 	}
 
-	ColorRGB_u8 Pack(const glm::u8vec3& v)
-	{
-		return color_from_glm(v);
-	}
-
-	ColorRGBA_u8 Pack(const glm::u8vec4& v)
-	{
-		return color_from_glm(v);
-	}
-
 	Vector2_i64 Pack(const glm::i64vec2& v)
 	{
 		return from_glm(v);
@@ -2104,16 +1834,6 @@ namespace flatbuffers
 	Matrix4x4_i64 Pack(const glm::i64mat4x4& v)
 	{
 		return from_glm(v);
-	}
-
-	ColorRGB_i64 Pack(const glm::i64vec3& v)
-	{
-		return color_from_glm(v);
-	}
-
-	ColorRGBA_i64 Pack(const glm::i64vec4& v)
-	{
-		return color_from_glm(v);
 	}
 
 	Vector2_u64 Pack(const glm::u64vec2& v)
@@ -2181,16 +1901,6 @@ namespace flatbuffers
 		return from_glm(v);
 	}
 
-	ColorRGB_u64 Pack(const glm::u64vec3& v)
-	{
-		return color_from_glm(v);
-	}
-
-	ColorRGBA_u64 Pack(const glm::u64vec4& v)
-	{
-		return color_from_glm(v);
-	}
-
 	Vector2_f64 Pack(const glm::dvec2& v)
 	{
 		return from_glm(v);
@@ -2254,16 +1964,6 @@ namespace flatbuffers
 	Matrix4x4_f64 Pack(const glm::dmat4x4& v)
 	{
 		return from_glm(v);
-	}
-
-	ColorRGB_f64 Pack(const glm::dvec3& v)
-	{
-		return color_from_glm(v);
-	}
-
-	ColorRGBA_f64 Pack(const glm::dvec4& v)
-	{
-		return color_from_glm(v);
 	}
 
 }	// namespace flatbuffers

@@ -11,106 +11,6 @@
 namespace flatmath
 {
 
-	ColorRGB_f32 color_from_glm(const glm::vec3& v)
-	{
-		return ColorRGB_f32{v.x, v.y, v.z};
-	}
-
-	ColorRGB_f64 color_from_glm(const glm::dvec3& v)
-	{
-		return ColorRGB_f64{v.x, v.y, v.z};
-	}
-
-	ColorRGB_i16 color_from_glm(const glm::i16vec3& v)
-	{
-		return ColorRGB_i16{v.x, v.y, v.z};
-	}
-
-	ColorRGB_i32 color_from_glm(const glm::ivec3& v)
-	{
-		return ColorRGB_i32{v.x, v.y, v.z};
-	}
-
-	ColorRGB_i64 color_from_glm(const glm::i64vec3& v)
-	{
-		return ColorRGB_i64{v.x, v.y, v.z};
-	}
-
-	ColorRGB_i8 color_from_glm(const glm::i8vec3& v)
-	{
-		return ColorRGB_i8{v.x, v.y, v.z};
-	}
-
-	ColorRGB_u16 color_from_glm(const glm::u16vec3& v)
-	{
-		return ColorRGB_u16{v.x, v.y, v.z};
-	}
-
-	ColorRGB_u32 color_from_glm(const glm::uvec3& v)
-	{
-		return ColorRGB_u32{v.x, v.y, v.z};
-	}
-
-	ColorRGB_u64 color_from_glm(const glm::u64vec3& v)
-	{
-		return ColorRGB_u64{v.x, v.y, v.z};
-	}
-
-	ColorRGB_u8 color_from_glm(const glm::u8vec3& v)
-	{
-		return ColorRGB_u8{v.x, v.y, v.z};
-	}
-
-	ColorRGBA_f32 color_from_glm(const glm::vec4& v)
-	{
-		return ColorRGBA_f32{v.x, v.y, v.z, v.w};
-	}
-
-	ColorRGBA_f64 color_from_glm(const glm::dvec4& v)
-	{
-		return ColorRGBA_f64{v.x, v.y, v.z, v.w};
-	}
-
-	ColorRGBA_i16 color_from_glm(const glm::i16vec4& v)
-	{
-		return ColorRGBA_i16{v.x, v.y, v.z, v.w};
-	}
-
-	ColorRGBA_i32 color_from_glm(const glm::ivec4& v)
-	{
-		return ColorRGBA_i32{v.x, v.y, v.z, v.w};
-	}
-
-	ColorRGBA_i64 color_from_glm(const glm::i64vec4& v)
-	{
-		return ColorRGBA_i64{v.x, v.y, v.z, v.w};
-	}
-
-	ColorRGBA_i8 color_from_glm(const glm::i8vec4& v)
-	{
-		return ColorRGBA_i8{v.x, v.y, v.z, v.w};
-	}
-
-	ColorRGBA_u16 color_from_glm(const glm::u16vec4& v)
-	{
-		return ColorRGBA_u16{v.x, v.y, v.z, v.w};
-	}
-
-	ColorRGBA_u32 color_from_glm(const glm::uvec4& v)
-	{
-		return ColorRGBA_u32{v.x, v.y, v.z, v.w};
-	}
-
-	ColorRGBA_u64 color_from_glm(const glm::u64vec4& v)
-	{
-		return ColorRGBA_u64{v.x, v.y, v.z, v.w};
-	}
-
-	ColorRGBA_u8 color_from_glm(const glm::u8vec4& v)
-	{
-		return ColorRGBA_u8{v.x, v.y, v.z, v.w};
-	}
-
 	Matrix2x2_f32 from_glm(const glm::mat2x2& v)
 	{
 		return Matrix2x2_f32{from_glm(v[0]), from_glm(v[1])};
@@ -586,7 +486,7 @@ namespace flatmath
 		return Quaternion_i64{v.x, v.y, v.z, v.w};
 	}
 
-	Quaternion_i8  Vector4_i8 glm::i8quat & v)
+	Quaternion_i8 from_glm(const glm::i8quat& v)
 	{
 		return Quaternion_i8{v.x, v.y, v.z, v.w};
 	}
@@ -606,7 +506,7 @@ namespace flatmath
 		return Quaternion_u64{v.x, v.y, v.z, v.w};
 	}
 
-	Quaternion_u8  Vector4_u8 glm::u8quat & v)
+	Quaternion_u8 from_glm(const glm::u8quat& v)
 	{
 		return Quaternion_u8{v.x, v.y, v.z, v.w};
 	}
@@ -1973,17 +1873,6 @@ namespace flatmath
 		return glm::u8vec2{v.x(), v.y()};
 	}
 
-	glm::vec3 to_glm(const ColorRGB_f32* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::vec3 to_glm(const ColorRGB_f32& v)
-	{
-		return glm::vec3{v.r(), v.g(), v.b()};
-	}
-
 	glm::vec3 to_glm(const Vector3_f32* pv)
 	{
 		KHUTILS_ASSERT_PTR(pv);
@@ -1993,17 +1882,6 @@ namespace flatmath
 	glm::vec3 to_glm(const Vector3_f32& v)
 	{
 		return glm::vec3{v.x(), v.y(), v.z()};
-	}
-
-	glm::dvec3 to_glm(const ColorRGB_f64* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::dvec3 to_glm(const ColorRGB_f64& v)
-	{
-		return glm::dvec3{v.r(), v.g(), v.b()};
 	}
 
 	glm::dvec3 to_glm(const Vector3_f64* pv)
@@ -2017,17 +1895,6 @@ namespace flatmath
 		return glm::dvec3{v.x(), v.y(), v.z()};
 	}
 
-	glm::i16vec3 to_glm(const ColorRGB_i16* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::i16vec3 to_glm(const ColorRGB_i16& v)
-	{
-		return glm::i16vec3{v.r(), v.g(), v.b()};
-	}
-
 	glm::i16vec3 to_glm(const Vector3_i16* pv)
 	{
 		KHUTILS_ASSERT_PTR(pv);
@@ -2037,17 +1904,6 @@ namespace flatmath
 	glm::i16vec3 to_glm(const Vector3_i16& v)
 	{
 		return glm::i16vec3{v.x(), v.y(), v.z()};
-	}
-
-	glm::ivec3 to_glm(const ColorRGB_i32* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::ivec3 to_glm(const ColorRGB_i32& v)
-	{
-		return glm::ivec3{v.r(), v.g(), v.b()};
 	}
 
 	glm::ivec3 to_glm(const Vector3_i32* pv)
@@ -2061,17 +1917,6 @@ namespace flatmath
 		return glm::ivec3{v.x(), v.y(), v.z()};
 	}
 
-	glm::i64vec3 to_glm(const ColorRGB_i64* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::i64vec3 to_glm(const ColorRGB_i64& v)
-	{
-		return glm::i64vec3{v.r(), v.g(), v.b()};
-	}
-
 	glm::i64vec3 to_glm(const Vector3_i64* pv)
 	{
 		KHUTILS_ASSERT_PTR(pv);
@@ -2081,17 +1926,6 @@ namespace flatmath
 	glm::i64vec3 to_glm(const Vector3_i64& v)
 	{
 		return glm::i64vec3{v.x(), v.y(), v.z()};
-	}
-
-	glm::i8vec3 to_glm(const ColorRGB_i8* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::i8vec3 to_glm(const ColorRGB_i8& v)
-	{
-		return glm::i8vec3{v.r(), v.g(), v.b()};
 	}
 
 	glm::i8vec3 to_glm(const Vector3_i8* pv)
@@ -2105,17 +1939,6 @@ namespace flatmath
 		return glm::i8vec3{v.x(), v.y(), v.z()};
 	}
 
-	glm::u16vec3 to_glm(const ColorRGB_u16* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::u16vec3 to_glm(const ColorRGB_u16& v)
-	{
-		return glm::u16vec3{v.r(), v.g(), v.b()};
-	}
-
 	glm::u16vec3 to_glm(const Vector3_u16* pv)
 	{
 		KHUTILS_ASSERT_PTR(pv);
@@ -2125,17 +1948,6 @@ namespace flatmath
 	glm::u16vec3 to_glm(const Vector3_u16& v)
 	{
 		return glm::u16vec3{v.x(), v.y(), v.z()};
-	}
-
-	glm::uvec3 to_glm(const ColorRGB_u32* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::uvec3 to_glm(const ColorRGB_u32& v)
-	{
-		return glm::uvec3{v.r(), v.g(), v.b()};
 	}
 
 	glm::uvec3 to_glm(const Vector3_u32* pv)
@@ -2149,17 +1961,6 @@ namespace flatmath
 		return glm::uvec3{v.x(), v.y(), v.z()};
 	}
 
-	glm::u64vec3 to_glm(const ColorRGB_u64* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::u64vec3 to_glm(const ColorRGB_u64& v)
-	{
-		return glm::u64vec3{v.r(), v.g(), v.b()};
-	}
-
 	glm::u64vec3 to_glm(const Vector3_u64* pv)
 	{
 		KHUTILS_ASSERT_PTR(pv);
@@ -2169,17 +1970,6 @@ namespace flatmath
 	glm::u64vec3 to_glm(const Vector3_u64& v)
 	{
 		return glm::u64vec3{v.x(), v.y(), v.z()};
-	}
-
-	glm::u8vec3 to_glm(const ColorRGB_u8* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::u8vec3 to_glm(const ColorRGB_u8& v)
-	{
-		return glm::u8vec3{v.r(), v.g(), v.b()};
 	}
 
 	glm::u8vec3 to_glm(const Vector3_u8* pv)
@@ -2193,17 +1983,6 @@ namespace flatmath
 		return glm::u8vec3{v.x(), v.y(), v.z()};
 	}
 
-	glm::vec4 to_glm(const ColorRGBA_f32* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::vec4 to_glm(const ColorRGBA_f32& v)
-	{
-		return glm::vec4{v.r(), v.g(), v.b(), v.a()};
-	}
-
 	glm::vec4 to_glm(const Vector4_f32* pv)
 	{
 		KHUTILS_ASSERT_PTR(pv);
@@ -2213,17 +1992,6 @@ namespace flatmath
 	glm::vec4 to_glm(const Vector4_f32& v)
 	{
 		return glm::vec4{v.x(), v.y(), v.z(), v.w()};
-	}
-
-	glm::dvec4 to_glm(const ColorRGBA_f64* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::dvec4 to_glm(const ColorRGBA_f64& v)
-	{
-		return glm::dvec4{v.r(), v.g(), v.b(), v.a()};
 	}
 
 	glm::dvec4 to_glm(const Vector4_f64* pv)
@@ -2237,17 +2005,6 @@ namespace flatmath
 		return glm::dvec4{v.x(), v.y(), v.z(), v.w()};
 	}
 
-	glm::i16vec4 to_glm(const ColorRGBA_i16* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::i16vec4 to_glm(const ColorRGBA_i16& v)
-	{
-		return glm::i16vec4{v.r(), v.g(), v.b(), v.a()};
-	}
-
 	glm::i16vec4 to_glm(const Vector4_i16* pv)
 	{
 		KHUTILS_ASSERT_PTR(pv);
@@ -2257,17 +2014,6 @@ namespace flatmath
 	glm::i16vec4 to_glm(const Vector4_i16& v)
 	{
 		return glm::i16vec4{v.x(), v.y(), v.z(), v.w()};
-	}
-
-	glm::ivec4 to_glm(const ColorRGBA_i32* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::ivec4 to_glm(const ColorRGBA_i32& v)
-	{
-		return glm::ivec4{v.r(), v.g(), v.b(), v.a()};
 	}
 
 	glm::ivec4 to_glm(const Vector4_i32* pv)
@@ -2281,17 +2027,6 @@ namespace flatmath
 		return glm::ivec4{v.x(), v.y(), v.z(), v.w()};
 	}
 
-	glm::i64vec4 to_glm(const ColorRGBA_i64* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::i64vec4 to_glm(const ColorRGBA_i64& v)
-	{
-		return glm::i64vec4{v.r(), v.g(), v.b(), v.a()};
-	}
-
 	glm::i64vec4 to_glm(const Vector4_i64* pv)
 	{
 		KHUTILS_ASSERT_PTR(pv);
@@ -2301,17 +2036,6 @@ namespace flatmath
 	glm::i64vec4 to_glm(const Vector4_i64& v)
 	{
 		return glm::i64vec4{v.x(), v.y(), v.z(), v.w()};
-	}
-
-	glm::i8vec4 to_glm(const ColorRGBA_i8* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::i8vec4 to_glm(const ColorRGBA_i8& v)
-	{
-		return glm::i8vec4{v.r(), v.g(), v.b(), v.a()};
 	}
 
 	glm::i8vec4 to_glm(const Vector4_i8* pv)
@@ -2325,17 +2049,6 @@ namespace flatmath
 		return glm::i8vec4{v.x(), v.y(), v.z(), v.w()};
 	}
 
-	glm::u16vec4 to_glm(const ColorRGBA_u16* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::u16vec4 to_glm(const ColorRGBA_u16& v)
-	{
-		return glm::u16vec4{v.r(), v.g(), v.b(), v.a()};
-	}
-
 	glm::u16vec4 to_glm(const Vector4_u16* pv)
 	{
 		KHUTILS_ASSERT_PTR(pv);
@@ -2345,17 +2058,6 @@ namespace flatmath
 	glm::u16vec4 to_glm(const Vector4_u16& v)
 	{
 		return glm::u16vec4{v.x(), v.y(), v.z(), v.w()};
-	}
-
-	glm::uvec4 to_glm(const ColorRGBA_u32* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::uvec4 to_glm(const ColorRGBA_u32& v)
-	{
-		return glm::uvec4{v.r(), v.g(), v.b(), v.a()};
 	}
 
 	glm::uvec4 to_glm(const Vector4_u32* pv)
@@ -2369,17 +2071,6 @@ namespace flatmath
 		return glm::uvec4{v.x(), v.y(), v.z(), v.w()};
 	}
 
-	glm::u64vec4 to_glm(const ColorRGBA_u64* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::u64vec4 to_glm(const ColorRGBA_u64& v)
-	{
-		return glm::u64vec4{v.r(), v.g(), v.b(), v.a()};
-	}
-
 	glm::u64vec4 to_glm(const Vector4_u64* pv)
 	{
 		KHUTILS_ASSERT_PTR(pv);
@@ -2389,17 +2080,6 @@ namespace flatmath
 	glm::u64vec4 to_glm(const Vector4_u64& v)
 	{
 		return glm::u64vec4{v.x(), v.y(), v.z(), v.w()};
-	}
-
-	glm::u8vec4 to_glm(const ColorRGBA_u8* pv)
-	{
-		KHUTILS_ASSERT_PTR(pv);
-		return to_glm(*pv);
-	}
-
-	glm::u8vec4 to_glm(const ColorRGBA_u8& v)
-	{
-		return glm::u8vec4{v.r(), v.g(), v.b(), v.a()};
 	}
 
 	glm::u8vec4 to_glm(const Vector4_u8* pv)

@@ -23,8 +23,6 @@ namespace flatbuffers
 	glm::mat4x2	UnPack(const flatmath::Matrix4x2_f32&);
 	glm::mat4x3	UnPack(const flatmath::Matrix4x3_f32&);
 	glm::mat4x4	UnPack(const flatmath::Matrix4x4_f32&);
-	glm::vec3	  UnPack(const flatmath::ColorRGB_f32&);
-	glm::vec4	  UnPack(const flatmath::ColorRGBA_f32&);
 	glm::ivec2	 UnPack(const flatmath::Vector2_i32&);
 	glm::ivec3	 UnPack(const flatmath::Vector3_i32&);
 	glm::ivec4	 UnPack(const flatmath::Vector4_i32&);
@@ -38,8 +36,6 @@ namespace flatbuffers
 	glm::imat4x2   UnPack(const flatmath::Matrix4x2_i32&);
 	glm::imat4x3   UnPack(const flatmath::Matrix4x3_i32&);
 	glm::imat4x4   UnPack(const flatmath::Matrix4x4_i32&);
-	glm::ivec3	 UnPack(const flatmath::ColorRGB_i32&);
-	glm::ivec4	 UnPack(const flatmath::ColorRGBA_i32&);
 	glm::uvec2	 UnPack(const flatmath::Vector2_u32&);
 	glm::uvec3	 UnPack(const flatmath::Vector3_u32&);
 	glm::uvec4	 UnPack(const flatmath::Vector4_u32&);
@@ -53,8 +49,6 @@ namespace flatbuffers
 	glm::umat4x2   UnPack(const flatmath::Matrix4x2_u32&);
 	glm::umat4x3   UnPack(const flatmath::Matrix4x3_u32&);
 	glm::umat4x4   UnPack(const flatmath::Matrix4x4_u32&);
-	glm::uvec3	 UnPack(const flatmath::ColorRGB_u32&);
-	glm::uvec4	 UnPack(const flatmath::ColorRGBA_u32&);
 	glm::i16vec2   UnPack(const flatmath::Vector2_i16&);
 	glm::i16vec3   UnPack(const flatmath::Vector3_i16&);
 	glm::i16vec4   UnPack(const flatmath::Vector4_i16&);
@@ -68,8 +62,6 @@ namespace flatbuffers
 	glm::i16mat4x2 UnPack(const flatmath::Matrix4x2_i16&);
 	glm::i16mat4x3 UnPack(const flatmath::Matrix4x3_i16&);
 	glm::i16mat4x4 UnPack(const flatmath::Matrix4x4_i16&);
-	glm::i16vec3   UnPack(const flatmath::ColorRGB_i16&);
-	glm::i16vec4   UnPack(const flatmath::ColorRGBA_i16&);
 	glm::u16vec2   UnPack(const flatmath::Vector2_u16&);
 	glm::u16vec3   UnPack(const flatmath::Vector3_u16&);
 	glm::u16vec4   UnPack(const flatmath::Vector4_u16&);
@@ -83,8 +75,6 @@ namespace flatbuffers
 	glm::u16mat4x2 UnPack(const flatmath::Matrix4x2_u16&);
 	glm::u16mat4x3 UnPack(const flatmath::Matrix4x3_u16&);
 	glm::u16mat4x4 UnPack(const flatmath::Matrix4x4_u16&);
-	glm::u16vec3   UnPack(const flatmath::ColorRGB_u16&);
-	glm::u16vec4   UnPack(const flatmath::ColorRGBA_u16&);
 	glm::i8vec2	UnPack(const flatmath::Vector2_i8&);
 	glm::i8vec3	UnPack(const flatmath::Vector3_i8&);
 	glm::i8vec4	UnPack(const flatmath::Vector4_i8&);
@@ -98,8 +88,6 @@ namespace flatbuffers
 	glm::i8mat4x2  UnPack(const flatmath::Matrix4x2_i8&);
 	glm::i8mat4x3  UnPack(const flatmath::Matrix4x3_i8&);
 	glm::i8mat4x4  UnPack(const flatmath::Matrix4x4_i8&);
-	glm::i8vec3	UnPack(const flatmath::ColorRGB_i8&);
-	glm::i8vec4	UnPack(const flatmath::ColorRGBA_i8&);
 	glm::u8vec2	UnPack(const flatmath::Vector2_u8&);
 	glm::u8vec3	UnPack(const flatmath::Vector3_u8&);
 	glm::u8vec4	UnPack(const flatmath::Vector4_u8&);
@@ -113,8 +101,6 @@ namespace flatbuffers
 	glm::u8mat4x2  UnPack(const flatmath::Matrix4x2_u8&);
 	glm::u8mat4x3  UnPack(const flatmath::Matrix4x3_u8&);
 	glm::u8mat4x4  UnPack(const flatmath::Matrix4x4_u8&);
-	glm::u8vec3	UnPack(const flatmath::ColorRGB_u8&);
-	glm::u8vec4	UnPack(const flatmath::ColorRGBA_u8&);
 	glm::i64vec2   UnPack(const flatmath::Vector2_i64&);
 	glm::i64vec3   UnPack(const flatmath::Vector3_i64&);
 	glm::i64vec4   UnPack(const flatmath::Vector4_i64&);
@@ -128,8 +114,6 @@ namespace flatbuffers
 	glm::i64mat4x2 UnPack(const flatmath::Matrix4x2_i64&);
 	glm::i64mat4x3 UnPack(const flatmath::Matrix4x3_i64&);
 	glm::i64mat4x4 UnPack(const flatmath::Matrix4x4_i64&);
-	glm::i64vec3   UnPack(const flatmath::ColorRGB_i64&);
-	glm::i64vec4   UnPack(const flatmath::ColorRGBA_i64&);
 	glm::u64vec2   UnPack(const flatmath::Vector2_u64&);
 	glm::u64vec3   UnPack(const flatmath::Vector3_u64&);
 	glm::u64vec4   UnPack(const flatmath::Vector4_u64&);
@@ -143,8 +127,6 @@ namespace flatbuffers
 	glm::u64mat4x2 UnPack(const flatmath::Matrix4x2_u64&);
 	glm::u64mat4x3 UnPack(const flatmath::Matrix4x3_u64&);
 	glm::u64mat4x4 UnPack(const flatmath::Matrix4x4_u64&);
-	glm::u64vec3   UnPack(const flatmath::ColorRGB_u64&);
-	glm::u64vec4   UnPack(const flatmath::ColorRGBA_u64&);
 	glm::dvec2	 UnPack(const flatmath::Vector2_f64&);
 	glm::dvec3	 UnPack(const flatmath::Vector3_f64&);
 	glm::dvec4	 UnPack(const flatmath::Vector4_f64&);
@@ -158,8 +140,6 @@ namespace flatbuffers
 	glm::dmat4x2   UnPack(const flatmath::Matrix4x2_f64&);
 	glm::dmat4x3   UnPack(const flatmath::Matrix4x3_f64&);
 	glm::dmat4x4   UnPack(const flatmath::Matrix4x4_f64&);
-	glm::dvec3	 UnPack(const flatmath::ColorRGB_f64&);
-	glm::dvec4	 UnPack(const flatmath::ColorRGBA_f64&);
 
 
 	glm::vec2	  UnPack(const flatmath::Vector2_f32*);
@@ -175,8 +155,6 @@ namespace flatbuffers
 	glm::mat4x2	UnPack(const flatmath::Matrix4x2_f32*);
 	glm::mat4x3	UnPack(const flatmath::Matrix4x3_f32*);
 	glm::mat4x4	UnPack(const flatmath::Matrix4x4_f32*);
-	glm::vec3	  UnPack(const flatmath::ColorRGB_f32*);
-	glm::vec4	  UnPack(const flatmath::ColorRGBA_f32*);
 	glm::ivec2	 UnPack(const flatmath::Vector2_i32*);
 	glm::ivec3	 UnPack(const flatmath::Vector3_i32*);
 	glm::ivec4	 UnPack(const flatmath::Vector4_i32*);
@@ -190,8 +168,6 @@ namespace flatbuffers
 	glm::imat4x2   UnPack(const flatmath::Matrix4x2_i32*);
 	glm::imat4x3   UnPack(const flatmath::Matrix4x3_i32*);
 	glm::imat4x4   UnPack(const flatmath::Matrix4x4_i32*);
-	glm::ivec3	 UnPack(const flatmath::ColorRGB_i32*);
-	glm::ivec4	 UnPack(const flatmath::ColorRGBA_i32*);
 	glm::uvec2	 UnPack(const flatmath::Vector2_u32*);
 	glm::uvec3	 UnPack(const flatmath::Vector3_u32*);
 	glm::uvec4	 UnPack(const flatmath::Vector4_u32*);
@@ -205,8 +181,6 @@ namespace flatbuffers
 	glm::umat4x2   UnPack(const flatmath::Matrix4x2_u32*);
 	glm::umat4x3   UnPack(const flatmath::Matrix4x3_u32*);
 	glm::umat4x4   UnPack(const flatmath::Matrix4x4_u32*);
-	glm::uvec3	 UnPack(const flatmath::ColorRGB_u32*);
-	glm::uvec4	 UnPack(const flatmath::ColorRGBA_u32*);
 	glm::i16vec2   UnPack(const flatmath::Vector2_i16*);
 	glm::i16vec3   UnPack(const flatmath::Vector3_i16*);
 	glm::i16vec4   UnPack(const flatmath::Vector4_i16*);
@@ -220,8 +194,6 @@ namespace flatbuffers
 	glm::i16mat4x2 UnPack(const flatmath::Matrix4x2_i16*);
 	glm::i16mat4x3 UnPack(const flatmath::Matrix4x3_i16*);
 	glm::i16mat4x4 UnPack(const flatmath::Matrix4x4_i16*);
-	glm::i16vec3   UnPack(const flatmath::ColorRGB_i16*);
-	glm::i16vec4   UnPack(const flatmath::ColorRGBA_i16*);
 	glm::u16vec2   UnPack(const flatmath::Vector2_u16*);
 	glm::u16vec3   UnPack(const flatmath::Vector3_u16*);
 	glm::u16vec4   UnPack(const flatmath::Vector4_u16*);
@@ -235,8 +207,6 @@ namespace flatbuffers
 	glm::u16mat4x2 UnPack(const flatmath::Matrix4x2_u16*);
 	glm::u16mat4x3 UnPack(const flatmath::Matrix4x3_u16*);
 	glm::u16mat4x4 UnPack(const flatmath::Matrix4x4_u16*);
-	glm::u16vec3   UnPack(const flatmath::ColorRGB_u16*);
-	glm::u16vec4   UnPack(const flatmath::ColorRGBA_u16*);
 	glm::i8vec2	UnPack(const flatmath::Vector2_i8*);
 	glm::i8vec3	UnPack(const flatmath::Vector3_i8*);
 	glm::i8vec4	UnPack(const flatmath::Vector4_i8*);
@@ -250,8 +220,6 @@ namespace flatbuffers
 	glm::i8mat4x2  UnPack(const flatmath::Matrix4x2_i8*);
 	glm::i8mat4x3  UnPack(const flatmath::Matrix4x3_i8*);
 	glm::i8mat4x4  UnPack(const flatmath::Matrix4x4_i8*);
-	glm::i8vec3	UnPack(const flatmath::ColorRGB_i8*);
-	glm::i8vec4	UnPack(const flatmath::ColorRGBA_i8*);
 	glm::u8vec2	UnPack(const flatmath::Vector2_u8*);
 	glm::u8vec3	UnPack(const flatmath::Vector3_u8*);
 	glm::u8vec4	UnPack(const flatmath::Vector4_u8*);
@@ -265,8 +233,6 @@ namespace flatbuffers
 	glm::u8mat4x2  UnPack(const flatmath::Matrix4x2_u8*);
 	glm::u8mat4x3  UnPack(const flatmath::Matrix4x3_u8*);
 	glm::u8mat4x4  UnPack(const flatmath::Matrix4x4_u8*);
-	glm::u8vec3	UnPack(const flatmath::ColorRGB_u8*);
-	glm::u8vec4	UnPack(const flatmath::ColorRGBA_u8*);
 	glm::i64vec2   UnPack(const flatmath::Vector2_i64*);
 	glm::i64vec3   UnPack(const flatmath::Vector3_i64*);
 	glm::i64vec4   UnPack(const flatmath::Vector4_i64*);
@@ -280,8 +246,6 @@ namespace flatbuffers
 	glm::i64mat4x2 UnPack(const flatmath::Matrix4x2_i64*);
 	glm::i64mat4x3 UnPack(const flatmath::Matrix4x3_i64*);
 	glm::i64mat4x4 UnPack(const flatmath::Matrix4x4_i64*);
-	glm::i64vec3   UnPack(const flatmath::ColorRGB_i64*);
-	glm::i64vec4   UnPack(const flatmath::ColorRGBA_i64*);
 	glm::u64vec2   UnPack(const flatmath::Vector2_u64*);
 	glm::u64vec3   UnPack(const flatmath::Vector3_u64*);
 	glm::u64vec4   UnPack(const flatmath::Vector4_u64*);
@@ -295,8 +259,6 @@ namespace flatbuffers
 	glm::u64mat4x2 UnPack(const flatmath::Matrix4x2_u64*);
 	glm::u64mat4x3 UnPack(const flatmath::Matrix4x3_u64*);
 	glm::u64mat4x4 UnPack(const flatmath::Matrix4x4_u64*);
-	glm::u64vec3   UnPack(const flatmath::ColorRGB_u64*);
-	glm::u64vec4   UnPack(const flatmath::ColorRGBA_u64*);
 	glm::dvec2	 UnPack(const flatmath::Vector2_f64*);
 	glm::dvec3	 UnPack(const flatmath::Vector3_f64*);
 	glm::dvec4	 UnPack(const flatmath::Vector4_f64*);
@@ -310,8 +272,6 @@ namespace flatbuffers
 	glm::dmat4x2   UnPack(const flatmath::Matrix4x2_f64*);
 	glm::dmat4x3   UnPack(const flatmath::Matrix4x3_f64*);
 	glm::dmat4x4   UnPack(const flatmath::Matrix4x4_f64*);
-	glm::dvec3	 UnPack(const flatmath::ColorRGB_f64*);
-	glm::dvec4	 UnPack(const flatmath::ColorRGBA_f64*);
 
 
 	flatmath::Vector2_f32	Pack(const glm::vec2&);
@@ -327,8 +287,6 @@ namespace flatbuffers
 	flatmath::Matrix4x2_f32  Pack(const glm::mat4x2&);
 	flatmath::Matrix4x3_f32  Pack(const glm::mat4x3&);
 	flatmath::Matrix4x4_f32  Pack(const glm::mat4x4&);
-	// flatmath::ColorRGB_f32   Pack(const glm::vec3&);
-	// flatmath::ColorRGBA_f32  Pack(const glm::vec4&);
 	flatmath::Vector2_i32	Pack(const glm::ivec2&);
 	flatmath::Vector3_i32	Pack(const glm::ivec3&);
 	flatmath::Vector4_i32	Pack(const glm::ivec4&);
@@ -342,8 +300,6 @@ namespace flatbuffers
 	flatmath::Matrix4x2_i32  Pack(const glm::imat4x2&);
 	flatmath::Matrix4x3_i32  Pack(const glm::imat4x3&);
 	flatmath::Matrix4x4_i32  Pack(const glm::imat4x4&);
-	// flatmath::ColorRGB_i32   Pack(const glm::ivec3&);
-	// flatmath::ColorRGBA_i32  Pack(const glm::ivec4&);
 	flatmath::Vector2_u32	Pack(const glm::uvec2&);
 	flatmath::Vector3_u32	Pack(const glm::uvec3&);
 	flatmath::Vector4_u32	Pack(const glm::uvec4&);
@@ -357,8 +313,6 @@ namespace flatbuffers
 	flatmath::Matrix4x2_u32  Pack(const glm::umat4x2&);
 	flatmath::Matrix4x3_u32  Pack(const glm::umat4x3&);
 	flatmath::Matrix4x4_u32  Pack(const glm::umat4x4&);
-	// flatmath::ColorRGB_u32   Pack(const glm::uvec3&);
-	// flatmath::ColorRGBA_u32  Pack(const glm::uvec4&);
 	flatmath::Vector2_i16	Pack(const glm::i16vec2&);
 	flatmath::Vector3_i16	Pack(const glm::i16vec3&);
 	flatmath::Vector4_i16	Pack(const glm::i16vec4&);
@@ -372,8 +326,6 @@ namespace flatbuffers
 	flatmath::Matrix4x2_i16  Pack(const glm::i16mat4x2&);
 	flatmath::Matrix4x3_i16  Pack(const glm::i16mat4x3&);
 	flatmath::Matrix4x4_i16  Pack(const glm::i16mat4x4&);
-	// flatmath::ColorRGB_i16   Pack(const glm::i16vec3&);
-	// flatmath::ColorRGBA_i16  Pack(const glm::i16vec4&);
 	flatmath::Vector2_u16	Pack(const glm::u16vec2&);
 	flatmath::Vector3_u16	Pack(const glm::u16vec3&);
 	flatmath::Vector4_u16	Pack(const glm::u16vec4&);
@@ -387,38 +339,32 @@ namespace flatbuffers
 	flatmath::Matrix4x2_u16  Pack(const glm::u16mat4x2&);
 	flatmath::Matrix4x3_u16  Pack(const glm::u16mat4x3&);
 	flatmath::Matrix4x4_u16  Pack(const glm::u16mat4x4&);
-	// flatmath::ColorRGB_u16   Pack(const glm::u16vec3&);
-	// flatmath::ColorRGBA_u16  Pack(const glm::u16vec4&);
-	flatmath::Vector2_i8	Pack(const glm::i8vec2&);
-	flatmath::Vector3_i8	Pack(const glm::i8vec3&);
-	flatmath::Vector4_i8	Pack(const glm::i8vec4&);
-	flatmath::Quaternion_i8 Pack(const glm::i8quat&);
-	flatmath::Matrix2x2_i8  Pack(const glm::i8mat2x2&);
-	flatmath::Matrix2x3_i8  Pack(const glm::i8mat2x3&);
-	flatmath::Matrix2x4_i8  Pack(const glm::i8mat2x4&);
-	flatmath::Matrix3x2_i8  Pack(const glm::i8mat3x2&);
-	flatmath::Matrix3x3_i8  Pack(const glm::i8mat3x3&);
-	flatmath::Matrix3x4_i8  Pack(const glm::i8mat3x4&);
-	flatmath::Matrix4x2_i8  Pack(const glm::i8mat4x2&);
-	flatmath::Matrix4x3_i8  Pack(const glm::i8mat4x3&);
-	flatmath::Matrix4x4_i8  Pack(const glm::i8mat4x4&);
-	// flatmath::ColorRGB_i8	Pack(const glm::i8vec3&);
-	// flatmath::ColorRGBA_i8   Pack(const glm::i8vec4&);
-	flatmath::Vector2_u8	Pack(const glm::u8vec2&);
-	flatmath::Vector3_u8	Pack(const glm::u8vec3&);
-	flatmath::Vector4_u8	Pack(const glm::u8vec4&);
-	flatmath::Quaternion_u8 Pack(const glm::u8quat&);
-	flatmath::Matrix2x2_u8  Pack(const glm::u8mat2x2&);
-	flatmath::Matrix2x3_u8  Pack(const glm::u8mat2x3&);
-	flatmath::Matrix2x4_u8  Pack(const glm::u8mat2x4&);
-	flatmath::Matrix3x2_u8  Pack(const glm::u8mat3x2&);
-	flatmath::Matrix3x3_u8  Pack(const glm::u8mat3x3&);
-	flatmath::Matrix3x4_u8  Pack(const glm::u8mat3x4&);
-	flatmath::Matrix4x2_u8  Pack(const glm::u8mat4x2&);
-	flatmath::Matrix4x3_u8  Pack(const glm::u8mat4x3&);
-	flatmath::Matrix4x4_u8  Pack(const glm::u8mat4x4&);
-	// flatmath::ColorRGB_u8	Pack(const glm::u8vec3&);
-	// flatmath::ColorRGBA_u8   Pack(const glm::u8vec4&);
+	flatmath::Vector2_i8	 Pack(const glm::i8vec2&);
+	flatmath::Vector3_i8	 Pack(const glm::i8vec3&);
+	flatmath::Vector4_i8	 Pack(const glm::i8vec4&);
+	flatmath::Quaternion_i8  Pack(const glm::i8quat&);
+	flatmath::Matrix2x2_i8   Pack(const glm::i8mat2x2&);
+	flatmath::Matrix2x3_i8   Pack(const glm::i8mat2x3&);
+	flatmath::Matrix2x4_i8   Pack(const glm::i8mat2x4&);
+	flatmath::Matrix3x2_i8   Pack(const glm::i8mat3x2&);
+	flatmath::Matrix3x3_i8   Pack(const glm::i8mat3x3&);
+	flatmath::Matrix3x4_i8   Pack(const glm::i8mat3x4&);
+	flatmath::Matrix4x2_i8   Pack(const glm::i8mat4x2&);
+	flatmath::Matrix4x3_i8   Pack(const glm::i8mat4x3&);
+	flatmath::Matrix4x4_i8   Pack(const glm::i8mat4x4&);
+	flatmath::Vector2_u8	 Pack(const glm::u8vec2&);
+	flatmath::Vector3_u8	 Pack(const glm::u8vec3&);
+	flatmath::Vector4_u8	 Pack(const glm::u8vec4&);
+	flatmath::Quaternion_u8  Pack(const glm::u8quat&);
+	flatmath::Matrix2x2_u8   Pack(const glm::u8mat2x2&);
+	flatmath::Matrix2x3_u8   Pack(const glm::u8mat2x3&);
+	flatmath::Matrix2x4_u8   Pack(const glm::u8mat2x4&);
+	flatmath::Matrix3x2_u8   Pack(const glm::u8mat3x2&);
+	flatmath::Matrix3x3_u8   Pack(const glm::u8mat3x3&);
+	flatmath::Matrix3x4_u8   Pack(const glm::u8mat3x4&);
+	flatmath::Matrix4x2_u8   Pack(const glm::u8mat4x2&);
+	flatmath::Matrix4x3_u8   Pack(const glm::u8mat4x3&);
+	flatmath::Matrix4x4_u8   Pack(const glm::u8mat4x4&);
 	flatmath::Vector2_i64	Pack(const glm::i64vec2&);
 	flatmath::Vector3_i64	Pack(const glm::i64vec3&);
 	flatmath::Vector4_i64	Pack(const glm::i64vec4&);
@@ -432,8 +378,6 @@ namespace flatbuffers
 	flatmath::Matrix4x2_i64  Pack(const glm::i64mat4x2&);
 	flatmath::Matrix4x3_i64  Pack(const glm::i64mat4x3&);
 	flatmath::Matrix4x4_i64  Pack(const glm::i64mat4x4&);
-	// flatmath::ColorRGB_i64   Pack(const glm::i64vec3&);
-	// flatmath::ColorRGBA_i64  Pack(const glm::i64vec4&);
 	flatmath::Vector2_u64	Pack(const glm::u64vec2&);
 	flatmath::Vector3_u64	Pack(const glm::u64vec3&);
 	flatmath::Vector4_u64	Pack(const glm::u64vec4&);
@@ -447,8 +391,6 @@ namespace flatbuffers
 	flatmath::Matrix4x2_u64  Pack(const glm::u64mat4x2&);
 	flatmath::Matrix4x3_u64  Pack(const glm::u64mat4x3&);
 	flatmath::Matrix4x4_u64  Pack(const glm::u64mat4x4&);
-	// flatmath::ColorRGB_u64   Pack(const glm::u64vec3&);
-	// flatmath::ColorRGBA_u64  Pack(const glm::u64vec4&);
 	flatmath::Vector2_f64	Pack(const glm::dvec2&);
 	flatmath::Vector3_f64	Pack(const glm::dvec3&);
 	flatmath::Vector4_f64	Pack(const glm::dvec4&);
@@ -462,8 +404,18 @@ namespace flatbuffers
 	flatmath::Matrix4x2_f64  Pack(const glm::dmat4x2&);
 	flatmath::Matrix4x3_f64  Pack(const glm::dmat4x3&);
 	flatmath::Matrix4x4_f64  Pack(const glm::dmat4x4&);
-	// flatmath::ColorRGB_f64   Pack(const glm::dvec3&);
-	// flatmath::ColorRGBA_f64  Pack(const glm::dvec4&);
+
+	/*
+	template <>
+	Offset<Vector<const flatmath::Vector3_f64*>> FlatBufferBuilder::CreateVectorOfStructs<flatmath::Vector3_f64,
+	glm::dvec3>(const std::vector<glm::dvec3>& v)
+	{
+		std::vector<flatmath::Vector3_f64> vT(v.size());
+		std::transform(v.begin(), v.end(), vT.begin(), [](auto& vv) { return Pack(vv); });
+
+		return CreateVectorOfStructs<flatmath::Vector3_f64>(vT);
+	}
+	 */
 
 }	// namespace flatbuffers
 
