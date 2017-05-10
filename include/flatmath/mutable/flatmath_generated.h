@@ -35,10 +35,6 @@ namespace flatmath
 
 	struct Matrix4x4_f32;
 
-	struct ColorRGB_f32;
-
-	struct ColorRGBA_f32;
-
 	struct Vector2_i32;
 
 	struct Vector3_i32;
@@ -64,10 +60,6 @@ namespace flatmath
 	struct Matrix4x3_i32;
 
 	struct Matrix4x4_i32;
-
-	struct ColorRGB_i32;
-
-	struct ColorRGBA_i32;
 
 	struct Vector2_u32;
 
@@ -95,10 +87,6 @@ namespace flatmath
 
 	struct Matrix4x4_u32;
 
-	struct ColorRGB_u32;
-
-	struct ColorRGBA_u32;
-
 	struct Vector2_i16;
 
 	struct Vector3_i16;
@@ -124,10 +112,6 @@ namespace flatmath
 	struct Matrix4x3_i16;
 
 	struct Matrix4x4_i16;
-
-	struct ColorRGB_i16;
-
-	struct ColorRGBA_i16;
 
 	struct Vector2_u16;
 
@@ -155,10 +139,6 @@ namespace flatmath
 
 	struct Matrix4x4_u16;
 
-	struct ColorRGB_u16;
-
-	struct ColorRGBA_u16;
-
 	struct Vector2_i8;
 
 	struct Vector3_i8;
@@ -184,10 +164,6 @@ namespace flatmath
 	struct Matrix4x3_i8;
 
 	struct Matrix4x4_i8;
-
-	struct ColorRGB_i8;
-
-	struct ColorRGBA_i8;
 
 	struct Vector2_u8;
 
@@ -215,10 +191,6 @@ namespace flatmath
 
 	struct Matrix4x4_u8;
 
-	struct ColorRGB_u8;
-
-	struct ColorRGBA_u8;
-
 	struct Vector2_i64;
 
 	struct Vector3_i64;
@@ -244,10 +216,6 @@ namespace flatmath
 	struct Matrix4x3_i64;
 
 	struct Matrix4x4_i64;
-
-	struct ColorRGB_i64;
-
-	struct ColorRGBA_i64;
 
 	struct Vector2_u64;
 
@@ -275,10 +243,6 @@ namespace flatmath
 
 	struct Matrix4x4_u64;
 
-	struct ColorRGB_u64;
-
-	struct ColorRGBA_u64;
-
 	struct Vector2_f64;
 
 	struct Vector3_f64;
@@ -304,10 +268,6 @@ namespace flatmath
 	struct Matrix4x3_f64;
 
 	struct Matrix4x4_f64;
-
-	struct ColorRGB_f64;
-
-	struct ColorRGBA_f64;
 
 	///-----------------------------------------------------------------------------
 	/// float types
@@ -560,7 +520,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_f32& mutable__0()
+		Vector2_f32& mutable__0()
 		{
 			return _0_;
 		}
@@ -568,7 +528,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_f32& mutable__1()
+		Vector2_f32& mutable__1()
 		{
 			return _1_;
 		}
@@ -602,7 +562,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_f32& mutable__0()
+		Vector3_f32& mutable__0()
 		{
 			return _0_;
 		}
@@ -610,7 +570,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_f32& mutable__1()
+		Vector3_f32& mutable__1()
 		{
 			return _1_;
 		}
@@ -644,7 +604,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_f32& mutable__0()
+		Vector4_f32& mutable__0()
 		{
 			return _0_;
 		}
@@ -652,7 +612,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_f32& mutable__1()
+		Vector4_f32& mutable__1()
 		{
 			return _1_;
 		}
@@ -688,7 +648,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_f32& mutable__0()
+		Vector2_f32& mutable__0()
 		{
 			return _0_;
 		}
@@ -696,7 +656,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_f32& mutable__1()
+		Vector2_f32& mutable__1()
 		{
 			return _1_;
 		}
@@ -704,7 +664,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_f32& mutable__2()
+		Vector2_f32& mutable__2()
 		{
 			return _2_;
 		}
@@ -740,7 +700,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_f32& mutable__0()
+		Vector3_f32& mutable__0()
 		{
 			return _0_;
 		}
@@ -748,7 +708,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_f32& mutable__1()
+		Vector3_f32& mutable__1()
 		{
 			return _1_;
 		}
@@ -756,7 +716,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_f32& mutable__2()
+		Vector3_f32& mutable__2()
 		{
 			return _2_;
 		}
@@ -792,7 +752,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_f32& mutable__0()
+		Vector4_f32& mutable__0()
 		{
 			return _0_;
 		}
@@ -800,7 +760,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_f32& mutable__1()
+		Vector4_f32& mutable__1()
 		{
 			return _1_;
 		}
@@ -808,7 +768,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_f32& mutable__2()
+		Vector4_f32& mutable__2()
 		{
 			return _2_;
 		}
@@ -845,7 +805,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_f32& mutable__0()
+		Vector2_f32& mutable__0()
 		{
 			return _0_;
 		}
@@ -853,7 +813,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_f32& mutable__1()
+		Vector2_f32& mutable__1()
 		{
 			return _1_;
 		}
@@ -861,7 +821,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_f32& mutable__2()
+		Vector2_f32& mutable__2()
 		{
 			return _2_;
 		}
@@ -869,7 +829,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector2_f32& mutable__3()
+		Vector2_f32& mutable__3()
 		{
 			return _3_;
 		}
@@ -906,7 +866,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_f32& mutable__0()
+		Vector3_f32& mutable__0()
 		{
 			return _0_;
 		}
@@ -914,7 +874,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_f32& mutable__1()
+		Vector3_f32& mutable__1()
 		{
 			return _1_;
 		}
@@ -922,7 +882,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_f32& mutable__2()
+		Vector3_f32& mutable__2()
 		{
 			return _2_;
 		}
@@ -930,7 +890,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector3_f32& mutable__3()
+		Vector3_f32& mutable__3()
 		{
 			return _3_;
 		}
@@ -967,7 +927,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_f32& mutable__0()
+		Vector4_f32& mutable__0()
 		{
 			return _0_;
 		}
@@ -975,7 +935,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_f32& mutable__1()
+		Vector4_f32& mutable__1()
 		{
 			return _1_;
 		}
@@ -983,7 +943,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_f32& mutable__2()
+		Vector4_f32& mutable__2()
 		{
 			return _2_;
 		}
@@ -991,128 +951,12 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector4_f32& mutable__3()
+		Vector4_f32& mutable__3()
 		{
 			return _3_;
 		}
 	};
 	STRUCT_END(Matrix4x4_f32, 64);
-
-	/// RGB color of float components
-	MANUALLY_ALIGNED_STRUCT(4) ColorRGB_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		float r_;
-		float g_;
-		float b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_f32";
-		}
-		ColorRGB_f32()
-		{
-			memset(this, 0, sizeof(ColorRGB_f32));
-		}
-		ColorRGB_f32(const ColorRGB_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_f32));
-		}
-		ColorRGB_f32(float _r, float _g, float _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-		float r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(float _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		float g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(float _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		float b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(float _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_f32, 12);
-
-	/// RGBA color of float components
-	MANUALLY_ALIGNED_STRUCT(4) ColorRGBA_f32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		float r_;
-		float g_;
-		float b_;
-		float a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_f32";
-		}
-		ColorRGBA_f32()
-		{
-			memset(this, 0, sizeof(ColorRGBA_f32));
-		}
-		ColorRGBA_f32(const ColorRGBA_f32& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_f32));
-		}
-		ColorRGBA_f32(float _r, float _g, float _b, float _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-		float r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(float _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		float g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(float _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		float b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(float _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		float a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(float _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_f32, 16);
 
 	///-----------------------------------------------------------------------------
 	///-----------------------------------------------------------------------------
@@ -1366,7 +1210,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_i32& mutable__0()
+		Vector2_i32& mutable__0()
 		{
 			return _0_;
 		}
@@ -1374,7 +1218,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_i32& mutable__1()
+		Vector2_i32& mutable__1()
 		{
 			return _1_;
 		}
@@ -1408,7 +1252,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_i32& mutable__0()
+		Vector3_i32& mutable__0()
 		{
 			return _0_;
 		}
@@ -1416,7 +1260,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_i32& mutable__1()
+		Vector3_i32& mutable__1()
 		{
 			return _1_;
 		}
@@ -1450,7 +1294,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_i32& mutable__0()
+		Vector4_i32& mutable__0()
 		{
 			return _0_;
 		}
@@ -1458,7 +1302,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_i32& mutable__1()
+		Vector4_i32& mutable__1()
 		{
 			return _1_;
 		}
@@ -1494,7 +1338,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_i32& mutable__0()
+		Vector2_i32& mutable__0()
 		{
 			return _0_;
 		}
@@ -1502,7 +1346,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_i32& mutable__1()
+		Vector2_i32& mutable__1()
 		{
 			return _1_;
 		}
@@ -1510,7 +1354,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_i32& mutable__2()
+		Vector2_i32& mutable__2()
 		{
 			return _2_;
 		}
@@ -1546,7 +1390,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_i32& mutable__0()
+		Vector3_i32& mutable__0()
 		{
 			return _0_;
 		}
@@ -1554,7 +1398,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_i32& mutable__1()
+		Vector3_i32& mutable__1()
 		{
 			return _1_;
 		}
@@ -1562,7 +1406,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_i32& mutable__2()
+		Vector3_i32& mutable__2()
 		{
 			return _2_;
 		}
@@ -1598,7 +1442,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_i32& mutable__0()
+		Vector4_i32& mutable__0()
 		{
 			return _0_;
 		}
@@ -1606,7 +1450,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_i32& mutable__1()
+		Vector4_i32& mutable__1()
 		{
 			return _1_;
 		}
@@ -1614,7 +1458,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_i32& mutable__2()
+		Vector4_i32& mutable__2()
 		{
 			return _2_;
 		}
@@ -1651,7 +1495,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_i32& mutable__0()
+		Vector2_i32& mutable__0()
 		{
 			return _0_;
 		}
@@ -1659,7 +1503,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_i32& mutable__1()
+		Vector2_i32& mutable__1()
 		{
 			return _1_;
 		}
@@ -1667,7 +1511,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_i32& mutable__2()
+		Vector2_i32& mutable__2()
 		{
 			return _2_;
 		}
@@ -1675,7 +1519,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector2_i32& mutable__3()
+		Vector2_i32& mutable__3()
 		{
 			return _3_;
 		}
@@ -1712,7 +1556,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_i32& mutable__0()
+		Vector3_i32& mutable__0()
 		{
 			return _0_;
 		}
@@ -1720,7 +1564,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_i32& mutable__1()
+		Vector3_i32& mutable__1()
 		{
 			return _1_;
 		}
@@ -1728,7 +1572,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_i32& mutable__2()
+		Vector3_i32& mutable__2()
 		{
 			return _2_;
 		}
@@ -1736,7 +1580,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector3_i32& mutable__3()
+		Vector3_i32& mutable__3()
 		{
 			return _3_;
 		}
@@ -1773,7 +1617,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_i32& mutable__0()
+		Vector4_i32& mutable__0()
 		{
 			return _0_;
 		}
@@ -1781,7 +1625,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_i32& mutable__1()
+		Vector4_i32& mutable__1()
 		{
 			return _1_;
 		}
@@ -1789,7 +1633,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_i32& mutable__2()
+		Vector4_i32& mutable__2()
 		{
 			return _2_;
 		}
@@ -1797,128 +1641,12 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector4_i32& mutable__3()
+		Vector4_i32& mutable__3()
 		{
 			return _3_;
 		}
 	};
 	STRUCT_END(Matrix4x4_i32, 64);
-
-	/// RGB color of int components
-	MANUALLY_ALIGNED_STRUCT(4) ColorRGB_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int32_t r_;
-		int32_t g_;
-		int32_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_i32";
-		}
-		ColorRGB_i32()
-		{
-			memset(this, 0, sizeof(ColorRGB_i32));
-		}
-		ColorRGB_i32(const ColorRGB_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_i32));
-		}
-		ColorRGB_i32(int32_t _r, int32_t _g, int32_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-		int32_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int32_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int32_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int32_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int32_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int32_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_i32, 12);
-
-	/// RGBA color of int components
-	MANUALLY_ALIGNED_STRUCT(4) ColorRGBA_i32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int32_t r_;
-		int32_t g_;
-		int32_t b_;
-		int32_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_i32";
-		}
-		ColorRGBA_i32()
-		{
-			memset(this, 0, sizeof(ColorRGBA_i32));
-		}
-		ColorRGBA_i32(const ColorRGBA_i32& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_i32));
-		}
-		ColorRGBA_i32(int32_t _r, int32_t _g, int32_t _b, int32_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-		int32_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int32_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int32_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int32_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int32_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int32_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		int32_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(int32_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_i32, 16);
 
 	///-----------------------------------------------------------------------------
 	///-----------------------------------------------------------------------------
@@ -2172,7 +1900,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_u32& mutable__0()
+		Vector2_u32& mutable__0()
 		{
 			return _0_;
 		}
@@ -2180,7 +1908,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_u32& mutable__1()
+		Vector2_u32& mutable__1()
 		{
 			return _1_;
 		}
@@ -2214,7 +1942,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_u32& mutable__0()
+		Vector3_u32& mutable__0()
 		{
 			return _0_;
 		}
@@ -2222,7 +1950,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_u32& mutable__1()
+		Vector3_u32& mutable__1()
 		{
 			return _1_;
 		}
@@ -2256,7 +1984,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_u32& mutable__0()
+		Vector4_u32& mutable__0()
 		{
 			return _0_;
 		}
@@ -2264,7 +1992,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_u32& mutable__1()
+		Vector4_u32& mutable__1()
 		{
 			return _1_;
 		}
@@ -2300,7 +2028,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_u32& mutable__0()
+		Vector2_u32& mutable__0()
 		{
 			return _0_;
 		}
@@ -2308,7 +2036,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_u32& mutable__1()
+		Vector2_u32& mutable__1()
 		{
 			return _1_;
 		}
@@ -2316,7 +2044,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_u32& mutable__2()
+		Vector2_u32& mutable__2()
 		{
 			return _2_;
 		}
@@ -2352,7 +2080,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_u32& mutable__0()
+		Vector3_u32& mutable__0()
 		{
 			return _0_;
 		}
@@ -2360,7 +2088,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_u32& mutable__1()
+		Vector3_u32& mutable__1()
 		{
 			return _1_;
 		}
@@ -2368,7 +2096,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_u32& mutable__2()
+		Vector3_u32& mutable__2()
 		{
 			return _2_;
 		}
@@ -2404,7 +2132,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_u32& mutable__0()
+		Vector4_u32& mutable__0()
 		{
 			return _0_;
 		}
@@ -2412,7 +2140,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_u32& mutable__1()
+		Vector4_u32& mutable__1()
 		{
 			return _1_;
 		}
@@ -2420,7 +2148,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_u32& mutable__2()
+		Vector4_u32& mutable__2()
 		{
 			return _2_;
 		}
@@ -2457,7 +2185,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_u32& mutable__0()
+		Vector2_u32& mutable__0()
 		{
 			return _0_;
 		}
@@ -2465,7 +2193,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_u32& mutable__1()
+		Vector2_u32& mutable__1()
 		{
 			return _1_;
 		}
@@ -2473,7 +2201,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_u32& mutable__2()
+		Vector2_u32& mutable__2()
 		{
 			return _2_;
 		}
@@ -2481,7 +2209,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector2_u32& mutable__3()
+		Vector2_u32& mutable__3()
 		{
 			return _3_;
 		}
@@ -2518,7 +2246,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_u32& mutable__0()
+		Vector3_u32& mutable__0()
 		{
 			return _0_;
 		}
@@ -2526,7 +2254,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_u32& mutable__1()
+		Vector3_u32& mutable__1()
 		{
 			return _1_;
 		}
@@ -2534,7 +2262,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_u32& mutable__2()
+		Vector3_u32& mutable__2()
 		{
 			return _2_;
 		}
@@ -2542,7 +2270,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector3_u32& mutable__3()
+		Vector3_u32& mutable__3()
 		{
 			return _3_;
 		}
@@ -2579,7 +2307,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_u32& mutable__0()
+		Vector4_u32& mutable__0()
 		{
 			return _0_;
 		}
@@ -2587,7 +2315,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_u32& mutable__1()
+		Vector4_u32& mutable__1()
 		{
 			return _1_;
 		}
@@ -2595,7 +2323,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_u32& mutable__2()
+		Vector4_u32& mutable__2()
 		{
 			return _2_;
 		}
@@ -2603,128 +2331,12 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector4_u32& mutable__3()
+		Vector4_u32& mutable__3()
 		{
 			return _3_;
 		}
 	};
 	STRUCT_END(Matrix4x4_u32, 64);
-
-	/// RGB color of uint components
-	MANUALLY_ALIGNED_STRUCT(4) ColorRGB_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint32_t r_;
-		uint32_t g_;
-		uint32_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_u32";
-		}
-		ColorRGB_u32()
-		{
-			memset(this, 0, sizeof(ColorRGB_u32));
-		}
-		ColorRGB_u32(const ColorRGB_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_u32));
-		}
-		ColorRGB_u32(uint32_t _r, uint32_t _g, uint32_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-		uint32_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint32_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint32_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint32_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint32_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint32_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_u32, 12);
-
-	/// RGBA color of uint components
-	MANUALLY_ALIGNED_STRUCT(4) ColorRGBA_u32 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint32_t r_;
-		uint32_t g_;
-		uint32_t b_;
-		uint32_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_u32";
-		}
-		ColorRGBA_u32()
-		{
-			memset(this, 0, sizeof(ColorRGBA_u32));
-		}
-		ColorRGBA_u32(const ColorRGBA_u32& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_u32));
-		}
-		ColorRGBA_u32(uint32_t _r, uint32_t _g, uint32_t _b, uint32_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-		uint32_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint32_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint32_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint32_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint32_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint32_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		uint32_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(uint32_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_u32, 16);
 
 	///-----------------------------------------------------------------------------
 	///-----------------------------------------------------------------------------
@@ -2978,7 +2590,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_i16& mutable__0()
+		Vector2_i16& mutable__0()
 		{
 			return _0_;
 		}
@@ -2986,7 +2598,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_i16& mutable__1()
+		Vector2_i16& mutable__1()
 		{
 			return _1_;
 		}
@@ -3020,7 +2632,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_i16& mutable__0()
+		Vector3_i16& mutable__0()
 		{
 			return _0_;
 		}
@@ -3028,7 +2640,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_i16& mutable__1()
+		Vector3_i16& mutable__1()
 		{
 			return _1_;
 		}
@@ -3062,7 +2674,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_i16& mutable__0()
+		Vector4_i16& mutable__0()
 		{
 			return _0_;
 		}
@@ -3070,7 +2682,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_i16& mutable__1()
+		Vector4_i16& mutable__1()
 		{
 			return _1_;
 		}
@@ -3106,7 +2718,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_i16& mutable__0()
+		Vector2_i16& mutable__0()
 		{
 			return _0_;
 		}
@@ -3114,7 +2726,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_i16& mutable__1()
+		Vector2_i16& mutable__1()
 		{
 			return _1_;
 		}
@@ -3122,7 +2734,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_i16& mutable__2()
+		Vector2_i16& mutable__2()
 		{
 			return _2_;
 		}
@@ -3158,7 +2770,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_i16& mutable__0()
+		Vector3_i16& mutable__0()
 		{
 			return _0_;
 		}
@@ -3166,7 +2778,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_i16& mutable__1()
+		Vector3_i16& mutable__1()
 		{
 			return _1_;
 		}
@@ -3174,7 +2786,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_i16& mutable__2()
+		Vector3_i16& mutable__2()
 		{
 			return _2_;
 		}
@@ -3210,7 +2822,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_i16& mutable__0()
+		Vector4_i16& mutable__0()
 		{
 			return _0_;
 		}
@@ -3218,7 +2830,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_i16& mutable__1()
+		Vector4_i16& mutable__1()
 		{
 			return _1_;
 		}
@@ -3226,7 +2838,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_i16& mutable__2()
+		Vector4_i16& mutable__2()
 		{
 			return _2_;
 		}
@@ -3263,7 +2875,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_i16& mutable__0()
+		Vector2_i16& mutable__0()
 		{
 			return _0_;
 		}
@@ -3271,7 +2883,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_i16& mutable__1()
+		Vector2_i16& mutable__1()
 		{
 			return _1_;
 		}
@@ -3279,7 +2891,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_i16& mutable__2()
+		Vector2_i16& mutable__2()
 		{
 			return _2_;
 		}
@@ -3287,7 +2899,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector2_i16& mutable__3()
+		Vector2_i16& mutable__3()
 		{
 			return _3_;
 		}
@@ -3324,7 +2936,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_i16& mutable__0()
+		Vector3_i16& mutable__0()
 		{
 			return _0_;
 		}
@@ -3332,7 +2944,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_i16& mutable__1()
+		Vector3_i16& mutable__1()
 		{
 			return _1_;
 		}
@@ -3340,7 +2952,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_i16& mutable__2()
+		Vector3_i16& mutable__2()
 		{
 			return _2_;
 		}
@@ -3348,7 +2960,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector3_i16& mutable__3()
+		Vector3_i16& mutable__3()
 		{
 			return _3_;
 		}
@@ -3385,7 +2997,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_i16& mutable__0()
+		Vector4_i16& mutable__0()
 		{
 			return _0_;
 		}
@@ -3393,7 +3005,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_i16& mutable__1()
+		Vector4_i16& mutable__1()
 		{
 			return _1_;
 		}
@@ -3401,7 +3013,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_i16& mutable__2()
+		Vector4_i16& mutable__2()
 		{
 			return _2_;
 		}
@@ -3409,128 +3021,12 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector4_i16& mutable__3()
+		Vector4_i16& mutable__3()
 		{
 			return _3_;
 		}
 	};
 	STRUCT_END(Matrix4x4_i16, 32);
-
-	/// RGB color of short components
-	MANUALLY_ALIGNED_STRUCT(2) ColorRGB_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int16_t r_;
-		int16_t g_;
-		int16_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_i16";
-		}
-		ColorRGB_i16()
-		{
-			memset(this, 0, sizeof(ColorRGB_i16));
-		}
-		ColorRGB_i16(const ColorRGB_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_i16));
-		}
-		ColorRGB_i16(int16_t _r, int16_t _g, int16_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-		int16_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int16_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int16_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int16_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int16_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int16_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_i16, 6);
-
-	/// RGBA color of short components
-	MANUALLY_ALIGNED_STRUCT(2) ColorRGBA_i16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int16_t r_;
-		int16_t g_;
-		int16_t b_;
-		int16_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_i16";
-		}
-		ColorRGBA_i16()
-		{
-			memset(this, 0, sizeof(ColorRGBA_i16));
-		}
-		ColorRGBA_i16(const ColorRGBA_i16& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_i16));
-		}
-		ColorRGBA_i16(int16_t _r, int16_t _g, int16_t _b, int16_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-		int16_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int16_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int16_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int16_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int16_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int16_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		int16_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(int16_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_i16, 8);
 
 	///-----------------------------------------------------------------------------
 	///-----------------------------------------------------------------------------
@@ -3784,7 +3280,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_u16& mutable__0()
+		Vector2_u16& mutable__0()
 		{
 			return _0_;
 		}
@@ -3792,7 +3288,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_u16& mutable__1()
+		Vector2_u16& mutable__1()
 		{
 			return _1_;
 		}
@@ -3826,7 +3322,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_u16& mutable__0()
+		Vector3_u16& mutable__0()
 		{
 			return _0_;
 		}
@@ -3834,7 +3330,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_u16& mutable__1()
+		Vector3_u16& mutable__1()
 		{
 			return _1_;
 		}
@@ -3868,7 +3364,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_u16& mutable__0()
+		Vector4_u16& mutable__0()
 		{
 			return _0_;
 		}
@@ -3876,7 +3372,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_u16& mutable__1()
+		Vector4_u16& mutable__1()
 		{
 			return _1_;
 		}
@@ -3912,7 +3408,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_u16& mutable__0()
+		Vector2_u16& mutable__0()
 		{
 			return _0_;
 		}
@@ -3920,7 +3416,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_u16& mutable__1()
+		Vector2_u16& mutable__1()
 		{
 			return _1_;
 		}
@@ -3928,7 +3424,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_u16& mutable__2()
+		Vector2_u16& mutable__2()
 		{
 			return _2_;
 		}
@@ -3964,7 +3460,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_u16& mutable__0()
+		Vector3_u16& mutable__0()
 		{
 			return _0_;
 		}
@@ -3972,7 +3468,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_u16& mutable__1()
+		Vector3_u16& mutable__1()
 		{
 			return _1_;
 		}
@@ -3980,7 +3476,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_u16& mutable__2()
+		Vector3_u16& mutable__2()
 		{
 			return _2_;
 		}
@@ -4016,7 +3512,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_u16& mutable__0()
+		Vector4_u16& mutable__0()
 		{
 			return _0_;
 		}
@@ -4024,7 +3520,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_u16& mutable__1()
+		Vector4_u16& mutable__1()
 		{
 			return _1_;
 		}
@@ -4032,7 +3528,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_u16& mutable__2()
+		Vector4_u16& mutable__2()
 		{
 			return _2_;
 		}
@@ -4069,7 +3565,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_u16& mutable__0()
+		Vector2_u16& mutable__0()
 		{
 			return _0_;
 		}
@@ -4077,7 +3573,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_u16& mutable__1()
+		Vector2_u16& mutable__1()
 		{
 			return _1_;
 		}
@@ -4085,7 +3581,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_u16& mutable__2()
+		Vector2_u16& mutable__2()
 		{
 			return _2_;
 		}
@@ -4093,7 +3589,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector2_u16& mutable__3()
+		Vector2_u16& mutable__3()
 		{
 			return _3_;
 		}
@@ -4130,7 +3626,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_u16& mutable__0()
+		Vector3_u16& mutable__0()
 		{
 			return _0_;
 		}
@@ -4138,7 +3634,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_u16& mutable__1()
+		Vector3_u16& mutable__1()
 		{
 			return _1_;
 		}
@@ -4146,7 +3642,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_u16& mutable__2()
+		Vector3_u16& mutable__2()
 		{
 			return _2_;
 		}
@@ -4154,7 +3650,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector3_u16& mutable__3()
+		Vector3_u16& mutable__3()
 		{
 			return _3_;
 		}
@@ -4191,7 +3687,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_u16& mutable__0()
+		Vector4_u16& mutable__0()
 		{
 			return _0_;
 		}
@@ -4199,7 +3695,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_u16& mutable__1()
+		Vector4_u16& mutable__1()
 		{
 			return _1_;
 		}
@@ -4207,7 +3703,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_u16& mutable__2()
+		Vector4_u16& mutable__2()
 		{
 			return _2_;
 		}
@@ -4215,128 +3711,12 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector4_u16& mutable__3()
+		Vector4_u16& mutable__3()
 		{
 			return _3_;
 		}
 	};
 	STRUCT_END(Matrix4x4_u16, 32);
-
-	/// RGB color of ushort components
-	MANUALLY_ALIGNED_STRUCT(2) ColorRGB_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint16_t r_;
-		uint16_t g_;
-		uint16_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_u16";
-		}
-		ColorRGB_u16()
-		{
-			memset(this, 0, sizeof(ColorRGB_u16));
-		}
-		ColorRGB_u16(const ColorRGB_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_u16));
-		}
-		ColorRGB_u16(uint16_t _r, uint16_t _g, uint16_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-		uint16_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint16_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint16_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint16_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint16_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint16_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_u16, 6);
-
-	/// RGBA color of ushort components
-	MANUALLY_ALIGNED_STRUCT(2) ColorRGBA_u16 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint16_t r_;
-		uint16_t g_;
-		uint16_t b_;
-		uint16_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_u16";
-		}
-		ColorRGBA_u16()
-		{
-			memset(this, 0, sizeof(ColorRGBA_u16));
-		}
-		ColorRGBA_u16(const ColorRGBA_u16& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_u16));
-		}
-		ColorRGBA_u16(uint16_t _r, uint16_t _g, uint16_t _b, uint16_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-		uint16_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint16_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint16_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint16_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint16_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint16_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		uint16_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(uint16_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_u16, 8);
 
 	///-----------------------------------------------------------------------------
 	///-----------------------------------------------------------------------------
@@ -4590,7 +3970,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_i8& mutable__0()
+		Vector2_i8& mutable__0()
 		{
 			return _0_;
 		}
@@ -4598,7 +3978,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_i8& mutable__1()
+		Vector2_i8& mutable__1()
 		{
 			return _1_;
 		}
@@ -4632,7 +4012,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_i8& mutable__0()
+		Vector3_i8& mutable__0()
 		{
 			return _0_;
 		}
@@ -4640,7 +4020,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_i8& mutable__1()
+		Vector3_i8& mutable__1()
 		{
 			return _1_;
 		}
@@ -4674,7 +4054,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_i8& mutable__0()
+		Vector4_i8& mutable__0()
 		{
 			return _0_;
 		}
@@ -4682,7 +4062,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_i8& mutable__1()
+		Vector4_i8& mutable__1()
 		{
 			return _1_;
 		}
@@ -4717,7 +4097,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_i8& mutable__0()
+		Vector2_i8& mutable__0()
 		{
 			return _0_;
 		}
@@ -4725,7 +4105,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_i8& mutable__1()
+		Vector2_i8& mutable__1()
 		{
 			return _1_;
 		}
@@ -4733,7 +4113,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_i8& mutable__2()
+		Vector2_i8& mutable__2()
 		{
 			return _2_;
 		}
@@ -4768,7 +4148,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_i8& mutable__0()
+		Vector3_i8& mutable__0()
 		{
 			return _0_;
 		}
@@ -4776,7 +4156,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_i8& mutable__1()
+		Vector3_i8& mutable__1()
 		{
 			return _1_;
 		}
@@ -4784,7 +4164,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_i8& mutable__2()
+		Vector3_i8& mutable__2()
 		{
 			return _2_;
 		}
@@ -4819,7 +4199,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_i8& mutable__0()
+		Vector4_i8& mutable__0()
 		{
 			return _0_;
 		}
@@ -4827,7 +4207,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_i8& mutable__1()
+		Vector4_i8& mutable__1()
 		{
 			return _1_;
 		}
@@ -4835,7 +4215,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_i8& mutable__2()
+		Vector4_i8& mutable__2()
 		{
 			return _2_;
 		}
@@ -4872,7 +4252,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_i8& mutable__0()
+		Vector2_i8& mutable__0()
 		{
 			return _0_;
 		}
@@ -4880,7 +4260,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_i8& mutable__1()
+		Vector2_i8& mutable__1()
 		{
 			return _1_;
 		}
@@ -4888,7 +4268,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_i8& mutable__2()
+		Vector2_i8& mutable__2()
 		{
 			return _2_;
 		}
@@ -4896,7 +4276,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector2_i8& mutable__3()
+		Vector2_i8& mutable__3()
 		{
 			return _3_;
 		}
@@ -4933,7 +4313,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_i8& mutable__0()
+		Vector3_i8& mutable__0()
 		{
 			return _0_;
 		}
@@ -4941,7 +4321,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_i8& mutable__1()
+		Vector3_i8& mutable__1()
 		{
 			return _1_;
 		}
@@ -4949,7 +4329,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_i8& mutable__2()
+		Vector3_i8& mutable__2()
 		{
 			return _2_;
 		}
@@ -4957,7 +4337,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector3_i8& mutable__3()
+		Vector3_i8& mutable__3()
 		{
 			return _3_;
 		}
@@ -4994,7 +4374,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_i8& mutable__0()
+		Vector4_i8& mutable__0()
 		{
 			return _0_;
 		}
@@ -5002,7 +4382,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_i8& mutable__1()
+		Vector4_i8& mutable__1()
 		{
 			return _1_;
 		}
@@ -5010,7 +4390,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_i8& mutable__2()
+		Vector4_i8& mutable__2()
 		{
 			return _2_;
 		}
@@ -5018,128 +4398,12 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector4_i8& mutable__3()
+		Vector4_i8& mutable__3()
 		{
 			return _3_;
 		}
 	};
 	STRUCT_END(Matrix4x4_i8, 16);
-
-	/// RGB color of byte components
-	MANUALLY_ALIGNED_STRUCT(1) ColorRGB_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int8_t r_;
-		int8_t g_;
-		int8_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_i8";
-		}
-		ColorRGB_i8()
-		{
-			memset(this, 0, sizeof(ColorRGB_i8));
-		}
-		ColorRGB_i8(const ColorRGB_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_i8));
-		}
-		ColorRGB_i8(int8_t _r, int8_t _g, int8_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-		int8_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int8_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int8_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int8_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int8_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int8_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_i8, 3);
-
-	/// RGBA color of byte components
-	MANUALLY_ALIGNED_STRUCT(1) ColorRGBA_i8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int8_t r_;
-		int8_t g_;
-		int8_t b_;
-		int8_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_i8";
-		}
-		ColorRGBA_i8()
-		{
-			memset(this, 0, sizeof(ColorRGBA_i8));
-		}
-		ColorRGBA_i8(const ColorRGBA_i8& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_i8));
-		}
-		ColorRGBA_i8(int8_t _r, int8_t _g, int8_t _b, int8_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-		int8_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int8_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int8_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int8_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int8_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int8_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		int8_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(int8_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_i8, 4);
 
 	///-----------------------------------------------------------------------------
 	///-----------------------------------------------------------------------------
@@ -5393,7 +4657,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_u8& mutable__0()
+		Vector2_u8& mutable__0()
 		{
 			return _0_;
 		}
@@ -5401,7 +4665,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_u8& mutable__1()
+		Vector2_u8& mutable__1()
 		{
 			return _1_;
 		}
@@ -5435,7 +4699,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_u8& mutable__0()
+		Vector3_u8& mutable__0()
 		{
 			return _0_;
 		}
@@ -5443,7 +4707,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_u8& mutable__1()
+		Vector3_u8& mutable__1()
 		{
 			return _1_;
 		}
@@ -5477,7 +4741,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_u8& mutable__0()
+		Vector4_u8& mutable__0()
 		{
 			return _0_;
 		}
@@ -5485,7 +4749,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_u8& mutable__1()
+		Vector4_u8& mutable__1()
 		{
 			return _1_;
 		}
@@ -5520,7 +4784,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_u8& mutable__0()
+		Vector2_u8& mutable__0()
 		{
 			return _0_;
 		}
@@ -5528,7 +4792,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_u8& mutable__1()
+		Vector2_u8& mutable__1()
 		{
 			return _1_;
 		}
@@ -5536,7 +4800,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_u8& mutable__2()
+		Vector2_u8& mutable__2()
 		{
 			return _2_;
 		}
@@ -5571,7 +4835,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_u8& mutable__0()
+		Vector3_u8& mutable__0()
 		{
 			return _0_;
 		}
@@ -5579,7 +4843,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_u8& mutable__1()
+		Vector3_u8& mutable__1()
 		{
 			return _1_;
 		}
@@ -5587,7 +4851,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_u8& mutable__2()
+		Vector3_u8& mutable__2()
 		{
 			return _2_;
 		}
@@ -5622,7 +4886,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_u8& mutable__0()
+		Vector4_u8& mutable__0()
 		{
 			return _0_;
 		}
@@ -5630,7 +4894,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_u8& mutable__1()
+		Vector4_u8& mutable__1()
 		{
 			return _1_;
 		}
@@ -5638,7 +4902,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_u8& mutable__2()
+		Vector4_u8& mutable__2()
 		{
 			return _2_;
 		}
@@ -5675,7 +4939,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_u8& mutable__0()
+		Vector2_u8& mutable__0()
 		{
 			return _0_;
 		}
@@ -5683,7 +4947,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_u8& mutable__1()
+		Vector2_u8& mutable__1()
 		{
 			return _1_;
 		}
@@ -5691,7 +4955,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_u8& mutable__2()
+		Vector2_u8& mutable__2()
 		{
 			return _2_;
 		}
@@ -5699,7 +4963,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector2_u8& mutable__3()
+		Vector2_u8& mutable__3()
 		{
 			return _3_;
 		}
@@ -5736,7 +5000,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_u8& mutable__0()
+		Vector3_u8& mutable__0()
 		{
 			return _0_;
 		}
@@ -5744,7 +5008,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_u8& mutable__1()
+		Vector3_u8& mutable__1()
 		{
 			return _1_;
 		}
@@ -5752,7 +5016,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_u8& mutable__2()
+		Vector3_u8& mutable__2()
 		{
 			return _2_;
 		}
@@ -5760,7 +5024,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector3_u8& mutable__3()
+		Vector3_u8& mutable__3()
 		{
 			return _3_;
 		}
@@ -5797,7 +5061,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_u8& mutable__0()
+		Vector4_u8& mutable__0()
 		{
 			return _0_;
 		}
@@ -5805,7 +5069,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_u8& mutable__1()
+		Vector4_u8& mutable__1()
 		{
 			return _1_;
 		}
@@ -5813,7 +5077,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_u8& mutable__2()
+		Vector4_u8& mutable__2()
 		{
 			return _2_;
 		}
@@ -5821,128 +5085,12 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector4_u8& mutable__3()
+		Vector4_u8& mutable__3()
 		{
 			return _3_;
 		}
 	};
 	STRUCT_END(Matrix4x4_u8, 16);
-
-	/// RGB color of ubyte components
-	MANUALLY_ALIGNED_STRUCT(1) ColorRGB_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint8_t r_;
-		uint8_t g_;
-		uint8_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_u8";
-		}
-		ColorRGB_u8()
-		{
-			memset(this, 0, sizeof(ColorRGB_u8));
-		}
-		ColorRGB_u8(const ColorRGB_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_u8));
-		}
-		ColorRGB_u8(uint8_t _r, uint8_t _g, uint8_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-		uint8_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint8_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint8_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint8_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint8_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint8_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_u8, 3);
-
-	/// RGBA color of ubyte components
-	MANUALLY_ALIGNED_STRUCT(1) ColorRGBA_u8 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint8_t r_;
-		uint8_t g_;
-		uint8_t b_;
-		uint8_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_u8";
-		}
-		ColorRGBA_u8()
-		{
-			memset(this, 0, sizeof(ColorRGBA_u8));
-		}
-		ColorRGBA_u8(const ColorRGBA_u8& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_u8));
-		}
-		ColorRGBA_u8(uint8_t _r, uint8_t _g, uint8_t _b, uint8_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-		uint8_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint8_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint8_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint8_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint8_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint8_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		uint8_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(uint8_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_u8, 4);
 
 	///-----------------------------------------------------------------------------
 	///-----------------------------------------------------------------------------
@@ -6196,7 +5344,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_i64& mutable__0()
+		Vector2_i64& mutable__0()
 		{
 			return _0_;
 		}
@@ -6204,7 +5352,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_i64& mutable__1()
+		Vector2_i64& mutable__1()
 		{
 			return _1_;
 		}
@@ -6238,7 +5386,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_i64& mutable__0()
+		Vector3_i64& mutable__0()
 		{
 			return _0_;
 		}
@@ -6246,7 +5394,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_i64& mutable__1()
+		Vector3_i64& mutable__1()
 		{
 			return _1_;
 		}
@@ -6280,7 +5428,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_i64& mutable__0()
+		Vector4_i64& mutable__0()
 		{
 			return _0_;
 		}
@@ -6288,7 +5436,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_i64& mutable__1()
+		Vector4_i64& mutable__1()
 		{
 			return _1_;
 		}
@@ -6324,7 +5472,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_i64& mutable__0()
+		Vector2_i64& mutable__0()
 		{
 			return _0_;
 		}
@@ -6332,7 +5480,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_i64& mutable__1()
+		Vector2_i64& mutable__1()
 		{
 			return _1_;
 		}
@@ -6340,7 +5488,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_i64& mutable__2()
+		Vector2_i64& mutable__2()
 		{
 			return _2_;
 		}
@@ -6376,7 +5524,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_i64& mutable__0()
+		Vector3_i64& mutable__0()
 		{
 			return _0_;
 		}
@@ -6384,7 +5532,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_i64& mutable__1()
+		Vector3_i64& mutable__1()
 		{
 			return _1_;
 		}
@@ -6392,7 +5540,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_i64& mutable__2()
+		Vector3_i64& mutable__2()
 		{
 			return _2_;
 		}
@@ -6428,7 +5576,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_i64& mutable__0()
+		Vector4_i64& mutable__0()
 		{
 			return _0_;
 		}
@@ -6436,7 +5584,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_i64& mutable__1()
+		Vector4_i64& mutable__1()
 		{
 			return _1_;
 		}
@@ -6444,7 +5592,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_i64& mutable__2()
+		Vector4_i64& mutable__2()
 		{
 			return _2_;
 		}
@@ -6481,7 +5629,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_i64& mutable__0()
+		Vector2_i64& mutable__0()
 		{
 			return _0_;
 		}
@@ -6489,7 +5637,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_i64& mutable__1()
+		Vector2_i64& mutable__1()
 		{
 			return _1_;
 		}
@@ -6497,7 +5645,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_i64& mutable__2()
+		Vector2_i64& mutable__2()
 		{
 			return _2_;
 		}
@@ -6505,7 +5653,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector2_i64& mutable__3()
+		Vector2_i64& mutable__3()
 		{
 			return _3_;
 		}
@@ -6542,7 +5690,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_i64& mutable__0()
+		Vector3_i64& mutable__0()
 		{
 			return _0_;
 		}
@@ -6550,7 +5698,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_i64& mutable__1()
+		Vector3_i64& mutable__1()
 		{
 			return _1_;
 		}
@@ -6558,7 +5706,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_i64& mutable__2()
+		Vector3_i64& mutable__2()
 		{
 			return _2_;
 		}
@@ -6566,7 +5714,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector3_i64& mutable__3()
+		Vector3_i64& mutable__3()
 		{
 			return _3_;
 		}
@@ -6603,7 +5751,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_i64& mutable__0()
+		Vector4_i64& mutable__0()
 		{
 			return _0_;
 		}
@@ -6611,7 +5759,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_i64& mutable__1()
+		Vector4_i64& mutable__1()
 		{
 			return _1_;
 		}
@@ -6619,7 +5767,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_i64& mutable__2()
+		Vector4_i64& mutable__2()
 		{
 			return _2_;
 		}
@@ -6627,128 +5775,12 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector4_i64& mutable__3()
+		Vector4_i64& mutable__3()
 		{
 			return _3_;
 		}
 	};
 	STRUCT_END(Matrix4x4_i64, 128);
-
-	/// RGB color of long components
-	MANUALLY_ALIGNED_STRUCT(8) ColorRGB_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int64_t r_;
-		int64_t g_;
-		int64_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_i64";
-		}
-		ColorRGB_i64()
-		{
-			memset(this, 0, sizeof(ColorRGB_i64));
-		}
-		ColorRGB_i64(const ColorRGB_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_i64));
-		}
-		ColorRGB_i64(int64_t _r, int64_t _g, int64_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-		int64_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int64_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int64_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int64_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int64_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int64_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_i64, 24);
-
-	/// RGBA color of long components
-	MANUALLY_ALIGNED_STRUCT(8) ColorRGBA_i64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		int64_t r_;
-		int64_t g_;
-		int64_t b_;
-		int64_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_i64";
-		}
-		ColorRGBA_i64()
-		{
-			memset(this, 0, sizeof(ColorRGBA_i64));
-		}
-		ColorRGBA_i64(const ColorRGBA_i64& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_i64));
-		}
-		ColorRGBA_i64(int64_t _r, int64_t _g, int64_t _b, int64_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-		int64_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(int64_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		int64_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(int64_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		int64_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(int64_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		int64_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(int64_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_i64, 32);
 
 	///-----------------------------------------------------------------------------
 	///-----------------------------------------------------------------------------
@@ -7002,7 +6034,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_u64& mutable__0()
+		Vector2_u64& mutable__0()
 		{
 			return _0_;
 		}
@@ -7010,7 +6042,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_u64& mutable__1()
+		Vector2_u64& mutable__1()
 		{
 			return _1_;
 		}
@@ -7044,7 +6076,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_u64& mutable__0()
+		Vector3_u64& mutable__0()
 		{
 			return _0_;
 		}
@@ -7052,7 +6084,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_u64& mutable__1()
+		Vector3_u64& mutable__1()
 		{
 			return _1_;
 		}
@@ -7086,7 +6118,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_u64& mutable__0()
+		Vector4_u64& mutable__0()
 		{
 			return _0_;
 		}
@@ -7094,7 +6126,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_u64& mutable__1()
+		Vector4_u64& mutable__1()
 		{
 			return _1_;
 		}
@@ -7130,7 +6162,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_u64& mutable__0()
+		Vector2_u64& mutable__0()
 		{
 			return _0_;
 		}
@@ -7138,7 +6170,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_u64& mutable__1()
+		Vector2_u64& mutable__1()
 		{
 			return _1_;
 		}
@@ -7146,7 +6178,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_u64& mutable__2()
+		Vector2_u64& mutable__2()
 		{
 			return _2_;
 		}
@@ -7182,7 +6214,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_u64& mutable__0()
+		Vector3_u64& mutable__0()
 		{
 			return _0_;
 		}
@@ -7190,7 +6222,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_u64& mutable__1()
+		Vector3_u64& mutable__1()
 		{
 			return _1_;
 		}
@@ -7198,7 +6230,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_u64& mutable__2()
+		Vector3_u64& mutable__2()
 		{
 			return _2_;
 		}
@@ -7234,7 +6266,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_u64& mutable__0()
+		Vector4_u64& mutable__0()
 		{
 			return _0_;
 		}
@@ -7242,7 +6274,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_u64& mutable__1()
+		Vector4_u64& mutable__1()
 		{
 			return _1_;
 		}
@@ -7250,7 +6282,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_u64& mutable__2()
+		Vector4_u64& mutable__2()
 		{
 			return _2_;
 		}
@@ -7287,7 +6319,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_u64& mutable__0()
+		Vector2_u64& mutable__0()
 		{
 			return _0_;
 		}
@@ -7295,7 +6327,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_u64& mutable__1()
+		Vector2_u64& mutable__1()
 		{
 			return _1_;
 		}
@@ -7303,7 +6335,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_u64& mutable__2()
+		Vector2_u64& mutable__2()
 		{
 			return _2_;
 		}
@@ -7311,7 +6343,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector2_u64& mutable__3()
+		Vector2_u64& mutable__3()
 		{
 			return _3_;
 		}
@@ -7348,7 +6380,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_u64& mutable__0()
+		Vector3_u64& mutable__0()
 		{
 			return _0_;
 		}
@@ -7356,7 +6388,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_u64& mutable__1()
+		Vector3_u64& mutable__1()
 		{
 			return _1_;
 		}
@@ -7364,7 +6396,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_u64& mutable__2()
+		Vector3_u64& mutable__2()
 		{
 			return _2_;
 		}
@@ -7372,7 +6404,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector3_u64& mutable__3()
+		Vector3_u64& mutable__3()
 		{
 			return _3_;
 		}
@@ -7409,7 +6441,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_u64& mutable__0()
+		Vector4_u64& mutable__0()
 		{
 			return _0_;
 		}
@@ -7417,7 +6449,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_u64& mutable__1()
+		Vector4_u64& mutable__1()
 		{
 			return _1_;
 		}
@@ -7425,7 +6457,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_u64& mutable__2()
+		Vector4_u64& mutable__2()
 		{
 			return _2_;
 		}
@@ -7433,128 +6465,12 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector4_u64& mutable__3()
+		Vector4_u64& mutable__3()
 		{
 			return _3_;
 		}
 	};
 	STRUCT_END(Matrix4x4_u64, 128);
-
-	/// RGB color of ulong components
-	MANUALLY_ALIGNED_STRUCT(8) ColorRGB_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint64_t r_;
-		uint64_t g_;
-		uint64_t b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_u64";
-		}
-		ColorRGB_u64()
-		{
-			memset(this, 0, sizeof(ColorRGB_u64));
-		}
-		ColorRGB_u64(const ColorRGB_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_u64));
-		}
-		ColorRGB_u64(uint64_t _r, uint64_t _g, uint64_t _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-		uint64_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint64_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint64_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint64_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint64_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint64_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_u64, 24);
-
-	/// RGBA color of ulong components
-	MANUALLY_ALIGNED_STRUCT(8) ColorRGBA_u64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		uint64_t r_;
-		uint64_t g_;
-		uint64_t b_;
-		uint64_t a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_u64";
-		}
-		ColorRGBA_u64()
-		{
-			memset(this, 0, sizeof(ColorRGBA_u64));
-		}
-		ColorRGBA_u64(const ColorRGBA_u64& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_u64));
-		}
-		ColorRGBA_u64(uint64_t _r, uint64_t _g, uint64_t _b, uint64_t _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-		uint64_t r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(uint64_t _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		uint64_t g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(uint64_t _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		uint64_t b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(uint64_t _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		uint64_t a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(uint64_t _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_u64, 32);
 
 	///-----------------------------------------------------------------------------
 	///-----------------------------------------------------------------------------
@@ -7808,7 +6724,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_f64& mutable__0()
+		Vector2_f64& mutable__0()
 		{
 			return _0_;
 		}
@@ -7816,7 +6732,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_f64& mutable__1()
+		Vector2_f64& mutable__1()
 		{
 			return _1_;
 		}
@@ -7850,7 +6766,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_f64& mutable__0()
+		Vector3_f64& mutable__0()
 		{
 			return _0_;
 		}
@@ -7858,7 +6774,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_f64& mutable__1()
+		Vector3_f64& mutable__1()
 		{
 			return _1_;
 		}
@@ -7892,7 +6808,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_f64& mutable__0()
+		Vector4_f64& mutable__0()
 		{
 			return _0_;
 		}
@@ -7900,7 +6816,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_f64& mutable__1()
+		Vector4_f64& mutable__1()
 		{
 			return _1_;
 		}
@@ -7936,7 +6852,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_f64& mutable__0()
+		Vector2_f64& mutable__0()
 		{
 			return _0_;
 		}
@@ -7944,7 +6860,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_f64& mutable__1()
+		Vector2_f64& mutable__1()
 		{
 			return _1_;
 		}
@@ -7952,7 +6868,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_f64& mutable__2()
+		Vector2_f64& mutable__2()
 		{
 			return _2_;
 		}
@@ -7988,7 +6904,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_f64& mutable__0()
+		Vector3_f64& mutable__0()
 		{
 			return _0_;
 		}
@@ -7996,7 +6912,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_f64& mutable__1()
+		Vector3_f64& mutable__1()
 		{
 			return _1_;
 		}
@@ -8004,7 +6920,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_f64& mutable__2()
+		Vector3_f64& mutable__2()
 		{
 			return _2_;
 		}
@@ -8040,7 +6956,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_f64& mutable__0()
+		Vector4_f64& mutable__0()
 		{
 			return _0_;
 		}
@@ -8048,7 +6964,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_f64& mutable__1()
+		Vector4_f64& mutable__1()
 		{
 			return _1_;
 		}
@@ -8056,7 +6972,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_f64& mutable__2()
+		Vector4_f64& mutable__2()
 		{
 			return _2_;
 		}
@@ -8093,7 +7009,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector2_f64& mutable__0()
+		Vector2_f64& mutable__0()
 		{
 			return _0_;
 		}
@@ -8101,7 +7017,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector2_f64& mutable__1()
+		Vector2_f64& mutable__1()
 		{
 			return _1_;
 		}
@@ -8109,7 +7025,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector2_f64& mutable__2()
+		Vector2_f64& mutable__2()
 		{
 			return _2_;
 		}
@@ -8117,7 +7033,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector2_f64& mutable__3()
+		Vector2_f64& mutable__3()
 		{
 			return _3_;
 		}
@@ -8154,7 +7070,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector3_f64& mutable__0()
+		Vector3_f64& mutable__0()
 		{
 			return _0_;
 		}
@@ -8162,7 +7078,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector3_f64& mutable__1()
+		Vector3_f64& mutable__1()
 		{
 			return _1_;
 		}
@@ -8170,7 +7086,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector3_f64& mutable__2()
+		Vector3_f64& mutable__2()
 		{
 			return _2_;
 		}
@@ -8178,7 +7094,7 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector3_f64& mutable__3()
+		Vector3_f64& mutable__3()
 		{
 			return _3_;
 		}
@@ -8215,7 +7131,7 @@ namespace flatmath
 		{
 			return _0_;
 		}
-		const Vector4_f64& mutable__0()
+		Vector4_f64& mutable__0()
 		{
 			return _0_;
 		}
@@ -8223,7 +7139,7 @@ namespace flatmath
 		{
 			return _1_;
 		}
-		const Vector4_f64& mutable__1()
+		Vector4_f64& mutable__1()
 		{
 			return _1_;
 		}
@@ -8231,7 +7147,7 @@ namespace flatmath
 		{
 			return _2_;
 		}
-		const Vector4_f64& mutable__2()
+		Vector4_f64& mutable__2()
 		{
 			return _2_;
 		}
@@ -8239,128 +7155,12 @@ namespace flatmath
 		{
 			return _3_;
 		}
-		const Vector4_f64& mutable__3()
+		Vector4_f64& mutable__3()
 		{
 			return _3_;
 		}
 	};
 	STRUCT_END(Matrix4x4_f64, 128);
-
-	/// RGB color of double components
-	MANUALLY_ALIGNED_STRUCT(8) ColorRGB_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		double r_;
-		double g_;
-		double b_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGB_f64";
-		}
-		ColorRGB_f64()
-		{
-			memset(this, 0, sizeof(ColorRGB_f64));
-		}
-		ColorRGB_f64(const ColorRGB_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGB_f64));
-		}
-		ColorRGB_f64(double _r, double _g, double _b)
-			: r_(flatbuffers::EndianScalar(_r)), g_(flatbuffers::EndianScalar(_g)), b_(flatbuffers::EndianScalar(_b))
-		{
-		}
-		double r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(double _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		double g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(double _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		double b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(double _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-	};
-	STRUCT_END(ColorRGB_f64, 24);
-
-	/// RGBA color of double components
-	MANUALLY_ALIGNED_STRUCT(8) ColorRGBA_f64 FLATBUFFERS_FINAL_CLASS
-	{
-	private:
-		double r_;
-		double g_;
-		double b_;
-		double a_;
-
-	public:
-		static FLATBUFFERS_CONSTEXPR const char* GetFullyQualifiedName()
-		{
-			return "flatmath.ColorRGBA_f64";
-		}
-		ColorRGBA_f64()
-		{
-			memset(this, 0, sizeof(ColorRGBA_f64));
-		}
-		ColorRGBA_f64(const ColorRGBA_f64& _o)
-		{
-			memcpy(this, &_o, sizeof(ColorRGBA_f64));
-		}
-		ColorRGBA_f64(double _r, double _g, double _b, double _a)
-			: r_(flatbuffers::EndianScalar(_r))
-			, g_(flatbuffers::EndianScalar(_g))
-			, b_(flatbuffers::EndianScalar(_b))
-			, a_(flatbuffers::EndianScalar(_a))
-		{
-		}
-		double r() const
-		{
-			return flatbuffers::EndianScalar(r_);
-		}
-		void mutate_r(double _r)
-		{
-			flatbuffers::WriteScalar(&r_, _r);
-		}
-		double g() const
-		{
-			return flatbuffers::EndianScalar(g_);
-		}
-		void mutate_g(double _g)
-		{
-			flatbuffers::WriteScalar(&g_, _g);
-		}
-		double b() const
-		{
-			return flatbuffers::EndianScalar(b_);
-		}
-		void mutate_b(double _b)
-		{
-			flatbuffers::WriteScalar(&b_, _b);
-		}
-		double a() const
-		{
-			return flatbuffers::EndianScalar(a_);
-		}
-		void mutate_a(double _a)
-		{
-			flatbuffers::WriteScalar(&a_, _a);
-		}
-	};
-	STRUCT_END(ColorRGBA_f64, 32);
 
 }	// namespace flatmath
 

@@ -101,21 +101,6 @@ struct Matrix4x4_f32(native_inline, native_type: "glm::mat4x4") {
 	_3: Vector4_f32(native_default: "0,0,0,1");
 }
 
-/// RGB color of float components
-struct ColorRGB_f32(native_inline, native_type: "glm::vec3") {
-	r: float(native_default: "0");
-	g: float(native_default: "0");
-	b: float(native_default: "0");
-}
-
-/// RGBA color of float components
-struct ColorRGBA_f32(native_inline, native_type: "glm::vec4") {
-	r: float(native_default: "0");
-	g: float(native_default: "0");
-	b: float(native_default: "0");
-	a: float(native_default: "0");
-}
-
 ///-----------------------------------------------------------------------------
 ///-----------------------------------------------------------------------------
 /// int types
@@ -210,21 +195,6 @@ struct Matrix4x4_i32(native_inline, native_type: "glm::imat4x4") {
 	_1: Vector4_i32(native_default: "0,1,0,0");
 	_2: Vector4_i32(native_default: "0,0,1,0");
 	_3: Vector4_i32(native_default: "0,0,0,1");
-}
-
-/// RGB color of int components
-struct ColorRGB_i32(native_inline, native_type: "glm::ivec3") {
-	r: int(native_default: "0");
-	g: int(native_default: "0");
-	b: int(native_default: "0");
-}
-
-/// RGBA color of int components
-struct ColorRGBA_i32(native_inline, native_type: "glm::ivec4") {
-	r: int(native_default: "0");
-	g: int(native_default: "0");
-	b: int(native_default: "0");
-	a: int(native_default: "0");
 }
 
 ///-----------------------------------------------------------------------------
@@ -323,21 +293,6 @@ struct Matrix4x4_u32(native_inline, native_type: "glm::umat4x4") {
 	_3: Vector4_u32(native_default: "0,0,0,1");
 }
 
-/// RGB color of uint components
-struct ColorRGB_u32(native_inline, native_type: "glm::uvec3") {
-	r: uint(native_default: "0");
-	g: uint(native_default: "0");
-	b: uint(native_default: "0");
-}
-
-/// RGBA color of uint components
-struct ColorRGBA_u32(native_inline, native_type: "glm::uvec4") {
-	r: uint(native_default: "0");
-	g: uint(native_default: "0");
-	b: uint(native_default: "0");
-	a: uint(native_default: "0");
-}
-
 ///-----------------------------------------------------------------------------
 ///-----------------------------------------------------------------------------
 /// short types
@@ -432,21 +387,6 @@ struct Matrix4x4_i16(native_inline, native_type: "glm::i16mat4x4") {
 	_1: Vector4_i16(native_default: "0,1,0,0");
 	_2: Vector4_i16(native_default: "0,0,1,0");
 	_3: Vector4_i16(native_default: "0,0,0,1");
-}
-
-/// RGB color of short components
-struct ColorRGB_i16(native_inline, native_type: "glm::i16vec3") {
-	r: short(native_default: "0");
-	g: short(native_default: "0");
-	b: short(native_default: "0");
-}
-
-/// RGBA color of short components
-struct ColorRGBA_i16(native_inline, native_type: "glm::i16vec4") {
-	r: short(native_default: "0");
-	g: short(native_default: "0");
-	b: short(native_default: "0");
-	a: short(native_default: "0");
 }
 
 ///-----------------------------------------------------------------------------
@@ -545,21 +485,6 @@ struct Matrix4x4_u16(native_inline, native_type: "glm::u16mat4x4") {
 	_3: Vector4_u16(native_default: "0,0,0,1");
 }
 
-/// RGB color of ushort components
-struct ColorRGB_u16(native_inline, native_type: "glm::u16vec3") {
-	r: ushort(native_default: "0");
-	g: ushort(native_default: "0");
-	b: ushort(native_default: "0");
-}
-
-/// RGBA color of ushort components
-struct ColorRGBA_u16(native_inline, native_type: "glm::u16vec4") {
-	r: ushort(native_default: "0");
-	g: ushort(native_default: "0");
-	b: ushort(native_default: "0");
-	a: ushort(native_default: "0");
-}
-
 ///-----------------------------------------------------------------------------
 ///-----------------------------------------------------------------------------
 /// byte types
@@ -654,21 +579,6 @@ struct Matrix4x4_i8(native_inline, native_type: "glm::i8mat4x4") {
 	_1: Vector4_i8(native_default: "0,1,0,0");
 	_2: Vector4_i8(native_default: "0,0,1,0");
 	_3: Vector4_i8(native_default: "0,0,0,1");
-}
-
-/// RGB color of byte components
-struct ColorRGB_i8(native_inline, native_type: "glm::i8vec3") {
-	r: byte(native_default: "0");
-	g: byte(native_default: "0");
-	b: byte(native_default: "0");
-}
-
-/// RGBA color of byte components
-struct ColorRGBA_i8(native_inline, native_type: "glm::i8vec4") {
-	r: byte(native_default: "0");
-	g: byte(native_default: "0");
-	b: byte(native_default: "0");
-	a: byte(native_default: "0");
 }
 
 ///-----------------------------------------------------------------------------
@@ -767,21 +677,6 @@ struct Matrix4x4_u8(native_inline, native_type: "glm::u8mat4x4") {
 	_3: Vector4_u8(native_default: "0,0,0,1");
 }
 
-/// RGB color of ubyte components
-struct ColorRGB_u8(native_inline, native_type: "glm::u8vec3") {
-	r: ubyte(native_default: "0");
-	g: ubyte(native_default: "0");
-	b: ubyte(native_default: "0");
-}
-
-/// RGBA color of ubyte components
-struct ColorRGBA_u8(native_inline, native_type: "glm::u8vec4") {
-	r: ubyte(native_default: "0");
-	g: ubyte(native_default: "0");
-	b: ubyte(native_default: "0");
-	a: ubyte(native_default: "0");
-}
-
 ///-----------------------------------------------------------------------------
 ///-----------------------------------------------------------------------------
 /// long types
@@ -876,21 +771,6 @@ struct Matrix4x4_i64(native_inline, native_type: "glm::i64mat4x4") {
 	_1: Vector4_i64(native_default: "0,1,0,0");
 	_2: Vector4_i64(native_default: "0,0,1,0");
 	_3: Vector4_i64(native_default: "0,0,0,1");
-}
-
-/// RGB color of long components
-struct ColorRGB_i64(native_inline, native_type: "glm::i64vec3") {
-	r: long(native_default: "0");
-	g: long(native_default: "0");
-	b: long(native_default: "0");
-}
-
-/// RGBA color of long components
-struct ColorRGBA_i64(native_inline, native_type: "glm::i64vec4") {
-	r: long(native_default: "0");
-	g: long(native_default: "0");
-	b: long(native_default: "0");
-	a: long(native_default: "0");
 }
 
 ///-----------------------------------------------------------------------------
@@ -989,21 +869,6 @@ struct Matrix4x4_u64(native_inline, native_type: "glm::u64mat4x4") {
 	_3: Vector4_u64(native_default: "0,0,0,1");
 }
 
-/// RGB color of ulong components
-struct ColorRGB_u64(native_inline, native_type: "glm::u64vec3") {
-	r: ulong(native_default: "0");
-	g: ulong(native_default: "0");
-	b: ulong(native_default: "0");
-}
-
-/// RGBA color of ulong components
-struct ColorRGBA_u64(native_inline, native_type: "glm::u64vec4") {
-	r: ulong(native_default: "0");
-	g: ulong(native_default: "0");
-	b: ulong(native_default: "0");
-	a: ulong(native_default: "0");
-}
-
 ///-----------------------------------------------------------------------------
 ///-----------------------------------------------------------------------------
 /// double types
@@ -1098,21 +963,6 @@ struct Matrix4x4_f64(native_inline, native_type: "glm::dmat4x4") {
 	_1: Vector4_f64(native_default: "0,1,0,0");
 	_2: Vector4_f64(native_default: "0,0,1,0");
 	_3: Vector4_f64(native_default: "0,0,0,1");
-}
-
-/// RGB color of double components
-struct ColorRGB_f64(native_inline, native_type: "glm::dvec3") {
-	r: double(native_default: "0");
-	g: double(native_default: "0");
-	b: double(native_default: "0");
-}
-
-/// RGBA color of double components
-struct ColorRGBA_f64(native_inline, native_type: "glm::dvec4") {
-	r: double(native_default: "0");
-	g: double(native_default: "0");
-	b: double(native_default: "0");
-	a: double(native_default: "0");
 }
 
 ///-----------------------------------------------------------------------------
