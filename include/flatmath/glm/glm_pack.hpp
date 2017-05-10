@@ -2,8 +2,8 @@
 #define FLATMATH_GLM_PACK_HPP_INC
 
 #include "../typedefs.hpp"
-#include <glm/glm.hpp>
-#include <glm/gtx/quaternion.hpp>
+#include "glm/glm.hpp"
+#include "glm/gtx/quaternion.hpp"
 
 #include "glm_extratypes.hpp"
 #include <flatbuffers/flatbuffers.h>
@@ -419,4 +419,4 @@ namespace flatbuffers
 
 }	// namespace flatbuffers
 
-#endif !FLATMATH_GLM_PACK_HPP_INC
+#endif // !FLATMATH_GLM_PACK_HPP_INC

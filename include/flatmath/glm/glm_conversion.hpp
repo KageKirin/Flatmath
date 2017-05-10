@@ -2,8 +2,8 @@
 #define FLATMATH_GLM_CONVERSION_HPP_INC
 
 #include "../typedefs.hpp"
-#include <glm/glm.hpp>
-#include <glm/gtx/quaternion.hpp>
+#include "glm/glm.hpp"
+#include "glm/gtx/quaternion.hpp"
 
 #include "glm_extratypes.hpp"
 
