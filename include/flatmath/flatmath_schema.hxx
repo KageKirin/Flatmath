@@ -1,8 +1,8 @@
 #include <string>
 
 extern const std::string flatmath_schema; // for linker happiness
-const std::string flatmath_schema(
-R"(// Flatbuffer schema for generic math types (Linear Algebra)
+const std::string flatmath_schema =
+std::string(R"(// Flatbuffer schema for generic math types (Linear Algebra)
 
 namespace flatmath;
 
@@ -71,7 +71,8 @@ struct Matrix3x3_f32(native_inline, native_type: "glm::mat3x3") {
 }
 
 /// 3x4 matrix of floats
-struct Matrix3x4_f32(native_inline, native_type: "glm::mat3x4") {
+struct Matrix3x4_f32(native_inline, native_type:)") +
+std::string(R"( "glm::mat3x4") {
 	_0: Vector4_f32(native_default: "1,0,0,0");
 	_1: Vector4_f32(native_default: "0,1,0,0");
 	_2: Vector4_f32(native_default: "0,0,1,0");
@@ -137,7 +138,8 @@ struct Quaternion_i32(native_inline, native_type: "glm::i32quat") {
 /// 2x2 matrix of ints
 struct Matrix2x2_i32(native_inline, native_type: "glm::imat2x2") {
 	_0: Vector2_i32(native_default: "1,0");
-	_1: Vector2_i32(native_default: "0,1");
+)") +
+std::string(R"(	_1: Vector2_i32(native_default: "0,1");
 }
 
 /// 2x3 matrix of ints
@@ -199,7 +201,8 @@ struct Matrix4x4_i32(native_inline, native_type: "glm::imat4x4") {
 
 ///-----------------------------------------------------------------------------
 ///-----------------------------------------------------------------------------
-/// uint types
+/// uint ty)") +
+std::string(R"(pes
 
 /// 2D vector of uints
 struct Vector2_u32(native_inline, native_type: "glm::uvec2") {
@@ -270,7 +273,8 @@ struct Matrix3x4_u32(native_inline, native_type: "glm::umat3x4") {
 }
 
 /// 4x2 matrix of uints
-struct Matrix4x2_u32(native_inline, native_type: "glm::umat4x2") {
+struct Ma)") +
+std::string(R"(trix4x2_u32(native_inline, native_type: "glm::umat4x2") {
 	_0: Vector2_u32(native_default: "1,0");
 	_1: Vector2_u32(native_default: "0,1");
 	_2: Vector2_u32(native_default: "0,0");
@@ -334,7 +338,8 @@ struct Matrix2x2_i16(native_inline, native_type: "glm::i16mat2x2") {
 
 /// 2x3 matrix of shorts
 struct Matrix2x3_i16(native_inline, native_type: "glm::i16mat2x3") {
-	_0: Vector3_i16(native_default: "1,0,0");
+	_0: )") +
+std::string(R"(Vector3_i16(native_default: "1,0,0");
 	_1: Vector3_i16(native_default: "0,1,0");
 }
 
@@ -395,7 +400,8 @@ struct Matrix4x4_i16(native_inline, native_type: "glm::i16mat4x4") {
 
 /// 2D vector of ushorts
 struct Vector2_u16(native_inline, native_type: "glm::u16vec2") {
-	x: ushort(native_default: "0");
+	x: ushort(nat)") +
+std::string(R"(ive_default: "0");
 	y: ushort(native_default: "0");
 }
 
@@ -462,7 +468,8 @@ struct Matrix3x4_u16(native_inline, native_type: "glm::u16mat3x4") {
 }
 
 /// 4x2 matrix of ushorts
-struct Matrix4x2_u16(native_inline, native_type: "glm::u16mat4x2") {
+struct Matrix4x2_u16(native_inline, native_type: ")") +
+std::string(R"(glm::u16mat4x2") {
 	_0: Vector2_u16(native_default: "1,0");
 	_1: Vector2_u16(native_default: "0,1");
 	_2: Vector2_u16(native_default: "0,0");
@@ -527,7 +534,8 @@ struct Matrix2x2_i8(native_inline, native_type: "glm::i8mat2x2") {
 /// 2x3 matrix of bytes
 struct Matrix2x3_i8(native_inline, native_type: "glm::i8mat2x3") {
 	_0: Vector3_i8(native_default: "1,0,0");
-	_1: Vector3_i8(native_default: "0,1,0");
+	_1: Vector3_i8(native_de)") +
+std::string(R"(fault: "0,1,0");
 }
 
 /// 2x4 matrix of bytes
@@ -592,7 +600,8 @@ struct Vector2_u8(native_inline, native_type: "glm::u8(vec2") {
 }
 
 /// 3D vector of ubytes
-struct Vector3_u8(native_inline, native_type: "glm::u8(vec3") {
+struct Vector3_u8(native_inline, n)") +
+std::string(R"(ative_type: "glm::u8(vec3") {
 	x: ubyte(native_default: "0");
 	y: ubyte(native_default: "0");
 	z: ubyte(native_default: "0");
@@ -658,7 +667,8 @@ struct Matrix4x2_u8(native_inline, native_type: "glm::u8mat4x2") {
 	_0: Vector2_u8(native_default: "1,0");
 	_1: Vector2_u8(native_default: "0,1");
 	_2: Vector2_u8(native_default: "0,0");
-	_3: Vector2_u8(native_default: "0,0");
+	_3: Vector2_u8(native_defau)") +
+std::string(R"(lt: "0,0");
 }
 
 /// 4x3 matrix of ubytes
@@ -725,7 +735,8 @@ struct Matrix2x3_i64(native_inline, native_type: "glm::i64mat2x3") {
 /// 2x4 matrix of longs
 struct Matrix2x4_i64(native_inline, native_type: "glm::i64mat2x4") {
 	_0: Vector4_i64(native_default: "1,0,0,0");
-	_1: Vector4_i64(native_default: "0,1,0,0");
+	_1: Vector4_i)") +
+std::string(R"(64(native_default: "0,1,0,0");
 }
 
 /// 3x2 matrix of longs
@@ -790,7 +801,8 @@ struct Vector3_u64(native_inline, native_type: "glm::u64vec3") {
 	z: ulong(native_default: "0");
 }
 
-/// 4D vector of ulongs (homogenous coordinates)
+/// )") +
+std::string(R"(4D vector of ulongs (homogenous coordinates)
 struct Vector4_u64(native_inline, native_type: "glm::u64vec4") {
 	x: ulong(native_default: "0");
 	y: ulong(native_default: "0");
@@ -854,7 +866,8 @@ struct Matrix4x2_u64(native_inline, native_type: "glm::u64mat4x2") {
 }
 
 /// 4x3 matrix of ulongs
-struct Matrix4x3_u64(native_inline, native_type: "glm::u64mat4x3") {
+struct Matrix4x3_u64(native_inline, native_type: "glm::u6)") +
+std::string(R"(4mat4x3") {
 	_0: Vector3_u64(native_default: "1,0,0");
 	_1: Vector3_u64(native_default: "0,1,0");
 	_2: Vector3_u64(native_default: "0,0,1");
@@ -920,7 +933,8 @@ struct Matrix2x4_f64(native_inline, native_type: "glm::dmat2x4") {
 	_1: Vector4_f64(native_default: "0,1,0,0");
 }
 
-/// 3x2 matrix of doubles
+/// 3x2 matrix of doubl)") +
+std::string(R"(es
 struct Matrix3x2_f64(native_inline, native_type: "glm::dmat3x2") {
 	_0: Vector2_f64(native_default: "1,0");
 	_1: Vector2_f64(native_default: "0,1");
@@ -966,5 +980,5 @@ struct Matrix4x4_f64(native_inline, native_type: "glm::dmat4x4") {
 }
 
 ///-----------------------------------------------------------------------------
-
-)");
+)") +
+"";
