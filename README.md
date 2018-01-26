@@ -1,9 +1,12 @@
-FLATMATH
-========
+FLATGLM
+=======
 
-Generic math types for Linear Algebra as flatbuffer.
+Flatbuffer serialization for [GLM](http://glm.g-truc.net/) types.
 
-# Usage intention
+## Usage intention
 
-Mostly for re-use (include) by other flatbuffer schemas that require vector/matrix types.
-C++ code comes with conversion code to glm types for computation.
+Mostly re-use (include) by other flatbuffer schemas that require vector/matrix types, so that GLM is used for _native_ linear algebra computations.
+
+## Projects using this library
+
+- [flatGLTF](https://github.com/KageKirin/flatGLTF)
